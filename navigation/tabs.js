@@ -26,111 +26,131 @@ const Tabs = () => {
                 }
             }}
         >
-            <Tab.Screen name='Home' component={HomeScreen} options={{
-                tabBarIcon:({focused}) => (
-                    <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
-                        <Image
-                            source={require('../assets/icons/Home.png')}
-                            resizeMode='contain'
-                            style={{
-                                width:25,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        />
-                        <Text  style={{
-                                width:25,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#00000'
-                            }}
-                        >HOME</Text>
-                    </View>
-                ),
-            }} />
-            <Tab.Screen name='Fixtures' component={FixturesScreen}  options={{
-                tabBarIcon:({focused}) => (
-                    <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
-                        <Image
-                            source={require('../assets/icons/Fixtures.png')}
-                            resizeMode='contain'
-                            style={{
-                                width:45,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        />
-                        <Text  style={{
-                                width:45,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        >FIXTURES</Text>
-                    </View>
-                ),
-            }} />
-            <Tab.Screen name='Results' component={ResultsScreen}  options={{
-                tabBarIcon:({focused}) => (
-                    <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
-                        <Image
-                            source={require('../assets/icons/Results.png')}
-                            resizeMode='contain'
-                            style={{
-                                width:25,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        />
-                        <Text  style={{
-                                width:45,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        >RESULTS</Text>
-                    </View>
-                ),
-            }} />
-            <Tab.Screen name='Stats' component={StatsScreen}  options={{
-                tabBarIcon:({focused}) => (
-                    <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
-                        <Image
-                            source={require('../assets/icons/Stats.png')}
-                            resizeMode='contain'
-                            style={{
-                                width:25,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        />
-                        <Text  style={{
-                                width:30,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        >STATS</Text>
-                    </View>
-                ),
-            }} />
-            <Tab.Screen name='More' component={MoreScreen}  options={{
-                tabBarIcon:({focused}) => (
-                    <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
-                        <Image
-                            source={require('../assets/icons/More.png')}
-                            resizeMode='contain'
-                            style={{
-                                width:25,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        />
-                        <Text  style={{
-                                width:30,
-                                height: 25,
-                                tintColor: focused ? '#e32f45' : '#748c94'
-                            }}
-                        >MORE</Text>
-                    </View>
-                ),
-            }} />
+            <Tab.Screen 
+                name='Home' 
+                component={HomeScreen} 
+                options={{
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
+                            <Image
+                                source={require('../assets/icons/Home.png')}
+                                resizeMode='contain'
+                                style={{
+                                    width:25,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            />
+                            <Text  style={{
+                                    width:25,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#00000'
+                                }}
+                            >HOME</Text>
+                        </View>
+                    ),
+                }} 
+            />
+            <Tab.Screen 
+                name='Fixtures' 
+                component={FixturesScreen}  
+                options={{
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
+                            <Image
+                                source={require('../assets/icons/Fixtures.png')}
+                                resizeMode='contain'
+                                style={{
+                                    width:45,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            />
+                            <Text  style={{
+                                    width:45,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            >FIXTURES</Text>
+                        </View>
+                    ),
+                }} 
+            />
+            <Tab.Screen 
+                name='Results' 
+                component={ResultsScreen}  
+                options={{
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
+                            <Image
+                                source={require('../assets/icons/Results.png')}
+                                resizeMode='contain'
+                                style={{
+                                    width:25,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            />
+                            <Text  style={{
+                                    width:45,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            >RESULTS</Text>
+                        </View>
+                    ),
+                }} 
+            />
+            <Tab.Screen 
+                name='Stats' 
+                component={StatsScreen}  
+                options={{
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
+                            <Image
+                                source={require('../assets/icons/Stats.png')}
+                                resizeMode='contain'
+                                style={{
+                                    width:25,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            />
+                            <Text  style={{
+                                    width:30,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            >STATS</Text>
+                        </View>
+                    ),
+                }} 
+            />
+            <Tab.Screen 
+                name='More' 
+                component={MoreScreen}  
+                options={{
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
+                            <Image
+                                source={require('../assets/icons/More.png')}
+                                resizeMode='contain'
+                                style={{
+                                    width:25,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            />
+                            <Text  style={{
+                                    width:30,
+                                    height: 25,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            >MORE</Text>
+                        </View>
+                    ),
+                }} 
+            />
         </Tab.Navigator>
     );
 }

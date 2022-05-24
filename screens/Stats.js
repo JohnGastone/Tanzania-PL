@@ -11,7 +11,7 @@ from 'react-native';
 const StatsScreen = ({navigation}) => {
     return(
         <View style={StyleSheet.container}>
-            <Text>Stats Screen</Text>
+            <Text style={{color:'#00000'}}>Stats Screen</Text>
             <Button
                 title='Click Me'
                 onPress={() => alert ('Button Clicked')}

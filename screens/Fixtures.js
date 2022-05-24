@@ -11,7 +11,7 @@ from 'react-native';
 const FixturesScreen = ({navigation}) => {
     return(
         <View style={StyleSheet.container}>
-            <Text>Fixtures Screen</Text>
+            <Text style={{color:'#00000'}}>Fixtures Screen</Text>
             <Button
                 title='Click Me'
                 onPress={() => alert ('Button Clicked')}

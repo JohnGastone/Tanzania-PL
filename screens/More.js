@@ -11,7 +11,7 @@ from 'react-native';
 const MoreScreen = ({navigation}) => {
     return(
         <View style={StyleSheet.container}>
-            <Text>More Screen</Text>
+            <Text style={{color:'#00000'}}>More Screen</Text>
             <Button
                 title='Click Me'
                 onPress={() => alert ('Button Clicked')}

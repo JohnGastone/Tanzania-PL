@@ -11,7 +11,7 @@ from 'react-native';
 const HomeScreen = ({navigation}) => {
     return(
         <View style={StyleSheet.container}>
-            <Text>Home Screen</Text>
+            <Text style={{color:'#00000'}}>Home Screen</Text>
             <Button
                 title='Click Me'
                 onPress={() => alert ('Button Clicked')}
