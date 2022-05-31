@@ -11,25 +11,25 @@ import
 }
 from 'react-native';
 import Feather from 'react-native-vector-icons/Feather'
-import staOfTheWeek from '../assets/icons/data/starOfTheWeek';
+import stars from '../assets/icons/data/stars';
 
-const renderStarOfTheWeekItem = ({item}) => 
+const renderStarsItem = ({item}) => 
     {
         return (
-            <View style={[styles.starOfTheWeekItemWrapper,
+            <View style={[styles.starsItemWrapper,
             {
-                backgroundColor: item.selected ? purple : white ,
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
                 marginLeft: item.id == 1 ? 20 : 0,
             }]}>
             <Image 
             source = {item.image} 
-            style={styles.starOfTheWeekItemImage} />
-            <Text style={styles.starOfTheWeekItemTitle}> {item.title} </Text>
+            style={styles.starsItemImage} />
+            <Text style={styles.starsItemTitle}> {item.title} </Text>
             <View 
             style={[
-                styles.starOfTheWeekSelectWrapper,
+                styles.starsSelectWrapper,
                 {
-                    backgroundColor: item.selected ? purple : white ,
+                    backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
                 }
                 ]}>
                
@@ -49,12 +49,24 @@ const HomeScreen = ({navigation}) => {
                         source={require('../assets/icons/NBC_PL.png')}
                         style={styles.profileImage}
                         />
-                        
+                        <Feather name='menu' size={28} color={'fffff'}/>
                     </View>
             </SafeAreaView>
 
             {/* Star of the Week */}
-          
+            <View style={styles.starsWrapper}>
+                    <Text style={styles.starsTitle}>Star of the Week</Text>
+                    <View style={styles.starsListWrapper}>
+                        <FlatList
+                            data={stars}
+                            renderItem={renderStarsItem}
+                            keyExtractor={item => item.id}
+                            horizontal={ true}
+                            showsHorizontalScrollIndicator={false}
+                        />
+                    </View>
+                </View>
+
         </View>
     );
 }
@@ -81,21 +93,21 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
     },
-    starOfTheWeekWrapper:{
+    starsWrapper:{
         marginTop: 30,
     },
-    starOfTheWeekTitle:{
+    starsTitle:{
         fontFamily: 'Montserrat-Bold',
         fontSize: 20,
         paddingHorizontal: 20,
-        color: '#fffff',
+        color: '#000000',
     },
-    starOfTheWeekListWrapper:{
+    starsListWrapper:{
         paddingTop: 15,
         paddingBottom: 20,
 
     },
-    starOfTheWeekItemWrapper:{
+    starsItemWrapper:{
         backgroundColor: '#F3D43',
         marginRight: 20,
         borderRadius: 20,   
@@ -108,21 +120,22 @@ const styles = StyleSheet.create({
         shadowRadius: 10,
         elevation: 2,
     },
-    starOfTheWeekItemImage:{
-        width: 60,
-        height: 60,
+    starsItemImage:{
+        width: 50,
+        height: 50,
         marginTop: 25,
         alignSelf: 'center',
         marginHorizontal: 20,
+        resizeMode:'contain',
     },
-    starOfTheWeekItemTitle:{
+    starsItemTitle:{
         textAlign: 'center',
         fontFamily: 'Montserrat-Medium',
         fontSize: 14,
         marginTop: 10,
-        color: '#fffff'
+        color: '#ffffff'
     },
-    starOfTheWeekSelectWrapper:{
+    starsSelectWrapper:{
         alignSelf: 'center',
         justifyContent: 'center',
         marginTop: 20,

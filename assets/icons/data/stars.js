@@ -2,14 +2,14 @@ const staOfTheWeek = [
     {
         id : '1',
         image: require('../Kibu Dennis.png'),
-        title : 'George',
+        title : '',
         selected: true,    
     
     },
     {
         id : '2',
         image: require('../AZAM.png'),
-        title : 'Mayele',
+        title : '',
         selected: true,
     
     },
@@ -17,14 +17,14 @@ const staOfTheWeek = [
     {
         id : '3',
         image: require('../TBC.png'),
-        title : 'Soft Drinks',
+        title : '',
         selected: true,
     
     },
     {
         id : '4',
         image: require('../CAFCC.png'),
-        title : 'Regional food',
+        title : '',
         selected: true,    
     
     },
