@@ -4,19 +4,29 @@ import
     View,
     Text, 
     Button,
-    StyleSheet
+    StyleSheet,
+    SafeAreaView,
+    Image,
 }
 from 'react-native';
 
 const MoreScreen = ({navigation}) => {
     return(
         <View style={StyleSheet.container}>
-            <Text style={{color:'#00000'}}>More Screen</Text>
-            <Button
-                title='Click Me'
-                onPress={() => alert ('Button Clicked')}
-            />
-        </View>
+        {/* Header */}
+        <SafeAreaView>
+                <View style={styles.headersWrapper}>
+                    <Image 
+                    source={require('../assets/icons/NBC_PL.png')}
+                    style={styles.profileImage}
+                    />
+                    
+                </View>
+        </SafeAreaView>
+
+        {/* Star of the Week */}
+      
+    </View>
     );
 }
 
@@ -28,5 +38,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#48234E'
+    },
+    headersWrapper:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingHorizontal: 20,
+        paddingTop: 20,
+        alignItems: 'center',
+        
+    },
+    profileImage:{
+        width: 50,
+        height: 50,
+        borderRadius: 30,
     },
 });

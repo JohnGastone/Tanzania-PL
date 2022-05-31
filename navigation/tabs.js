@@ -42,9 +42,9 @@ const Tabs = () => {
                                 }}
                             />
                             <Text  style={{
-                                    width:25,
+                                    width:29,
                                     height: 25,
-                                    tintColor: focused ? '#e32f45' : '#00000'
+                                    tintColor: focused ? '#e32f45' : '#f0f'
                                 }}
                             >HOME</Text>
                         </View>
@@ -61,13 +61,13 @@ const Tabs = () => {
                                 source={require('../assets/icons/Fixtures.png')}
                                 resizeMode='contain'
                                 style={{
-                                    width:45,
+                                    width:50,
                                     height: 25,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
-                                    width:45,
+                                    width:55,
                                     height: 25,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
@@ -117,7 +117,7 @@ const Tabs = () => {
                                 }}
                             />
                             <Text  style={{
-                                    width:30,
+                                    width:35,
                                     height: 25,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}

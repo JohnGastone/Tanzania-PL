@@ -49,24 +49,12 @@ const HomeScreen = ({navigation}) => {
                         source={require('../assets/icons/NBC_PL.png')}
                         style={styles.profileImage}
                         />
-                        <Feather name='menu' size={28} color={'fffff'}/>
+                        
                     </View>
             </SafeAreaView>
 
             {/* Star of the Week */}
-            <View style={styles.starOfTheWeekWrapper}>
-                    <Text style={styles.starOfTheWeekTitle}>Star of the Week</Text>
-                    <View style={styles.starOfTheWeekListWrapper}>
-                        <FlatList
-                        data={starOfTheWeek}
-                        renderItem={renderStarOfTheWeekItem}
-                        keyExtractor={item => item.id}
-                        horizontal={ true}
-                        showsHorizontalScrollIndicator={false}
-                        />
-                    </View>
-                </View>
-
+          
         </View>
     );
 }
