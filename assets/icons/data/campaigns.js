@@ -14,20 +14,7 @@ const campaigns = [
     
     },
     
-    {
-        id : '3',
-        image: require('../Mpole.png'),
-        title : '',
-        selected: true,
-    
-    },
-    {
-        id : '4',
-        image: require('../CAFCC.png'),
-        title : 'Pumzi ya moto kwa Mkapa',
-        selected: true,    
-    
-    },
+   
    
     ];
     

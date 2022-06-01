@@ -21,14 +21,7 @@ const stars = [
         selected: true,
     
     },
-    {
-        id : '4',
-        image: require('../CAFCC.png'),
-        title : '',
-        selected: true,    
     
-    },
-   
     ];
     
     export default stars;

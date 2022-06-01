@@ -159,9 +159,8 @@ const renderCampaignsItem = ({item}) =>
                         </View>
                 </View>
 
-                 {/* Star of the Week */}
+                 {/* Sponsors */}
                  <View style={styles.starsWrapper}>
-                        <Text style={styles.starsTitle}>Stars of the Week</Text>
                         <View style={styles.starsListWrapper}>
                             <FlatList
                                 data={stars}
@@ -173,21 +172,7 @@ const renderCampaignsItem = ({item}) =>
                         </View>
                 </View>
 
-                 {/* Latest News */}
-                 <View style={styles.latestWrapper}>
-                        <Text style={styles.latestTitle}>Latest News </Text>
-                        <View style={styles.latestListWrapper}>
-                            <FlatList
-                                data={latest}
-                                renderItem={renderLatestItem}
-                                keyExtractor={item => item.id}
-                                horizontal={ true}
-                                showsHorizontalScrollIndicator={false}
-                            />
-                        </View>
-                    </View>
-
-
+               
 
             </View>
         </ScrollView>
@@ -201,7 +186,7 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        color: '#000000', 
+        color: '#43927F', 
     },
     headersWrapper:{
         flexDirection: 'row',
