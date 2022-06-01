@@ -9,13 +9,13 @@ import
     Image,
     ScrollView,
     FlatList,
+    TouchableOpacity,
     
 }
 from 'react-native';
-
-import Feather from 'react-native-vector-icons/Feather'
 import latest from '../assets/icons/data/latest';
-import stars from '../assets/icons/data/stars'
+import stars from '../assets/icons/data/stars';
+import campaigns from '../assets/icons/data/campaigns';
 
 {/* Function to render Latest news data */}
 const renderLatestItem = ({item}) => 
@@ -73,7 +73,35 @@ const renderStarsItem = ({item}) =>
         );
     };
 
-const HomeScreen = ({navigation}) => {
+    {/* Function to render Campaigns data */}
+const renderCampaignsItem = ({item}) => 
+    {
+        return (
+            <View style={[styles.campaignsItemWrapper,
+            {
+                backgroundColor: item.selected ? '#ffffff' : '#f4cd6' ,
+                marginLeft: item.id == 1 ? 20 : 0,
+            }]}>
+            <Image 
+            source = {item.image} 
+            style={styles.campaignsItemImage} />
+            <Text style={styles.campaignsItemTitle}> {item.title} </Text>
+            <View 
+            style={[
+                styles.campaignsSelectWrapper,
+                {
+                    backgroundColor: item.selected ? '#ffffff' : '#f4cd6d' ,
+                }
+                ]}>
+            
+            </View>
+
+            </View>
+        );
+    };
+
+
+    const HomeScreen = ({navigation}) => {
     return(
         <ScrollView>
             <View style={StyleSheet.container}>
@@ -84,11 +112,12 @@ const HomeScreen = ({navigation}) => {
                             source={require('../assets/icons/NBC_PL.png')}
                             style={styles.profileImage}
                             />
-                            <Feather name='menu' size={28} color={'fffff'}/>
+                            
                         </View>
                 </SafeAreaView>
 
                 {/* Latest News */}
+        
                 <View style={styles.latestWrapper}>
                         <Text style={styles.latestTitle}>Latest News </Text>
                         <View style={styles.latestListWrapper}>
@@ -114,7 +143,51 @@ const HomeScreen = ({navigation}) => {
                                 showsHorizontalScrollIndicator={false}
                             />
                         </View>
+                </View>
+
+                 {/* Campaigns */}
+                 <View style={styles.campaignsWrapper}>
+                        <Text style={styles.campaignsTitle}>Campaigns</Text>
+                        <View style={styles.campaignsListWrapper}>
+                            <FlatList
+                                data={campaigns}
+                                renderItem={renderCampaignsItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                </View>
+
+                 {/* Star of the Week */}
+                 <View style={styles.starsWrapper}>
+                        <Text style={styles.starsTitle}>Stars of the Week</Text>
+                        <View style={styles.starsListWrapper}>
+                            <FlatList
+                                data={stars}
+                                renderItem={renderStarsItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                </View>
+
+                 {/* Latest News */}
+                 <View style={styles.latestWrapper}>
+                        <Text style={styles.latestTitle}>Latest News </Text>
+                        <View style={styles.latestListWrapper}>
+                            <FlatList
+                                data={latest}
+                                renderItem={renderLatestItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
                     </View>
+
+
 
             </View>
         </ScrollView>
@@ -128,7 +201,7 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        color: '#48234E',
+        color: '#000000', 
     },
     headersWrapper:{
         flexDirection: 'row',
@@ -153,8 +226,8 @@ const styles = StyleSheet.create({
         color: '#000000',
     },
     latestListWrapper:{
-        paddingTop: 15,
-        paddingBottom: 20,
+        paddingTop: 10,
+        paddingBottom: 1,
     },
     LatestItemWrapper:{
         backgroundColor: '#f3d4d3',
@@ -197,7 +270,7 @@ const styles = StyleSheet.create({
 
     },
     starsWrapper:{
-        marginTop: 5,
+        marginTop: 1,
     },
     starsTitle:{
         fontFamily: 'Montserrat-Bold',
@@ -206,13 +279,14 @@ const styles = StyleSheet.create({
         color: '#000000',
     },
     starsListWrapper:{
-        paddingTop: 15,
+        paddingTop: 10,
         paddingBottom: 20,
 
     },
     starsItemWrapper:{
         backgroundColor: '#F3D4d3',
         marginRight: 20,
+        marginTop: 1,
         borderRadius: 15,   
         shadowColor: '#000000',
         shadowOffset:{
@@ -224,7 +298,7 @@ const styles = StyleSheet.create({
         elevation: 0,
     },
     starsItemImage:{
-        width: 80,
+        width: 100,
         height: undefined,
         marginTop: 25,
         alignSelf: 'center',
@@ -250,4 +324,59 @@ const styles = StyleSheet.create({
         marginBottom: 20,
 
     },
+    campaignsWrapper:{
+        marginTop: 5,
+    },
+    campaignsTitle:{
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 20,
+        paddingHorizontal: 20,
+        color: '#000000',
+    },
+    campaignsListWrapper:{
+        paddingTop: 10,
+        paddingBottom: 20,
+    },
+    campaignsItemWrapper:{
+        backgroundColor: '#F3D4d3',
+        padding:20,
+        marginLeft:10,
+        marginRight: 30,
+        borderRadius: 15,   
+        shadowColor: '#000000',
+        shadowOffset:{
+            width: 0,
+            height: 0,
+        },
+        shadowOpacity: 0.0,
+        shadowRadius: 0,
+        elevation: 0,
+    },
+    campaignsItemImage:{
+        width: 100,
+        height: undefined,
+        marginTop: 25,
+        alignSelf: 'center',
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10,
+    },
+    campaignsItemTitle:{
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 14,
+        marginTop: 5,
+        color: '#000000'
+    },
+    campaignsSelectWrapper:{
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
+        marginBottom: 20,
+    },
+
 });
