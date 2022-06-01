@@ -7,12 +7,46 @@ import
     StyleSheet,
     SafeAreaView,
     Image,
-    FlatList
+    ScrollView,
+    FlatList,
+    
 }
 from 'react-native';
-import Feather from 'react-native-vector-icons/Feather'
-import stars from '../assets/icons/data/stars';
 
+import Feather from 'react-native-vector-icons/Feather'
+import latest from '../assets/icons/data/latest';
+import stars from '../assets/icons/data/stars'
+
+{/* Function to render Latest news data */}
+const renderLatestItem = ({item}) => 
+    {
+        return (
+            <View style={[styles.LatestItemWrapper,
+                {
+                    backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+                    marginLeft: item.id == 1 ? 20 : 0,
+                }]}
+            >
+                <Image 
+                    source = {item.image} 
+                    style={styles.latestItemImage} 
+                />
+                <Text style={styles.latestItemTitle}> {item.title} </Text>
+                <View 
+                    style={[
+                        styles.latestSelectWrapper,
+                        {
+                            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+                        }
+                        ]}>
+                
+                </View>
+
+            </View>
+        );
+    };
+
+{/* Function to render Star of the Week data */}
 const renderStarsItem = ({item}) => 
     {
         return (
@@ -41,33 +75,49 @@ const renderStarsItem = ({item}) =>
 
 const HomeScreen = ({navigation}) => {
     return(
-        <View style={StyleSheet.container}>
-            {/* Header */}
-            <SafeAreaView>
-                    <View style={styles.headersWrapper}>
-                        <Image 
-                        source={require('../assets/icons/NBC_PL.png')}
-                        style={styles.profileImage}
-                        />
-                        <Feather name='menu' size={28} color={'fffff'}/>
-                    </View>
-            </SafeAreaView>
+        <ScrollView>
+            <View style={StyleSheet.container}>
+                {/* Header */}
+                <SafeAreaView>
+                        <View style={styles.headersWrapper}>
+                            <Image 
+                            source={require('../assets/icons/NBC_PL.png')}
+                            style={styles.profileImage}
+                            />
+                            <Feather name='menu' size={28} color={'fffff'}/>
+                        </View>
+                </SafeAreaView>
 
-            {/* Star of the Week */}
-            <View style={styles.starsWrapper}>
-                    <Text style={styles.starsTitle}>Star of the Week</Text>
-                    <View style={styles.starsListWrapper}>
-                        <FlatList
-                            data={stars}
-                            renderItem={renderStarsItem}
-                            keyExtractor={item => item.id}
-                            horizontal={ true}
-                            showsHorizontalScrollIndicator={false}
-                        />
+                {/* Latest News */}
+                <View style={styles.latestWrapper}>
+                        <Text style={styles.latestTitle}>Latest News </Text>
+                        <View style={styles.latestListWrapper}>
+                            <FlatList
+                                data={latest}
+                                renderItem={renderLatestItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
                     </View>
-                </View>
 
-        </View>
+                {/* Star of the Week */}
+                <View style={styles.starsWrapper}>
+                        <Text style={styles.starsTitle}>Stars of the Week</Text>
+                        <View style={styles.starsListWrapper}>
+                            <FlatList
+                                data={stars}
+                                renderItem={renderStarsItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                    </View>
+
+            </View>
+        </ScrollView>
     );
 }
  
@@ -78,7 +128,7 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#48234E'
+        color: '#48234E',
     },
     headersWrapper:{
         flexDirection: 'row',
@@ -93,8 +143,61 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
     },
+    latestWrapper:{
+        marginTop: 10,
+    },
+    latestTitle:{
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 20,
+        paddingHorizontal: 20,
+        color: '#000000',
+    },
+    latestListWrapper:{
+        paddingTop: 15,
+        paddingBottom: 20,
+    },
+    LatestItemWrapper:{
+        backgroundColor: '#f3d4d3',
+        marginRight: 20,
+        borderRadius: 15,
+        shadowColor: '#000000',
+        shadowOffset: {
+            width: 0,
+            height:0,
+        },
+        shadowOpacity: 0.0,
+        shadowRadius: 0,
+        elevation: 0,
+    },
+    latestItemImage:{
+        width: 210,
+        height: 125,
+        marginTop: 25,
+        alignSelf: 'center',
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10
+    },
+    latestItemTitle:{
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 14,
+        marginTop: 10,
+        color: '#000000'
+    },
+    latestSelectWrapper:{
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
+        marginBottom: 20,
+
+    },
     starsWrapper:{
-        marginTop: 30,
+        marginTop: 5,
     },
     starsTitle:{
         fontFamily: 'Montserrat-Bold',
@@ -108,40 +211,42 @@ const styles = StyleSheet.create({
 
     },
     starsItemWrapper:{
-        backgroundColor: '#F3D43',
+        backgroundColor: '#F3D4d3',
         marginRight: 20,
-        borderRadius: 20,   
-        shadowColor: '#fffff',
+        borderRadius: 15,   
+        shadowColor: '#000000',
         shadowOffset:{
             width: 0,
-            height: 2,
+            height: 0,
         },
-        shadowOpacity: 0.05,
-        shadowRadius: 10,
-        elevation: 2,
+        shadowOpacity: 0.0,
+        shadowRadius: 15,
+        elevation: 0,
     },
     starsItemImage:{
-        width: 50,
-        height: 50,
+        width: 80,
+        height: undefined,
         marginTop: 25,
         alignSelf: 'center',
         marginHorizontal: 20,
-        resizeMode:'contain',
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10
     },
     starsItemTitle:{
         textAlign: 'center',
         fontFamily: 'Montserrat-Medium',
         fontSize: 14,
         marginTop: 10,
-        color: '#ffffff'
+        color: '#000000'
     },
     starsSelectWrapper:{
         alignSelf: 'center',
         justifyContent: 'center',
         marginTop: 20,
-        width: 26,
-        height: 26,
-        borderRadius: 26,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
         marginBottom: 20,
 
     },

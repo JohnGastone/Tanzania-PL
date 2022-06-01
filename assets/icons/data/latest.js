@@ -1,34 +1,34 @@
-const stars = [
+const latest = [
     {
         id : '1',
-        image: require('../Tepsi.png'),
-        title : 'Tepsi Evance',
+        image: require('../Mpole.png'),
+        title : 'Mpole hashikiki',
         selected: true,    
     
     },
     {
         id : '2',
-        image: require('../Cleofas.png'),
-        title : 'Cleofas Mkandala',
+        image: require('../Mpole.png'),
+        title : '',
         selected: true,
     
     },
     
     {
         id : '3',
-        image: require('../Lusajo-Reliant.png'),
-        title : 'Reliant Lusajo',
+        image: require('../Mpole.png'),
+        title : '',
         selected: true,
     
     },
     {
         id : '4',
         image: require('../CAFCC.png'),
-        title : '',
+        title : 'Pumzi ya moto kwa Mkapa',
         selected: true,    
     
     },
    
     ];
     
-    export default stars;
+    export default latest;
