@@ -26,9 +26,10 @@ const Tabs = () => {
                 }
             }}
         >
-            <Tab.Screen 
+            <Tab.Screen  
                 name='Ligi kuu ya NBC' 
                 component={HomeScreen} 
+                backgroundColor='#087A43'
                 options={{
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>

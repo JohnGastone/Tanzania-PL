@@ -196,11 +196,44 @@ const renderSponsorItem = ({item}) =>
                            
                                 <Image
                                     source={require ('../assets/icons/AZAM.png') }
-                                    style={{width: 120, height: 34, padding: 4}}
+                                    style={{
+                                        width: 120, 
+                                        height: 34, 
+                                        padding: 4,
+                                        marginVertical: 10,
+                                        alignSelf: 'center'
+                                    }}
                         
                                 />
+                                <Image
+                                    source={require ('../assets/icons/NBC.png') }
+                                    style={{
+                                        width: 34,
+                                        height: 34, 
+                                        padding: 4,
+                                        marginVertical: 0,
+                                        paddingHorizontal: 0,
+                                        padding: 1,
+                                        alignSelf: 'center'
+                                    }}
+                        
+                                />
+                                 <Image
+                                    source={require ('../assets/icons/TBC.png') }
+                                    style={{
+                                        width: 34,
+                                        height: 34, 
+                                        padding: 4,
+                                        marginVertical: 18,
+                                        paddingHorizontal: 0,
+                                        padding: 1,
+                                        alignSelf: 'center'
+                                    }}
+                        
+                                />
+                                 
                                 
-                            
+                                                          
                         </View>
                 </View>
 
