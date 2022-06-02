@@ -193,13 +193,14 @@ const renderSponsorItem = ({item}) =>
                  <View style={styles.sponsorWrapper}>
                      <Text style={styles.sponsorTitle}>Wadhamini</Text>
                         <View style={styles.sponsorListWrapper}>
-                            <FlatList
-                                data={sponsor}
-                                renderItem={renderSponsorItem}
-                                keyExtractor={item => item.id}
-                                horizontal={ true}
-                                showsHorizontalScrollIndicator={false}
-                            />
+                           
+                                <Image
+                                    source={require ('../assets/icons/AZAM.png') }
+                                    style={{width: 120, height: 34, padding: 4}}
+                        
+                                />
+                                
+                            
                         </View>
                 </View>
 
