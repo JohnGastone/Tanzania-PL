@@ -181,12 +181,13 @@ const renderCampaignsItem = ({item}) =>
  
 export default HomeScreen;
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create
+({
     container: {
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        color: '#43927F', 
+        backgroundColor: '#E1BEE7', 
     },
     headersWrapper:{
         flexDirection: 'row',
@@ -205,6 +206,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     latestTitle:{
+        marginTop: 10,
+        marginBottom:1,
         fontFamily: 'Montserrat-Bold',
         fontSize: 20,
         paddingHorizontal: 20,
@@ -212,7 +215,7 @@ const styles = StyleSheet.create({
     },
     latestListWrapper:{
         paddingTop: 10,
-        paddingBottom: 1,
+        paddingBottom:1,
     },
     LatestItemWrapper:{
         backgroundColor: '#f3d4d3',
@@ -258,6 +261,8 @@ const styles = StyleSheet.create({
         marginTop: 1,
     },
     starsTitle:{
+        paddingTop: 10,
+        paddingBottom:1,
         fontFamily: 'Montserrat-Bold',
         fontSize: 20,
         paddingHorizontal: 20,
@@ -310,9 +315,11 @@ const styles = StyleSheet.create({
 
     },
     campaignsWrapper:{
-        marginTop: 5,
+        marginTop: 1,
     },
     campaignsTitle:{
+        paddingTop: 1,
+        paddingBottom: 1,
         fontFamily: 'Montserrat-Bold',
         fontSize: 20,
         paddingHorizontal: 20,
@@ -323,14 +330,14 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
     },
     campaignsItemWrapper:{
-        backgroundColor: '#F3D4d3',
+        backgroundColor: '#ffffff',
         padding:20,
-        marginLeft:10,
-        marginRight: 30,
+        marginLeft:1,
+        marginRight: 15,
         borderRadius: 15,   
         shadowColor: '#000000',
         shadowOffset:{
-            width: 0,
+            width: 16,
             height: 0,
         },
         shadowOpacity: 0.0,
@@ -352,7 +359,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Montserrat-Medium',
         fontSize: 14,
         marginTop: 5,
-        color: '#000000'
+        color: '#000000',
     },
     campaignsSelectWrapper:{
         alignSelf: 'center',

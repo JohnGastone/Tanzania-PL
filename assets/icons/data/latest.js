@@ -8,16 +8,16 @@ const latest = [
     },
     {
         id : '2',
-        image: require('../Mpole.png'),
-        title : '',
+        image: require('../Ukocha.png'),
+        title : 'Diploma "A" CAF',
         selected: true,
     
     },
     
     {
         id : '3',
-        image: require('../Mpole.png'),
-        title : '',
+        image: require('../SerengetiGirls.png'),
+        title : 'Serengeti Girls kuivaa Burundi',
         selected: true,
     
     },
