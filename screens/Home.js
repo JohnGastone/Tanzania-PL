@@ -16,6 +16,7 @@ from 'react-native';
 import latest from '../assets/icons/data/latest';
 import stars from '../assets/icons/data/stars';
 import campaigns from '../assets/icons/data/campaigns';
+import sponsor from '../assets/icons/data/sponsor';
 
 {/* Function to render Latest news data */}
 const renderLatestItem = ({item}) => 
@@ -100,6 +101,33 @@ const renderCampaignsItem = ({item}) =>
         );
     };
 
+    {/* Function to render Sponsor's data */}
+const renderSponsorItem = ({item}) => 
+{
+    return (
+        <View style={[styles.sponsorItemWrapper,
+        {
+            backgroundColor: item.selected ? '#ffffff' : '#f4cd6' ,
+            marginLeft: item.id == 1 ? 20 : 0,
+        }]}>
+        <Image 
+        source = {item.image} 
+        style={styles.sponsorItemImage} />
+        <Text style={styles.sponsorItemTitle}> {item.title} </Text>
+        <View 
+        style={[
+            styles.sponsorSelectWrapper,
+            {
+                backgroundColor: item.selected ? '#ffffff' : '#f4cd6d' ,
+            }
+            ]}>
+        
+        </View>
+
+        </View>
+    );
+};
+
 
     const HomeScreen = ({navigation}) => {
     return(
@@ -117,9 +145,10 @@ const renderCampaignsItem = ({item}) =>
                 </SafeAreaView>
 
                 {/* Latest News */}
-        
+                    
                 <View style={styles.latestWrapper}>
-                        <Text style={styles.latestTitle}>Latest News </Text>
+                        <Text style={styles.latestTitle}>Habari za hivi karibuni</Text>
+                        
                         <View style={styles.latestListWrapper}>
                             <FlatList
                                 data={latest}
@@ -129,11 +158,12 @@ const renderCampaignsItem = ({item}) =>
                                 showsHorizontalScrollIndicator={false}
                             />
                         </View>
+                        
                     </View>
 
                 {/* Star of the Week */}
                 <View style={styles.starsWrapper}>
-                        <Text style={styles.starsTitle}>Stars of the Week</Text>
+                        <Text style={styles.starsTitle}>Nyota wa Wiki</Text>
                         <View style={styles.starsListWrapper}>
                             <FlatList
                                 data={stars}
@@ -147,7 +177,7 @@ const renderCampaignsItem = ({item}) =>
 
                  {/* Campaigns */}
                  <View style={styles.campaignsWrapper}>
-                        <Text style={styles.campaignsTitle}>Campaigns</Text>
+                        <Text style={styles.campaignsTitle}>Kampeni</Text>
                         <View style={styles.campaignsListWrapper}>
                             <FlatList
                                 data={campaigns}
@@ -160,11 +190,12 @@ const renderCampaignsItem = ({item}) =>
                 </View>
 
                  {/* Sponsors */}
-                 <View style={styles.starsWrapper}>
-                        <View style={styles.starsListWrapper}>
+                 <View style={styles.sponsorWrapper}>
+                     <Text style={styles.sponsorTitle}>Wadhamini</Text>
+                        <View style={styles.sponsorListWrapper}>
                             <FlatList
-                                data={stars}
-                                renderItem={renderStarsItem}
+                                data={sponsor}
+                                renderItem={renderSponsorItem}
                                 keyExtractor={item => item.id}
                                 horizontal={ true}
                                 showsHorizontalScrollIndicator={false}
@@ -198,8 +229,8 @@ const styles = StyleSheet.create
         
     },
     profileImage:{
-        width: 50,
-        height: 50,
+        width: 70,
+        height: 70,
         borderRadius: 30,
     },
     latestWrapper:{
@@ -222,6 +253,7 @@ const styles = StyleSheet.create
         marginRight: 20,
         borderRadius: 15,
         shadowColor: '#000000',
+        padding: 0.45,
         shadowOffset: {
             width: 0,
             height:0,
@@ -288,7 +320,7 @@ const styles = StyleSheet.create
         elevation: 0,
     },
     starsItemImage:{
-        width: 100,
+        width: 60,
         height: undefined,
         marginTop: 25,
         alignSelf: 'center',
@@ -345,7 +377,7 @@ const styles = StyleSheet.create
         elevation: 0,
     },
     campaignsItemImage:{
-        width: 100,
+        width: 75,
         height: undefined,
         marginTop: 25,
         alignSelf: 'center',
@@ -370,5 +402,64 @@ const styles = StyleSheet.create
         borderRadius: 25,
         marginBottom: 20,
     },
+    sponsorWrapper:{
+        marginTop: 1,
+    },
+    sponsorTitle:{
+        paddingTop: 1,
+        paddingBottom: 1,
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 20,
+        paddingHorizontal: 20,
+        color: '#000000',
+    },
+    sponsorListWrapper:{
+        paddingTop: 10,
+        paddingBottom: 20,
+    },
+    sponsorItemWrapper:{
+        backgroundColor: '#ffffff',
+        padding:20,
+        width: 320,
+        marginLeft:1,
+        marginRight: 15,
+        borderRadius: 15,   
+        shadowColor: '#000000',
+        shadowOffset:{
+            width: 16,
+            height: 0,
+        },
+        shadowOpacity: 0.0,
+        shadowRadius: 0,
+        elevation: 0,
+    },
+    sponsorItemImage:{
+        width: 75,
+        height: undefined,
+        marginTop: 25,
+        alignSelf: 'center',
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10,
+    },
+    sponsorItemTitle:{
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 14,
+        marginTop: 5,
+        color: '#000000',
+    },
+    sponsorSelectWrapper:{
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
+        marginBottom: 20,
+    },
+
+
 
 });

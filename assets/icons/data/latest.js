@@ -1,8 +1,8 @@
 const latest = [
     {
         id : '1',
-        image: require('../Mpole.png'),
-        title : 'Mpole hashikiki',
+        image: require('../CAFCL.png'),
+        title : 'Nafasi 4 kimataifa uhakika',
         selected: true,    
     
     },

@@ -27,7 +27,7 @@ const Tabs = () => {
             }}
         >
             <Tab.Screen 
-                name='NBC Premier League' 
+                name='Ligi kuu ya NBC' 
                 component={HomeScreen} 
                 options={{
                     tabBarIcon:({focused}) => (

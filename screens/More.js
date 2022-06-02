@@ -7,6 +7,7 @@ import
     StyleSheet,
     SafeAreaView,
     Image,
+    TouchableOpacity
 }
 from 'react-native';
 
@@ -24,7 +25,14 @@ const MoreScreen = ({navigation}) => {
                 </View>
         </SafeAreaView>
 
-        {/* Star of the Week */}
+        <View>
+            <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                <Button
+                    title='Back'
+                   
+                />
+            </TouchableOpacity>
+        </View>
       
     </View>
     );
@@ -48,8 +56,8 @@ const styles = StyleSheet.create({
         
     },
     profileImage:{
-        width: 50,
-        height: 50,
+        width: 70,
+        height: 70,
         borderRadius: 30,
     },
 });
