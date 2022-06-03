@@ -14,7 +14,8 @@ from 'react-native';
 
 const FixturesScreen = ({navigation}) => {
     return(
-        <View style={StyleSheet.container}>
+
+    <View style={StyleSheet.container}>
         {/* Header */}
         <SafeAreaView>
                 <View style={styles.headersWrapper}>
@@ -28,7 +29,7 @@ const FixturesScreen = ({navigation}) => {
 
         {/* Back Button */}
         <View>
-            <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+            <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center', marginBottom:1}}>
                 <Button
                     title='Back'
                     color='#087A43'
@@ -36,8 +37,90 @@ const FixturesScreen = ({navigation}) => {
                 />
             </TouchableOpacity>
         </View>
-      
-    </View>
+        {/* Fixtures */}
+        <View style={styles.fixtures}>
+            {/* Fixture Date */}
+            <View>
+                <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
+            </View>
+            {/* Fixture */}
+            <View style={styles.fixtureItem}>
+                <Text style={{paddingRight: 20, color:'#087d43', alignSelf: 'center'}}>Biashara United
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />
+                    <Text>Tanzania Prisons</Text>
+                </Text>
+                
+            </View>
+            {/* Fixture Date */}
+            <View>
+                <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>16 March</Text>
+            </View>
+            <View style={styles.fixtureItem}>
+                <Text style={{marginBottom: 10, paddingRight:40, color:'#087d43', alignSelf: 'center'}}>Namungo
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />
+                    <Text>Azam</Text>
+                </Text>
+
+                {/* Fixture Date */}
+                <View>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>19 March</Text>
+                </View>
+                
+            </View>
+            <View style={styles.fixtureItem}>
+                <Text style={{paddingRight: 70, color:'#087d43', alignSelf: 'center'}}>Young Africans
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
+                    />
+                    <Text>KMC </Text>
+                </Text>
+                
+            </View>
+
+            {/* Fixture Date */}
+            <View>
+                <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>27 March</Text>
+            </View>
+            <View style={styles.fixtureItem}>
+                <Text style={{paddingRight: 50, color:'#087d43', alignSelf: 'center'}}>Polisi Tanzania
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />
+                    <Text>Simba Sc</Text>
+                </Text>
+                
+            </View>
+
+            {/* Fixture Date */}
+            <View>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>1 April</Text>
+                </View>
+            <View style={styles.fixtureItem}>
+                <Text style={{paddingRight: 23, color:'#087d43', alignSelf: 'center'}}>Polisi Tanzania
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />
+                    <Text>Ruvu Shooting</Text>
+                </Text>
+                
+            </View>
+        
+        </View>
+     </View>
     );
 }
 
@@ -62,6 +145,17 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 30
+    },
+    fixtures:{
+        paddingTop: 1
+    },
+    fixtureItem:{
+        paddingHorizontal: 28,
+        marginBottom:10
+    },
+    buttonText:{
+        
+        
     },
    
 });

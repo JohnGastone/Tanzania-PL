@@ -201,7 +201,7 @@ const renderSponsorItem = ({item}) =>
                                         height: 34, 
                                         padding: 4,
                                         marginVertical: 10,
-                                        alignSelf: 'center'
+                                        alignSelf: 'center',
                                     }}
                         
                                 />
