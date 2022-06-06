@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#48234E'
+        backgroundColor: '#48234E' 
     },
     headersWrapper:{
         flexDirection: 'row',

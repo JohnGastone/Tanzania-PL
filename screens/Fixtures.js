@@ -9,118 +9,168 @@ import
     SafeAreaView,
     Image,
     TouchableOpacity,
+    ScrollView
 }
 from 'react-native';
 
 const FixturesScreen = ({navigation}) => {
     return(
-
+    <ScrollView>
     <View style={StyleSheet.container}>
-        {/* Header */}
-        <SafeAreaView>
-                <View style={styles.headersWrapper}>
-                    <Image 
-                    source={require('../assets/icons/NBC_PL.png')}
-                    style={styles.profileImage}
+            {/* Header */}
+            <SafeAreaView>
+                    <View style={styles.headersWrapper}>
+                        <Image 
+                        source={require('../assets/icons/NBC_PL.png')}
+                        style={styles.profileImage}
+                        />
+                        
+                    </View>
+            </SafeAreaView>
+
+            {/* Back Button */}
+            <View>
+                <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center', marginBottom:1}}>
+                    <Button
+                        title='Back'
+                        color='#087A43'
+                    
                     />
+                </TouchableOpacity>
+            </View>
+            {/* Fixtures */}
+            <View style={styles.fixtures}>
+                {/* Fixture Date */}
+                <View>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
+                </View>
+                {/* Fixture */}
+                <View style={styles.fixtureItem}>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center'}}>Biashara United
+                        <Button
+                            title='16:00'
+                            disabled={true}
+                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        />
+                        <Text>Tanzania Prisons</Text>
+                    </Text>
                     
                 </View>
-        </SafeAreaView>
+                {/* Fixture Date */}
+                <View>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>16 March</Text>
+                </View>
+                <View style={styles.fixtureItem}>
+                    <Text style={{marginBottom: 10, paddingRight:40, color:'#5C1919', alignSelf: 'center'}}>Namungo
+                        <Button
+                            title='16:00'
+                            disabled={true}
+                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        />
+                        <Text>Azam</Text>
+                    </Text>
 
-        {/* Back Button */}
-        <View>
-            <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center', marginBottom:1}}>
-                <Button
-                    title='Back'
-                    color='#087A43'
-                   
-                />
-            </TouchableOpacity>
-        </View>
-        {/* Fixtures */}
-        <View style={styles.fixtures}>
-            {/* Fixture Date */}
-            <View>
-                <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
-            </View>
-            {/* Fixture */}
-            <View style={styles.fixtureItem}>
-                <Text style={{paddingRight: 20, color:'#087d43', alignSelf: 'center'}}>Biashara United
-                    <Button
-                        title='16:00'
-                        disabled={true}
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                    />
-                    <Text>Tanzania Prisons</Text>
-                </Text>
-                
-            </View>
-            {/* Fixture Date */}
-            <View>
-                <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>16 March</Text>
-            </View>
-            <View style={styles.fixtureItem}>
-                <Text style={{marginBottom: 10, paddingRight:40, color:'#087d43', alignSelf: 'center'}}>Namungo
-                    <Button
-                        title='16:00'
-                        disabled={true}
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                    />
-                    <Text>Azam</Text>
-                </Text>
+                    {/* Fixture Date */}
+                    <View>
+                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>19 March</Text>
+                    </View>
+                    
+                </View>
+                <View style={styles.fixtureItem}>
+                    <Text style={{paddingRight: 70, color:'#5C1919', alignSelf: 'center'}}>Young Africans
+                        <Button
+                            title='19:00'
+                            disabled={true}
+                            style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
+                        />
+                        <Text>KMC </Text>
+                    </Text>
+                    
+                </View>
 
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>19 March</Text>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>27 March</Text>
                 </View>
-                
-            </View>
-            <View style={styles.fixtureItem}>
-                <Text style={{paddingRight: 70, color:'#087d43', alignSelf: 'center'}}>Young Africans
-                    <Button
-                        title='16:00'
-                        disabled={true}
-                        style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
-                    />
-                    <Text>KMC </Text>
-                </Text>
-                
-            </View>
-
-            {/* Fixture Date */}
-            <View>
-                <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>27 March</Text>
-            </View>
-            <View style={styles.fixtureItem}>
-                <Text style={{paddingRight: 50, color:'#087d43', alignSelf: 'center'}}>Polisi Tanzania
-                    <Button
-                        title='16:00'
-                        disabled={true}
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                    />
-                    <Text>Simba Sc</Text>
-                </Text>
-                
-            </View>
-
-            {/* Fixture Date */}
-            <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>1 April</Text>
+                <View style={styles.fixtureItem}>
+                    <Text style={{paddingRight: 50, color:'#5C1919', alignSelf: 'center'}}>Polisi Tanzania
+                        <Button
+                            title='16:00'
+                            disabled={true}
+                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        />
+                        <Text>Simba Sc</Text>
+                    </Text>
+                    
                 </View>
-            <View style={styles.fixtureItem}>
-                <Text style={{paddingRight: 23, color:'#087d43', alignSelf: 'center'}}>Polisi Tanzania
-                    <Button
-                        title='16:00'
-                        disabled={true}
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                    />
-                    <Text>Ruvu Shooting</Text>
-                </Text>
-                
-            </View>
+
+                {/* Fixture Date */}
+                <View>
+                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>1 April</Text>
+                    </View>
+                <View style={styles.fixtureItem}>
+                    <Text style={{paddingRight: 23, color:'#5C1919', alignSelf: 'center'}}>Polisi Tanzania
+                        <Button
+                            title='16:00'
+                            disabled={true}
+                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        />
+                        <Text>Ruvu Shooting</Text>
+                    </Text>
+                    
+                </View>
+
+                 {/* Sponsors */}
+                 <View style={styles.sponsorWrapper}>
+                     <Text style={styles.sponsorTitle}>Wadhamini</Text>
+                        <View style={styles.sponsorListWrapper}>
+                           
+                                <Image
+                                    source={require ('../assets/icons/AZAM.png') }
+                                    style={{
+                                        width: 120, 
+                                        height: 34, 
+                                        padding: 4,
+                                        marginVertical: 10,
+                                        alignSelf: 'center',
+                                    }}
+                        
+                                />
+                                <Image
+                                    source={require ('../assets/icons/NBC.png') }
+                                    style={{
+                                        width: 34,
+                                        height: 34, 
+                                        padding: 4,
+                                        marginVertical: 0,
+                                        paddingHorizontal: 0,
+                                        padding: 1,
+                                        alignSelf: 'center'
+                                    }}
+                        
+                                />
+                                 <Image
+                                    source={require ('../assets/icons/TBC.png') }
+                                    style={{
+                                        width: 34,
+                                        height: 34, 
+                                        padding: 4,
+                                        marginVertical: 18,
+                                        paddingHorizontal: 0,
+                                        padding: 1,
+                                        alignSelf: 'center'
+                                    }}
+                        
+                                />
+                                 
+                                
+                                                          
+                        </View>
+                </View>
         
         </View>
      </View>
+     </ScrollView>
     );
 }
 
@@ -157,5 +207,65 @@ const styles = StyleSheet.create({
         
         
     },
+    sponsorWrapper:{
+        marginTop: 1,
+    },
+    sponsorTitle:{
+        paddingTop: 1,
+        paddingBottom: 1,
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 20,
+        paddingHorizontal: 20,
+        color: '#000000',
+    },
+    sponsorListWrapper:{
+        paddingTop: 10,
+        paddingBottom: 20,
+    },
+    sponsorItemWrapper:{
+        backgroundColor: '#ffffff',
+        padding:20,
+        width: 320,
+        marginLeft:1,
+        marginRight: 15,
+        borderRadius: 15,   
+        shadowColor: '#000000',
+        shadowOffset:{
+            width: 16,
+            height: 0,
+        },
+        shadowOpacity: 0.0,
+        shadowRadius: 0,
+        elevation: 0,
+    },
+    sponsorItemImage:{
+        width: 75,
+        height: undefined,
+        marginTop: 25,
+        alignSelf: 'center',
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10,
+    },
+    sponsorItemTitle:{
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 14,
+        marginTop: 5,
+        color: '#000000',
+    },
+    sponsorSelectWrapper:{
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
+        marginBottom: 20,
+    },
+
+
+
    
 });
