@@ -31,7 +31,7 @@ const ResultsScreen = ({navigation}) => {
             <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center', color:'' }}>
                 <Button
                     title='Back'
-                    color='#087A43'
+                    color='#087A76'
                 />
             </TouchableOpacity>
         </View>

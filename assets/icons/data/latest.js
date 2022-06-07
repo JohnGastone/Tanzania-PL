@@ -8,19 +8,20 @@ const latest = [
     },
     {
         id : '2',
+        image: require('../Serengeti.png'),
+        title : 'Serengeti Girls Kombe la dunia',
+        selected: true,
+    
+    },
+    {
+        id : '3',
         image: require('../Ukocha.png'),
         title : 'Diploma "A" CAF',
         selected: true,
     
     },
     
-    {
-        id : '3',
-        image: require('../SerengetiGirls.png'),
-        title : 'Serengeti Girls kuivaa Burundi',
-        selected: true,
-    
-    },
+
     {
         id : '4',
         image: require('../CAFCC.png'),
