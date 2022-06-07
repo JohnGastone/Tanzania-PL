@@ -54,9 +54,20 @@ const MoreScreen = ({navigation}) => {
                             <Pressable style={styles.button} onPress={onPress}>
                                 <Text style={styles.text}>Namungo Fc</Text>
                             </Pressable>
+                            <Pressable style={styles.button1} onPress={onPress}>
+                                <Text style={styles.text}>Official Website</Text>
+                            </Pressable>
                         </View>
 
-                        {/* About us */}
+                    {/* Referees */}
+                        <View>
+                            <Text style={styles.favoriteTeam}>Referees</Text>
+                            <Pressable style={styles.button1} onPress={onPress}>
+                                <Text style={styles.text}>Referees</Text>
+                            </Pressable>
+                        </View>
+
+                    {/* About us */}
                         <View>
                             <Text style={styles.favoriteTeam}>About Us</Text>
                             <Pressable style={styles.button} onPress={onPress}>
@@ -113,7 +124,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         elevation: 3,
         backgroundColor: '#087A43',
-        width: 330,
+        width: 360,
         paddingLeft: 30,
         paddingRight: 30,
         height: 42,
@@ -140,11 +151,11 @@ const styles = StyleSheet.create({
             justifyContent: 'center',
             paddingVertical: 12,
             paddingHorizontal: 32,
-            borderRadius: 17,
+            borderRadius: 20,
             elevation: 1,
             backgroundColor: '#087A43',
             marginTop: 10,
-            width: 330,
+            width: 360,
             height: 42,
             },
 
