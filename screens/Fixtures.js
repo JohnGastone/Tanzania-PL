@@ -120,9 +120,9 @@ const FixturesScreen = ({navigation}) => {
                     
                 </View>
 
-                 {/* Sponsors */}
-                 <View style={styles.sponsorWrapper}>
-                     <Text style={styles.sponsorTitle}>Wadhamini</Text>
+                {/* Sponsors */}
+                <View style={styles.sponsorWrapper}>
+                     <Text style={styles.sponsorTitle}></Text>
                         <View style={styles.sponsorListWrapper}>
                            
                                 <Image
@@ -133,6 +133,8 @@ const FixturesScreen = ({navigation}) => {
                                         padding: 4,
                                         marginVertical: 10,
                                         alignSelf: 'center',
+                                        marginRight: 30,
+
                                     }}
                         
                                 />
@@ -140,25 +142,23 @@ const FixturesScreen = ({navigation}) => {
                                     source={require ('../assets/icons/NBC.png') }
                                     style={{
                                         width: 34,
-                                        height: 34, 
-                                        padding: 4,
-                                        marginVertical: 0,
-                                        paddingHorizontal: 0,
+                                        height: 34,
                                         padding: 1,
-                                        alignSelf: 'center'
+                                        alignSelf: 'center',
+                                        marginRight: 55,
                                     }}
                         
                                 />
-                                 <Image
+                                <Image
                                     source={require ('../assets/icons/TBC.png') }
                                     style={{
-                                        width: 34,
-                                        height: 34, 
+                                        width: 70,
+                                        height: 54, 
                                         padding: 4,
-                                        marginVertical: 18,
-                                        paddingHorizontal: 0,
+                                        marginVertical: 18,                                       
                                         padding: 1,
-                                        alignSelf: 'center'
+                                        alignSelf: 'center',
+                                        marginTop: 10,
                                     }}
                         
                                 />
@@ -221,6 +221,8 @@ const styles = StyleSheet.create({
     sponsorListWrapper:{
         paddingTop: 10,
         paddingBottom: 20,
+        flexDirection: 'row',
+        marginHorizontal: 20,
     },
     sponsorItemWrapper:{
         backgroundColor: '#ffffff',

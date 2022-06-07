@@ -103,7 +103,7 @@ const Tabs = () => {
                 }} 
             />
             <Tab.Screen 
-                name='Stats' 
+                name='Statistics' 
                 component={StatsScreen}  
                 options={{
                     tabBarIcon:({focused}) => (

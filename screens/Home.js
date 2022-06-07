@@ -18,8 +18,8 @@ import stars from '../assets/icons/data/stars';
 import campaigns from '../assets/icons/data/campaigns';
 import sponsor from '../assets/icons/data/sponsor';
 
-{/* Function to render Latest news data */}
-const renderLatestItem = ({item}) => 
+    {/* Function to render Latest news data */}
+    const renderLatestItem = ({item}) => 
     {
         return (
             <View style={[styles.LatestItemWrapper,
@@ -47,8 +47,8 @@ const renderLatestItem = ({item}) =>
         );
     };
 
-{/* Function to render Star of the Week data */}
-const renderStarsItem = ({item}) => 
+    {/* Function to render Star of the Week data */}
+    const renderStarsItem = ({item}) => 
     {
         return (
             <View style={[styles.starsItemWrapper,
@@ -75,7 +75,7 @@ const renderStarsItem = ({item}) =>
     };
 
     {/* Function to render Campaigns data */}
-const renderCampaignsItem = ({item}) => 
+    const renderCampaignsItem = ({item}) => 
     {
         return (
             <View style={[styles.campaignsItemWrapper,
@@ -176,7 +176,7 @@ const renderSponsorItem = ({item}) =>
                 </View>
 
                  {/* Campaigns */}
-                 <View style={styles.campaignsWrapper}>
+                <View style={styles.campaignsWrapper}>
                         <Text style={styles.campaignsTitle}>Kampeni</Text>
                         <View style={styles.campaignsListWrapper}>
                             <FlatList
@@ -189,11 +189,10 @@ const renderSponsorItem = ({item}) =>
                         </View>
                 </View>
 
-                 {/* Sponsors */}
-                 <View style={styles.sponsorWrapper}>
-                     <Text style={styles.sponsorTitle}>Wadhamini</Text>
-                        <View style={styles.sponsorListWrapper}>
-                           
+                {/* Sponsors */}
+                <View style={styles.sponsorWrapper}>
+                     <Text style={styles.sponsorTitle}></Text>
+                        <View style={styles.sponsorListWrapper}>                           
                                 <Image
                                     source={require ('../assets/icons/AZAM.png') }
                                     style={{
@@ -202,7 +201,7 @@ const renderSponsorItem = ({item}) =>
                                         padding: 4,
                                         marginVertical: 10,
                                         alignSelf: 'center',
-                                        marginRight: 30,
+                                        marginRight: 25,
 
                                     }}
                         
@@ -210,14 +209,11 @@ const renderSponsorItem = ({item}) =>
                                 <Image
                                     source={require ('../assets/icons/NBC.png') }
                                     style={{
-                                        width: 34,
-                                        height: 34, 
-                                        padding: 4,
-                                        marginVertical: 0,
-                                        paddingHorizontal: 0,
+                                        width: 62,
+                                        height: 44,
                                         padding: 1,
                                         alignSelf: 'center',
-                                        marginRight: 55,
+                                        marginRight: 42,
                                     }}
                         
                                 />
@@ -227,23 +223,70 @@ const renderSponsorItem = ({item}) =>
                                         width: 70,
                                         height: 54, 
                                         padding: 4,
-                                        marginVertical: 18,
-                                        //paddingHorizontal: 0,
+                                        marginVertical: 18,                                       
                                         padding: 1,
                                         alignSelf: 'center',
-                                        marginTop: 10,
+                                        marginTop: 16,
                                         
                                     }}
                         
-                                />
-                                 
-                                
-                                                          
+                                />                                                                                                                           
                         </View>
-                </View>
+                        <View>
+                            <Text style={styles.sponsorsLine}></Text>
+                        </View>
+                         
+                        {/* TPLB Social Media Reach */}
+                        <View style={styles.socialMedia}>
+                            <Image 
+                                source={require('../assets/icons/icons8-twitter-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                    marginRight: 8,
+                                }}
+                            />
+                            <Image 
+                                source={require('../assets/icons/icons8-facebook-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                    marginRight: 8,
+                                }}
+                            />
+                            <Image 
+                                source={require('../assets/icons/icons8-instagram-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                    marginRight: 8,
+                                }}
+                            />
+                            <Image 
+                                source={require('../assets/icons/icons8-tiktok-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                }}
+                            />
+                            <Text style={styles.tplBoard}> tplboard </Text>
+                        </View>
 
-               
-
+                        {/* TPL Youtube and Website */}
+                        <View style={styles.youtubeWebsite}>
+                            <Text style={styles.ligiKuu}>www.ligikuu.co.tz</Text>
+                            <Image 
+                                source={require('../assets/icons/icons8-youtube-48.png')}
+                                style={{
+                                    paddingLeft: 34,
+                                    marginLeft: 18,
+                                    marginTop: -6,
+                                    marginRight: -8,
+                                }}
+                            />
+                            <Text style={styles.tplBoard}>LIGI KUU TV</Text>
+                        </View>
+                </View>               
             </View>
         </ScrollView>
     );
@@ -501,7 +544,30 @@ const styles = StyleSheet.create
         borderRadius: 25,
         marginBottom: 20,
     },
-
-
-
+    sponsorsLine: {
+        flex: 1,
+        marginLeft: 10,
+        borderBottomColor: '#C4C4C4',
+        borderBottomWidth: 1,
+        marginTop: -30,
+    },
+    socialMedia: {
+        flexDirection: 'row',
+        marginTop: 10,
+        paddingLeft: 70,
+    },
+    tplBoard: {
+        color: '#000000',
+        paddingLeft: 10,
+        marginTop: 7,
+    },
+    youtubeWebsite: {
+        flexDirection: 'row',
+        marginTop: 10,
+        paddingLeft: 70,
+    },
+    ligiKuu: {
+        color: '#000000',
+        marginTop: 7
+    },
 });
