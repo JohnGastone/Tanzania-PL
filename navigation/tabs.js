@@ -1,6 +1,7 @@
 import {StyleSheet, Text, Image, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import StackNavigator from './StackNavigators';
 import FixturesScreen from '../screens/Fixtures';
 import HomeScreen from '../screens/Home';
 import MoreScreen from '../screens/More';
@@ -152,6 +153,14 @@ const Tabs = () => {
                     ),
                 }} 
             />
+            <Tab.Screen 
+                name="Sign In" 
+                component={StackNavigator} 
+                options={{
+                    headerShown: false,
+                }}
+            />
+            
         </Tab.Navigator>
     );
 }

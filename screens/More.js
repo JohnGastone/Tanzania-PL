@@ -42,7 +42,7 @@ const MoreScreen = ({navigation}) => {
                             
                             />
                         </TouchableOpacity>
-                        <Pressable style={styles.button} onPress={onPress}>
+                        <Pressable style={styles.button} onPress={() => navigation.navigate('Sign In')}>
                             <Text style={styles.text}>Sign In / Create New Account</Text>
                         </Pressable>  
                     </View>              
@@ -51,7 +51,7 @@ const MoreScreen = ({navigation}) => {
                     <View>
                         <View>
                             <Text style={styles.favoriteTeam}>Favorite Team</Text>
-                            <Pressable style={styles.button} onPress={onPress}>
+                            <Pressable style={styles.button} >
                                 <Text style={styles.text}>Namungo Fc</Text>
                             </Pressable>
                             <Pressable style={styles.button1} onPress={() => navigation.navigate('HomeScreen') }>
