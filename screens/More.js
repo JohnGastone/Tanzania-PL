@@ -54,7 +54,7 @@ const MoreScreen = ({navigation}) => {
                             <Pressable style={styles.button} onPress={onPress}>
                                 <Text style={styles.text}>Namungo Fc</Text>
                             </Pressable>
-                            <Pressable style={styles.button1} onPress={onPress}>
+                            <Pressable style={styles.button1} onPress={() => navigation.navigate('HomeScreen') }>
                                 <Text style={styles.text}>Official Website</Text>
                             </Pressable>
                         </View>
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 20,
         elevation: 3,
-        backgroundColor: '#087A43',
+        backgroundColor: '#3AA78D',
         width: 360,
         paddingLeft: 30,
         paddingRight: 30,
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
             paddingHorizontal: 32,
             borderRadius: 20,
             elevation: 1,
-            backgroundColor: '#087A43',
+            backgroundColor: '#3AA78D',
             marginTop: 10,
             width: 360,
             height: 42,

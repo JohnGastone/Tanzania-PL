@@ -56,9 +56,12 @@ const FixturesScreen = ({navigation}) => {
                     </Text>
                     
                 </View>
+                <View>
+                            <Text style={styles.sponsorsLine}></Text>
+                        </View>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>16 March</Text>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000', paddingTop: 13}}>16 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
                     <Text style={{marginBottom: 10, paddingRight:40, color:'#5C1919', alignSelf: 'center'}}>Namungo
@@ -69,10 +72,13 @@ const FixturesScreen = ({navigation}) => {
                         />
                         <Text>Azam</Text>
                     </Text>
+                    <View>
+                        <Text style={styles.sponsorsLine}></Text>
+                    </View>
 
                     {/* Fixture Date */}
                     <View>
-                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>19 March</Text>
+                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>19 March</Text>
                     </View>
                     
                 </View>
@@ -87,10 +93,13 @@ const FixturesScreen = ({navigation}) => {
                     </Text>
                     
                 </View>
+                <View>
+                    <Text style={styles.sponsorsLine}></Text>
+                </View>
 
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>27 March</Text>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>27 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 50, color:'#5C1919', alignSelf: 'center'}}>Polisi Tanzania
@@ -103,10 +112,13 @@ const FixturesScreen = ({navigation}) => {
                     </Text>
                     
                 </View>
+                <View>
+                    <Text style={styles.sponsorsLine}></Text>
+                </View>
 
                 {/* Fixture Date */}
                 <View>
-                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000'}}>1 April</Text>
+                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>1 April</Text>
                     </View>
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 23, color:'#5C1919', alignSelf: 'center'}}>Polisi Tanzania
@@ -123,8 +135,7 @@ const FixturesScreen = ({navigation}) => {
                 {/* Sponsors */}
                 <View style={styles.sponsorWrapper}>
                      <Text style={styles.sponsorTitle}></Text>
-                        <View style={styles.sponsorListWrapper}>
-                           
+                        <View style={styles.sponsorListWrapper}>                           
                                 <Image
                                     source={require ('../assets/icons/AZAM.png') }
                                     style={{
@@ -133,7 +144,7 @@ const FixturesScreen = ({navigation}) => {
                                         padding: 4,
                                         marginVertical: 10,
                                         alignSelf: 'center',
-                                        marginRight: 30,
+                                        marginRight: 25,
 
                                     }}
                         
@@ -141,15 +152,15 @@ const FixturesScreen = ({navigation}) => {
                                 <Image
                                     source={require ('../assets/icons/NBC.png') }
                                     style={{
-                                        width: 34,
-                                        height: 34,
+                                        width: 62,
+                                        height: 44,
                                         padding: 1,
                                         alignSelf: 'center',
-                                        marginRight: 55,
+                                        marginRight: 42,
                                     }}
                         
                                 />
-                                <Image
+                                 <Image
                                     source={require ('../assets/icons/TBC.png') }
                                     style={{
                                         width: 70,
@@ -158,15 +169,80 @@ const FixturesScreen = ({navigation}) => {
                                         marginVertical: 18,                                       
                                         padding: 1,
                                         alignSelf: 'center',
-                                        marginTop: 10,
+                                        marginTop: 16,
+                                        
                                     }}
                         
-                                />
-                                 
-                                
-                                                          
+                                />                                                                                                                           
                         </View>
+                        <View>
+                            <Text style={styles.sponsorsLine}></Text>
+                        </View>
+                         
+                        {/* TPLB Social Media Reach */}
+                        <View style={styles.socialMedia}>
+                            <Image 
+                                source={require('../assets/icons/icons8-twitter-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                    marginRight: 8,
+                                }}
+                            />
+                            <Image 
+                                source={require('../assets/icons/icons8-facebook-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                    marginRight: 8,
+                                }}
+                            />
+                            <Image 
+                                source={require('../assets/icons/icons8-instagram-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                    marginRight: 8,
+                                }}
+                            />
+                            <Image 
+                                source={require('../assets/icons/icons8-tiktok-30.png')}
+                                style={{
+                                    paddingLeft: 12,
+                                    paddingRight: 20,
+                                }}
+                            />
+                            <Text style={styles.tplBoard}> tplboard </Text>
+                        </View>
+
+                        {/* TPL Youtube and Website */}
+                        <View style={styles.youtubeWebsite}>
+                            <Text style={styles.ligiKuu}>www.ligikuu.co.tz</Text>
+                            <Image 
+                                source={require('../assets/icons/icons8-youtube-48.png')}
+                                style={{
+                                    paddingLeft: 34,
+                                    marginLeft: 18,
+                                    marginTop: -6,
+                                    marginRight: -8,
+                                }}
+                            />
+                            <Text style={styles.tplBoard}>LIGI KUU TV</Text>
+                        </View>
+                </View> 
+                <View>
+                    <Text style={styles.tplBoard}></Text>
                 </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View> 
+
         
         </View>
      </View>
@@ -223,6 +299,7 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         flexDirection: 'row',
         marginHorizontal: 20,
+    
     },
     sponsorItemWrapper:{
         backgroundColor: '#ffffff',
@@ -266,7 +343,35 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         marginBottom: 20,
     },
-
+    sponsorsLine: {
+        flex: 1,
+        marginLeft: 20,
+        borderBottomColor: '#C4C4C4',
+        borderBottomWidth: 1,
+        marginTop: -5,
+        width: 320,
+    },
+    socialMedia: {
+        flexDirection: 'row',
+        marginTop: 10,
+        paddingLeft: 70,
+    },
+    tplBoard: {
+        color: '#000000',
+        paddingLeft: 10,
+        marginTop: 7,
+    },
+    youtubeWebsite: {
+        flexDirection: 'row',
+        marginTop: 10,
+        paddingLeft: 70,
+    },
+    ligiKuu: {
+        color: '#000000',
+        marginTop: 4,
+        fontSize: 20,
+        marginLeft: -26,
+    },
 
 
    

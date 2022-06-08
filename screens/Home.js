@@ -286,7 +286,20 @@ const renderSponsorItem = ({item}) =>
                             />
                             <Text style={styles.tplBoard}>LIGI KUU TV</Text>
                         </View>
-                </View>               
+                </View> 
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View> 
+
             </View>
         </ScrollView>
     );
@@ -568,6 +581,8 @@ const styles = StyleSheet.create
     },
     ligiKuu: {
         color: '#000000',
-        marginTop: 7
+        marginTop: 4,
+        fontSize: 20,
+        marginLeft: -26,
     },
 });

@@ -261,12 +261,13 @@ const styles = StyleSheet.create({
     },
     ligiKuu: {
         color: '#000000',
-        marginTop: 7
+        marginTop: 7,
+        fontSize: 20,
     },
     seasonText: {
         color: '#000000',
         marginLeft: 20,
-        fontSize: 16
+        fontSize: 20
 
     }
 });

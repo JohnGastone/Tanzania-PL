@@ -9,7 +9,7 @@ const latest = [
     {
         id : '2',
         image: require('../Serengeti.png'),
-        title : 'Serengeti Girls Kombe la dunia',
+        title : 'Serengeti Girls yafuzu Kombe la dunia',
         selected: true,
     
     },
