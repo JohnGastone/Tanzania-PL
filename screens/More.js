@@ -87,6 +87,27 @@ const MoreScreen = ({navigation}) => {
                         </View>                    
                     
                     </View>
+                    <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View> 
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View>
+                <View>
+                    <Text style={styles.tplBoard}></Text>
+                </View> 
                 
             
         </View>

@@ -42,18 +42,17 @@ const FixturesScreen = ({navigation}) => {
             <View style={styles.fixtures}>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
+                    <Text style={{paddingRight: 10,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
                 </View>
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center'}}>Biashara United
-                        <Button
+                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: -24 }}> Biashara United </Text>
+                    <Button
                             title='16:00'
                             disabled={true}
-                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                        />
-                        <Text>Tanzania Prisons</Text>
-                    </Text>
+                            style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A43', alignSelf: 'center', marginLeft: 10}}
+                    />
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Tanzania Prisons</Text>
                     
                 </View>
                 <View>
@@ -61,37 +60,34 @@ const FixturesScreen = ({navigation}) => {
                         </View>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000', paddingTop: 13}}>16 March</Text>
+                    <Text style={{paddingRight: 10,alignSelf: 'center', marginBottom: 12, color: '#000000', paddingTop: 13}}>16 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
-                    <Text style={{marginBottom: 10, paddingRight:40, color:'#5C1919', alignSelf: 'center'}}>Namungo
-                        <Button
-                            title='16:00'
-                            disabled={true}
-                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                        />
-                        <Text>Azam</Text>
-                    </Text>
-                    <View>
-                        <Text style={styles.sponsorsLine}></Text>
-                    </View>
+                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Azam</Text>
+                </View>
+                <View>
+                    <Text style={styles.sponsorsLine}></Text>
+                </View>
 
-                    {/* Fixture Date */}
-                    <View>
-                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>19 March</Text>
-                    </View>
-                    
+                 {/* Fixture Date */}
+                 <View>
+                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>19 March</Text>
                 </View>
+                    
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 70, color:'#5C1919', alignSelf: 'center'}}>Young Africans
-                        <Button
+                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Young Africans</Text>                               
+                    <Button
                             title='19:00'
                             disabled={true}
                             style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
-                        />
-                        <Text>KMC </Text>
-                    </Text>
-                    
+                    />
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -102,15 +98,13 @@ const FixturesScreen = ({navigation}) => {
                     <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>27 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 50, color:'#5C1919', alignSelf: 'center'}}>Polisi Tanzania
-                        <Button
-                            title='16:00'
-                            disabled={true}
-                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                        />
-                        <Text>Simba Sc</Text>
-                    </Text>
-                    
+                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -121,14 +115,14 @@ const FixturesScreen = ({navigation}) => {
                         <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>1 April</Text>
                     </View>
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 23, color:'#5C1919', alignSelf: 'center'}}>Polisi Tanzania
-                        <Button
-                            title='16:00'
-                            disabled={true}
-                            style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                        />
-                        <Text>Ruvu Shooting</Text>
-                    </Text>
+                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
+                    <Button
+                        title='16:00'
+                        disabled={true}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                    />    
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
+                    
                     
                 </View>
 
@@ -276,8 +270,9 @@ const styles = StyleSheet.create({
         paddingTop: 1
     },
     fixtureItem:{
-        paddingHorizontal: 28,
-        marginBottom:10
+        paddingHorizontal: 30,
+        marginBottom:10,
+        flexDirection: 'row',
     },
     buttonText:{
         
@@ -296,7 +291,7 @@ const styles = StyleSheet.create({
     },
     sponsorListWrapper:{
         paddingTop: 10,
-        paddingBottom: 20,
+        paddingBottom: -20,
         flexDirection: 'row',
         marginHorizontal: 20,
     

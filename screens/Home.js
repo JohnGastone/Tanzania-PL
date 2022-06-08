@@ -510,7 +510,7 @@ const styles = StyleSheet.create
     },
     sponsorListWrapper:{
         paddingTop: 10,
-        paddingBottom: 20,
+        paddingBottom: -20,
         flexDirection: 'row',
         marginHorizontal: 20,
     
