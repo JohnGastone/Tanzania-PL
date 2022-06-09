@@ -15,7 +15,7 @@ import {
  import LinearGradient from 'react-native-linear-gradient';
  
 
-const SignIn = (navigation) => {
+const SignUp = (navigation) => {
 
     const [data, setData] = React.useState({
         email: '',
@@ -58,7 +58,7 @@ const SignIn = (navigation) => {
     <View style={styles.container}>
         <StatusBar backgroundColor='#009387' barStyle="light-content" />
         <View style={styles.headersWrapper}>
-            <Text style={styles.textHeader}> Welcome! </Text>
+            <Text style={styles.textHeader}>  </Text>
         </View>
         <Animatable.View 
             animation="fadeInUpBig"
@@ -121,6 +121,38 @@ const SignIn = (navigation) => {
 
                 </TouchableOpacity>
             </View>
+            <Text style={styles.textFooter}>Confirm Password </Text>
+            <View style={styles.action}>
+                <Feather 
+                    name="lock"
+                    size={20} 
+                    color="#05375a"
+                />
+                <TextInput 
+                    placeholder="Confirm Your Password"
+                    secureTextEntry={data.secureTextEntry ? true : false}
+                    style={styles.textInput}
+                    autoCapitalize="none" 
+                    onChangeText={(val) => handlePasswordChange({val})}
+                />
+                <TouchableOpacity
+                    onPress={updateSecureTextEntry}
+                >
+                {data.secureTextEntry ? 
+                <Feather 
+                    name="eye-off"
+                    color="grey"
+                    size={20}
+                />
+                :
+                <Feather 
+                    name="eye"
+                    color="grey"
+                    size={20}
+                />}
+
+                </TouchableOpacity>
+            </View>
             <View style={styles.button}>
                     <LinearGradient
                         colors={['#08d4c4', '#01ab9d']}
@@ -132,7 +164,7 @@ const SignIn = (navigation) => {
                         }]}> Sign In</Text>
                     </LinearGradient>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('SignUp')}
+                        onPress={() => navigation.navigate('Home')}
                         style={[styles.signIn, {
                             borderRadius: 10,
                             borderColor: '#009387',
@@ -216,4 +248,4 @@ const styles = StyleSheet.create({
 
 
 });
-export default SignIn;
+export default SignUp;

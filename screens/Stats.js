@@ -10,7 +10,8 @@ import
     TouchableOpacity,
     FlatList,
     ScrollView,
-    Pressable
+    Pressable,
+    StatusBar,
 }
 from 'react-native';
 
@@ -106,6 +107,7 @@ const renderCleansheetsItem = ({item}) =>
 const StatsScreen = ({navigation}) => {
     return(
     <View style={StyleSheet.container}>
+    <StatusBar backgroundColor='#009387' barStyle="light-content" />
     <ScrollView>
                 {/* Header */}
                 <SafeAreaView>

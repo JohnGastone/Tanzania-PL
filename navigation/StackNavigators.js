@@ -1,9 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import SignIn from '../StackScreens/SignIn';
-import Referees from '../StackScreens/Referees';
-import Home from '../StackScreens/SignIn';
-import HomeScreen from '../screens/Home';
+import SignUp from '../StackScreens/SignUp';
+
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -14,7 +13,11 @@ const StackNavigator = () => {
         headerShown: false,
     }}
 />
-<Stack.Screen name="Referees" component={Referees} />
+<Stack.Screen name="Sign Up" component={SignUp} 
+    options={{
+        headerShown: false,
+    }}
+/>
 </Stack.Navigator>
  );
 };

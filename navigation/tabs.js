@@ -165,6 +165,13 @@ const Tabs = () => {
                     headerShown: false,
                 }}
             />
+             <Tab.Screen 
+                name="Sign Up" 
+                component={StackNavigator} 
+                options={{
+                    headerShown: false,
+                }}
+              />
             
         </Tab.Navigator>
     );

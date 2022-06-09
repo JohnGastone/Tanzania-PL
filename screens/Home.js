@@ -10,6 +10,7 @@ import
     ScrollView,
     FlatList,
     TouchableOpacity,
+    StatusBar,
     
 }
 from 'react-native';
@@ -133,6 +134,7 @@ const renderSponsorItem = ({item}) =>
     return(
         <ScrollView>
             <View style={StyleSheet.container}>
+            <StatusBar backgroundColor='#009387' barStyle="light-content"/>
                 {/* Header */}
                 <SafeAreaView>
                         <View style={styles.headersWrapper}>
