@@ -131,6 +131,7 @@ const styles = StyleSheet.create({
         paddingTop: 20,
         alignItems: 'center',
         
+        
     },
     profileImage:{
         width: 70,
@@ -145,7 +146,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         elevation: 3,
         backgroundColor: '#3AA78D',
-        width: 360,
+        width: 320,
+        marginLeft: 20,
         paddingLeft: 30,
         paddingRight: 30,
         height: 42,
@@ -176,8 +178,9 @@ const styles = StyleSheet.create({
             elevation: 1,
             backgroundColor: '#3AA78D',
             marginTop: 10,
-            width: 360,
-            height: 42,
+            width: 320,
+            marginLeft: 20,
+            height: 42, 
             },
 
 

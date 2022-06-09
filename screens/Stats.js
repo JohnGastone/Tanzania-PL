@@ -7,13 +7,106 @@ import
     StyleSheet,
     SafeAreaView,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    FlatList,
+    ScrollView,
+    Pressable
 }
 from 'react-native';
+
+import scorers from '../assets/icons/data/scorers';
+import cleansheets from '../assets/icons/data/cleansheets';
+import assists from '../assets/icons/data/assists';
+
+{/* Function to render Top scorers data */}
+const renderScorersItem = ({item}) => 
+{
+    return (
+        <View style={[styles.scorersItemWrapper,
+        {
+            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            marginLeft: item.id == 1 ? 20 : 0,
+        }]}>
+        <Image 
+            source = {item.image} 
+            style={styles.scorersItemImage} 
+        />
+        <Text style={styles.scorersItemTitle}> {item.title} </Text>
+        <View 
+        style={[
+            styles.scorersSelectWrapper,
+            {
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            }
+            ]}>
+           
+        </View>
+
+        </View>
+    );
+};
+
+{/* Function to render Top scorers data */}
+const renderAssistsItem = ({item}) => 
+{
+    return (
+        <View style={[styles.scorersItemWrapper,
+        {
+            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            marginLeft: item.id == 1 ? 20 : 0,
+        }]}>
+        <Image 
+            source = {item.image} 
+            style={styles.scorersItemImage} 
+        />
+        <Text style={styles.scorersItemTitle}> {item.title} </Text>
+        <View 
+        style={[
+            styles.scorersSelectWrapper,
+            {
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            }
+            ]}>
+           
+        </View>
+
+        </View>
+    );
+};
+
+{/* Function to render Cleansheets data */}
+const renderCleansheetsItem = ({item}) => 
+{
+    return (
+        <View style={[styles.scorersItemWrapper,
+        {
+            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            marginLeft: item.id == 1 ? 20 : 0,
+        }]}>
+        <Image 
+            source = {item.image} 
+            style={styles.scorersItemImage} 
+        />
+        <Text style={styles.scorersItemTitle}> {item.title} </Text>
+        <View 
+        style={[
+            styles.scorersSelectWrapper,
+            {
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            }
+            ]}>
+           
+        </View>
+
+        </View>
+    );
+};
+
 
 const StatsScreen = ({navigation}) => {
     return(
     <View style={StyleSheet.container}>
+    <ScrollView>
                 {/* Header */}
                 <SafeAreaView>
                         <View style={styles.headersWrapper}>
@@ -43,9 +136,60 @@ const StatsScreen = ({navigation}) => {
                         2021/22 Top Statistics
                     </Text>
                 </View>   
-                
-                           
 
+                {/* Top Scorers */}
+                <View style={styles.scorersWrapper}>
+                        <Text style={styles.scorersTitle}>Top Scorers</Text>
+                        <View style={styles.scorersListWrapper}>
+                            <FlatList
+                                data={scorers}
+                                renderItem={renderScorersItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                </View>
+
+                <Pressable style={styles.button1} >
+                    <Text style={styles.text}>Full list</Text>
+                </Pressable>
+                {/* Top Assist Providers */}
+                <View style={styles.assistWrapper}>
+                        <Text style={styles.scorersTitle}>Top Assist Providers</Text>
+                        <View style={styles.scorersListWrapper}>
+                            <FlatList
+                                data={assists}
+                                renderItem={renderAssistsItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                        
+                </View>
+                <Pressable style={styles.button1} >
+                    <Text style={styles.text}>Full list</Text>
+                </Pressable>
+
+                {/* Cleansheets */}
+                <View style={styles.assistWrapper}>
+                        <Text style={styles.scorersTitle}>Cleansheets</Text>
+                        <View style={styles.scorersListWrapper}>
+                            <FlatList
+                                data={cleansheets}
+                                renderItem={renderCleansheetsItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                        
+                </View>
+                <Pressable style={styles.button1} >
+                    <Text style={styles.text}>Full list</Text>
+                </Pressable>                        
+                                                           
                 {/* Sponsors */}
             <View style={styles.sponsorWrapper}>
                      <Text style={styles.sponsorTitle}></Text>
@@ -147,10 +291,8 @@ const StatsScreen = ({navigation}) => {
                             />
                             <Text style={styles.tplBoard}>LIGI KUU TV</Text>
                         </View>
-            </View>
-
-            
-            
+            </View>            
+        </ScrollView>   
     </View>
     );
 }
@@ -177,6 +319,86 @@ const styles = StyleSheet.create({
         height: 70,
         borderRadius: 30,
     },
+    scorersWrapper:{
+        marginTop: 1,
+    },
+    scorersTitle:{
+        paddingTop: 10,
+        paddingBottom:1,
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 20,
+        paddingHorizontal: 20,
+        color: '#000000',
+    },
+    scorersListWrapper:{
+        paddingTop: 10,
+        paddingBottom: 20,
+
+    },
+    scorersItemWrapper:{
+        backgroundColor: '#F3D4d3',
+        marginRight: 20,
+        marginTop: 1,
+        borderRadius: 15,   
+        shadowColor: '#000000',
+        shadowOffset:{
+            width: 0,
+            height: 0,
+        },
+        shadowOpacity: 0.0,
+        shadowRadius: 15,
+        elevation: 0,
+    },
+    scorersItemImage:{
+        width: 80,
+        height: undefined,
+        marginTop: -1,
+        alignSelf: 'center',
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10,
+        marginRight: 12,
+        marginLeft: 10
+    },
+    scorersItemTitle:{
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 14,
+        marginTop: 13,
+        color: '#000000'
+    },
+    scorersSelectWrapper:{
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
+        marginBottom: 20,
+
+    },
+
+    button1: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 20,
+        elevation: 3,
+        backgroundColor: '#3AA78D',
+        width: 110,
+        marginLeft: 20,
+        paddingLeft: 30,
+        paddingRight: 30,
+        height: 38,
+        marginTop: -45,
+        marginBottom: 43
+      },
+    assistWrapper: {
+        marginTop: -35
+    },
+
     sponsorWrapper:{
         marginTop: 1,
     },

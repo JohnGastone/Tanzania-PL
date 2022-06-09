@@ -32,6 +32,7 @@ const Tabs = () => {
                 component={HomeScreen} 
                 backgroundColor='#087A43'
                 options={{
+                    headerShown: false,
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image
@@ -57,6 +58,7 @@ const Tabs = () => {
                 name='Fixtures' 
                 component={FixturesScreen}  
                 options={{
+                    headerShown: false,
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image
@@ -82,6 +84,7 @@ const Tabs = () => {
                 name='Results' 
                 component={ResultsScreen}  
                 options={{
+                    headerShown: false,
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image
@@ -107,6 +110,7 @@ const Tabs = () => {
                 name='Statistics' 
                 component={StatsScreen}  
                 options={{
+                    headerShown: false,
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image
@@ -132,6 +136,7 @@ const Tabs = () => {
                 name='More' 
                 component={MoreScreen}  
                 options={{
+                    headerShown: false,
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image

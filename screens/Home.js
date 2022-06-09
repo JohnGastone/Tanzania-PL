@@ -415,7 +415,7 @@ const styles = StyleSheet.create
         elevation: 0,
     },
     starsItemImage:{
-        width: 60,
+        width: 80,
         height: undefined,
         marginTop: 25,
         alignSelf: 'center',
@@ -429,7 +429,8 @@ const styles = StyleSheet.create
         fontFamily: 'Montserrat-Medium',
         fontSize: 14,
         marginTop: 10,
-        color: '#000000'
+        color: '#000000',
+        marginLeft: 20
     },
     starsSelectWrapper:{
         alignSelf: 'center',
