@@ -7,6 +7,7 @@ import {
     TextInput,
     TouchableOpacity,
     StatusBar,
+    ScrollView,
  } from 'react-native';
 
  import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -55,10 +56,11 @@ const SignUp = (navigation) => {
     }
 
   return (
+    <ScrollView>
     <View style={styles.container}>
         <StatusBar backgroundColor='#009387' barStyle="light-content" />
         <View style={styles.headersWrapper}>
-            <Text style={styles.textHeader}>  </Text>
+            <Text style={styles.textHeader}> Welcome  </Text>
         </View>
         <Animatable.View 
             animation="fadeInUpBig"
@@ -179,6 +181,7 @@ const SignUp = (navigation) => {
                 </View>
         </Animatable.View>
     </View>
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({
@@ -209,6 +212,8 @@ const styles = StyleSheet.create({
       fontSize: 30,
       fontWeight: 'bold',
       marginLeft: -170,
+      marginTop: 60,
+      marginBottom: 10,
   },
   textFooter: {
         color: '#3AA78D',

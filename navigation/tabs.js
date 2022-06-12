@@ -24,6 +24,7 @@ const Tabs = () => {
                     backgroundColor: '#48234E',
                     borderRadius: 35,
                     height: 60,
+                    width: '90%',
                 }
             }}
         >
@@ -41,12 +42,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
+                                    marginLeft: 10,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:29,
                                     height: 25,
+                                    marginLeft: 10,
                                     tintColor: focused ? '#e32f45' : '#f0f'
                                 }}
                             >HOME</Text>
@@ -67,12 +70,14 @@ const Tabs = () => {
                                 style={{
                                     width:50,
                                     height: 25,
+                                    marginLeft: 20,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:55,
                                     height: 25,
+                                    marginLeft: 20,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >FIXTURES</Text>
@@ -93,12 +98,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
+                                    marginLeft: 30,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:45,
                                     height: 25,
+                                    marginLeft: 30,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >RESULTS</Text>
@@ -119,12 +126,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
+                                    marginLeft: 30,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:35,
                                     height: 25,
+                                    marginLeft: 30,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >STATS</Text>
@@ -145,12 +154,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
+                                    marginLeft: 10,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:30,
                                     height: 25,
+                                    marginLeft: 10,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >MORE</Text>
@@ -158,21 +169,7 @@ const Tabs = () => {
                     ),
                 }} 
             />
-            <Tab.Screen 
-                name="Sign In" 
-                component={StackNavigator} 
-                options={{
-                    headerShown: false,
-                }}
-            />
-             <Tab.Screen 
-                name="Sign Up" 
-                component={StackNavigator} 
-                options={{
-                    headerShown: false,
-                }}
-              />
-            
+           
         </Tab.Navigator>
     );
 }

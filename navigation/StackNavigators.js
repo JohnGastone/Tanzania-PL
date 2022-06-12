@@ -8,12 +8,12 @@ const Stack = createStackNavigator();
 const StackNavigator = () => {
  return (
 <Stack.Navigator>
-<Stack.Screen name="Sign in or Click Register" component={SignIn}
+<Stack.Screen name="SignIn" component={SignIn}
     options={{
         headerShown: false,
     }}
 />
-<Stack.Screen name="Sign Up" component={SignUp} 
+<Stack.Screen name="SignUp" component={SignUp} 
     options={{
         headerShown: false,
     }}

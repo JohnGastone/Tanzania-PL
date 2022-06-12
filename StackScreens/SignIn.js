@@ -7,12 +7,14 @@ import {
     TextInput,
     TouchableOpacity,
     StatusBar,
+    Pressable,
  } from 'react-native';
 
  import FontAwesome from 'react-native-vector-icons/FontAwesome';
  import Feather from 'react-native-vector-icons/Feather';
  import * as Animatable from 'react-native-animatable';
  import LinearGradient from 'react-native-linear-gradient';
+ import {AuthContext} from '../components/context';
  
 
 const SignIn = (navigation) => {
@@ -23,6 +25,8 @@ const SignIn = (navigation) => {
            check_textInputChange: false,
            secureTextEntry: true,
     });
+
+    const  { signIn }  = React.useContext(AuthContext);
 
     const textInputChange = (val) => {{
         if (val.length !== 0) {
@@ -107,21 +111,29 @@ const SignIn = (navigation) => {
                     onPress={updateSecureTextEntry}
                 >
                 {data.secureTextEntry ? 
-                <Feather 
-                    name="eye-off"
-                    color="grey"
-                    size={20}
-                />
-                :
-                <Feather 
-                    name="eye"
-                    color="grey"
-                    size={20}
-                />}
+                    <Feather 
+                        name="eye-off"
+                        color="grey"
+                        size={20}
+                    />
+                    :
+                    <Feather 
+                        name="eye"
+                        color="grey"
+                        size={20}
+                    />
+                }
 
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity>
+                <Text style={{color: '#009387', marginTop: 15}}>Forgot Password?</Text>
+            </TouchableOpacity>
             <View style={styles.button}>
+                <TouchableOpacity
+                    style={styles.signIn}
+                    onPress={() => navigation.navigate('signIn')}
+                />
                     <LinearGradient
                         colors={['#08d4c4', '#01ab9d']}
                         style={styles.signIn}
@@ -131,8 +143,8 @@ const SignIn = (navigation) => {
                             color: '#fff',
                         }]}> Sign In</Text>
                     </LinearGradient>
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('SignUp')}
+                    <Pressable
+                        onPress={() => navigation.navigate('Home')}
                         style={[styles.signIn, {
                             borderRadius: 10,
                             borderColor: '#009387',
@@ -143,7 +155,7 @@ const SignIn = (navigation) => {
                     
                     
                         <Text style={styles.textSign}> Sign Up </Text>
-                    </TouchableOpacity>
+                    </Pressable>
                 </View>
         </Animatable.View>
     </View>

@@ -139,6 +139,8 @@ const StatsScreen = ({navigation}) => {
                     </Text>
                 </View>   
 
+                
+
                 {/* Top Scorers */}
                 <View style={styles.scorersWrapper}>
                         <Text style={styles.scorersTitle}>Top Scorers</Text>
@@ -306,7 +308,8 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#43927F'
+        backgroundColor: '#43927F',
+        headerShown: false,
     },
     headersWrapper:{
         flexDirection: 'row',
@@ -352,7 +355,7 @@ const styles = StyleSheet.create({
         elevation: 0,
     },
     scorersItemImage:{
-        width: 80,
+        width: 110,
         height: undefined,
         marginTop: -1,
         alignSelf: 'center',
