@@ -8,6 +8,8 @@ import {
     TouchableOpacity,
     StatusBar,
     Pressable,
+    ScrollView,
+    Image,
  } from 'react-native';
 
  import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -59,9 +61,17 @@ const SignIn = (navigation) => {
     }
 
   return (
+    <ScrollView>
     <View style={styles.container}>
         <StatusBar backgroundColor='#009387' barStyle="light-content" />
         <View style={styles.headersWrapper}>
+            
+            <Image 
+            source={require('../assets/icons/NBC_PL.png')}
+            style={styles.profileImage}
+            />
+        </View>
+        <View>
             <Text style={styles.textHeader}> Welcome! </Text>
         </View>
         <Animatable.View 
@@ -132,7 +142,7 @@ const SignIn = (navigation) => {
             <View style={styles.button}>
                 <TouchableOpacity
                     style={styles.signIn}
-                    onPress={() => navigation.navigate('signIn')}
+                    onPress={() => {SignIn()}}
                 />
                     <LinearGradient
                         colors={['#08d4c4', '#01ab9d']}
@@ -159,6 +169,7 @@ const SignIn = (navigation) => {
                 </View>
         </Animatable.View>
     </View>
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({
@@ -173,7 +184,15 @@ const styles = StyleSheet.create({
       justifyContent: 'flex-end',
       paddingHorizontal: 20,
       paddingBottom: 50,
+      flexDirection: 'row',
   },
+  profileImage:{
+    width: 70,
+    height: 70,
+    borderRadius: 30,
+    marginTop: 10,
+    marginBottom: 40,
+},
   footersWrapper: {
         flex: 3,
         backgroundColor: '#fff',
@@ -189,6 +208,7 @@ const styles = StyleSheet.create({
       fontSize: 30,
       fontWeight: 'bold',
       marginLeft: -170,
+        marginTop: -60,
   },
   textFooter: {
         color: '#3AA78D',

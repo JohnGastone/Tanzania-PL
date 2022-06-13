@@ -169,7 +169,17 @@ const Tabs = () => {
                     ),
                 }} 
             />
-           
+           <Tab.Screen 
+                name='Sign In'
+                component={StackNavigator}
+                options=
+                {{
+                    headerShown: false,
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}/>
+                    ),
+                }}
+            />
         </Tab.Navigator>
     );
 }

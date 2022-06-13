@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
         elevation: 0,
     },
     scorersItemImage:{
-        width: 110,
+        width: 130,
         height: undefined,
         marginTop: -1,
         alignSelf: 'center',

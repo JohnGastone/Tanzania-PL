@@ -360,8 +360,8 @@ const styles = StyleSheet.create
         elevation: 0,
     },
     latestItemImage:{
-        width: 210,
-        height: 125,
+        width: 130,
+        height: undefined,
         marginTop: 25,
         alignSelf: 'center',
         marginHorizontal: 20,
@@ -417,7 +417,7 @@ const styles = StyleSheet.create
         elevation: 0,
     },
     starsItemImage:{
-        width: 80,
+        width: 130,
         height: undefined,
         marginTop: 25,
         alignSelf: 'center',
