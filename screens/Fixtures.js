@@ -46,13 +46,14 @@ const FixturesScreen = ({navigation}) => {
                 </View>
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: -24 }}> Biashara United </Text>
+                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Biashara United </Text>
                     <Button
                             title='16:00'
                             disabled={false}
                             style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A43', alignSelf: 'center', marginLeft: 10}}
+                            onPress={() => navigation.navigate('Home') }
                     />
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Tanzania Prisons</Text>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 8}}>Tanzania Prisons</Text>
                     
                 </View>
                 <View>
@@ -68,6 +69,7 @@ const FixturesScreen = ({navigation}) => {
                         title='16:00'
                         disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Azam</Text>
                 </View>
@@ -86,6 +88,7 @@ const FixturesScreen = ({navigation}) => {
                             title='19:00'
                             disabled={false}
                             style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
+                            onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
                 </View>
@@ -103,6 +106,7 @@ const FixturesScreen = ({navigation}) => {
                         title='16:00'
                         disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
                 </View>
@@ -120,6 +124,7 @@ const FixturesScreen = ({navigation}) => {
                         title='16:00'
                         disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        onPress={() => navigation.navigate('Home') }
                     />    
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
                     
