@@ -42,7 +42,7 @@ const MoreScreen = ({navigation}) => {
                             
                             />
                         </TouchableOpacity>
-                        <Pressable style={styles.button} onPress={() => navigation.navigate('Sign In')}>
+                        <Pressable style={styles.button} onPress={() => navigation.navigate('Sign Up')}>
                             <Text style={styles.text}>Sign In / Create New Account</Text>
                         </Pressable>  
                     </View>              
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
       favoriteTeam:{
         fontSize: 20,
         lineHeight: 23,
-        fontWight: 'bold',
+        fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'black',
         marginTop: 10,

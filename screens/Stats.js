@@ -155,7 +155,10 @@ const StatsScreen = ({navigation}) => {
                         </View>
                 </View>
 
-                <Pressable style={styles.button1} >
+                <Pressable 
+                    style={styles.button1} 
+                    onPress={() => navigation.navigate('Sign In')}
+                >
                     <Text style={styles.text}>Full list</Text>
                 </Pressable>
                 {/* Top Assist Providers */}

@@ -8,6 +8,7 @@ import {
     TouchableOpacity,
     StatusBar,
     ScrollView,
+    Image,
  } from 'react-native';
 
  import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -16,7 +17,7 @@ import {
  import LinearGradient from 'react-native-linear-gradient';
  
 
-const SignUp = (navigation) => {
+const SignIn = (navigation) => {
 
     const [data, setData] = React.useState({
         email: '',
@@ -59,6 +60,13 @@ const SignUp = (navigation) => {
     <ScrollView>
     <View style={styles.container}>
         <StatusBar backgroundColor='#009387' barStyle="light-content" />
+        <View style={styles.headersWrapper}>
+            
+            <Image 
+            source={require('../assets/icons/NBC_PL.png')}
+            style={styles.profileImage}
+            />
+        </View>
         <View style={styles.headersWrapper}>
             <Text style={styles.textHeader}> Welcome  </Text>
         </View>
@@ -197,6 +205,13 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       paddingBottom: 50,
   },
+  profileImage:{
+    width: 70,
+    height: 70,
+    borderRadius: 30,
+    marginTop: 10,
+    marginBottom: 40,
+},
   footersWrapper: {
         flex: 3,
         backgroundColor: '#fff',
@@ -205,6 +220,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         paddingVertical: 30,
         width: '100%',
+        marginTop: -30
 
     },
   textHeader: {
@@ -212,7 +228,7 @@ const styles = StyleSheet.create({
       fontSize: 30,
       fontWeight: 'bold',
       marginLeft: -170,
-      marginTop: 60,
+      marginTop: -70,
       marginBottom: 10,
   },
   textFooter: {
@@ -253,4 +269,4 @@ const styles = StyleSheet.create({
 
 
 });
-export default SignUp;
+export default SignIn;
