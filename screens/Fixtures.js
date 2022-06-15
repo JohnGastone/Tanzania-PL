@@ -49,7 +49,7 @@ const FixturesScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: -24 }}> Biashara United </Text>
                     <Button
                             title='16:00'
-                            disabled={true}
+                            disabled={false}
                             style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A43', alignSelf: 'center', marginLeft: 10}}
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Tanzania Prisons</Text>
@@ -66,7 +66,7 @@ const FixturesScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
                     <Button
                         title='16:00'
-                        disabled={true}
+                        disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Azam</Text>
@@ -84,7 +84,7 @@ const FixturesScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Young Africans</Text>                               
                     <Button
                             title='19:00'
-                            disabled={true}
+                            disabled={false}
                             style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
@@ -101,7 +101,7 @@ const FixturesScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
                     <Button
                         title='16:00'
-                        disabled={true}
+                        disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
@@ -118,7 +118,7 @@ const FixturesScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
                     <Button
                         title='16:00'
-                        disabled={true}
+                        disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
                     />    
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
@@ -154,7 +154,7 @@ const FixturesScreen = ({navigation}) => {
                                     }}
                         
                                 />
-                                 <Image
+                                <Image
                                     source={require ('../assets/icons/TBC.png') }
                                     style={{
                                         width: 70,

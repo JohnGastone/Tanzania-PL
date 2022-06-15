@@ -30,7 +30,7 @@ const ResultsScreen = ({navigation}) => {
 
             {/* Back Button */}
             <View>
-                <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center', color:'' }}>
+                <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center' }}>
                     <Button
                         title='Back'
                         color='#087A76'
@@ -47,11 +47,12 @@ const ResultsScreen = ({navigation}) => {
                 </View>
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}> Biashara United </Text>
+                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Biashara United </Text>
                     <Button
                             title='2 - 1'
-                            disabled={true}
-                            style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A43', alignSelf: 'center', marginLeft: 10}}
+                            disabled={false}
+                            style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A76', alignSelf: 'center', marginLeft: 10}}
+                            onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Tanzania Prisons</Text>
                     
@@ -64,11 +65,12 @@ const ResultsScreen = ({navigation}) => {
                     <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000', paddingTop: 13}}>16 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
+                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -15, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
                     <Button
                         title='2 - 1'
-                        disabled={true}
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        disabled={false}
+                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A76'}}
+                        onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Azam</Text>
                                  
@@ -86,8 +88,9 @@ const ResultsScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Young Africans</Text>                               
                     <Button
                             title='2 - 0'
-                            disabled={true}
+                            disabled={false}
                             style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
+                            onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
                 </View>
@@ -103,8 +106,9 @@ const ResultsScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
                     <Button
                         title='0 - 0'
-                        disabled={true}
+                        disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
                 </View>
@@ -120,8 +124,9 @@ const ResultsScreen = ({navigation}) => {
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
                     <Button
                         title='4 - 3'
-                        disabled={true}
+                        disabled={false}
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        onPress={() => navigation.navigate('Home') }
                     />    
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
                     

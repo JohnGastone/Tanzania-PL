@@ -157,7 +157,7 @@ const StatsScreen = ({navigation}) => {
 
                 <Pressable 
                     style={styles.button1} 
-                    onPress={() => navigation.navigate('Sign In')}
+                    onPress={() => navigation.navigate('Home')}
                 >
                     <Text style={styles.text}>Full list</Text>
                 </Pressable>
@@ -175,7 +175,7 @@ const StatsScreen = ({navigation}) => {
                         </View>
                         
                 </View>
-                <Pressable style={styles.button1} >
+                <Pressable style={styles.button1} onPress={() => navigation.navigate('Home')}>
                     <Text style={styles.text}>Full list</Text>
                 </Pressable>
 
@@ -193,7 +193,7 @@ const StatsScreen = ({navigation}) => {
                         </View>
                         
                 </View>
-                <Pressable style={styles.button1} >
+                <Pressable style={styles.button1} onPress={() => navigation.navigate('Home')}>
                     <Text style={styles.text}>Full list</Text>
                 </Pressable>                        
                                                            

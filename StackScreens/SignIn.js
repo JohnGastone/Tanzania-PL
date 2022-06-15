@@ -142,7 +142,7 @@ const SignIn = (navigation) => {
             <View style={styles.button}>
                 <TouchableOpacity
                     style={styles.signIn}
-                    onPress={() => {SignIn()}}
+                    onPress={() => {navigation.navigate('Home')}}
                 />
                     <LinearGradient
                         colors={['#08d4c4', '#01ab9d']}
@@ -155,13 +155,15 @@ const SignIn = (navigation) => {
                     </LinearGradient>
                     <Pressable
                         onPress={() => navigation.navigate('Home')}
-                        style={[styles.signIn, {
+                        style={[styles.signIn, 
+                            {
                             borderRadius: 10,
                             borderColor: '#009387',
                             borderWidth: 1,
                             marginTop: 15,
                         
-                        }]}>
+                            }]}
+                    >
                     
                     
                         <Text style={styles.textSign}> Sign Up </Text>

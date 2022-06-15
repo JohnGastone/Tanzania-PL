@@ -17,7 +17,7 @@ import {
  import LinearGradient from 'react-native-linear-gradient';
  
 
-const SignIn = (navigation) => {
+const SignUp = (navigation) => {
 
     const [data, setData] = React.useState({
         email: '',
@@ -269,4 +269,4 @@ const styles = StyleSheet.create({
 
 
 });
-export default SignIn;
+export default SignUp;
