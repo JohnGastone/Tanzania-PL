@@ -8,16 +8,16 @@ const stars = [
     },
     {
         id : '2',
-        image: require('../Tepsi.png'),
-        title : 'Tepsi fundi asiyeimbwa',
+        image: require('../Ndemla.png'),
+        title : 'Ndemla awa lulu Manungu',
         selected: true,
     
     },
     
     {
         id : '3',
-        image: require('../Cleofas.png'),
-        title : 'Maestro Mkandala ',
+        image: require('../Tepsi.png'),
+        title : 'Tepsi fundi asiyeimbwa ',
         selected: true,
     
     },

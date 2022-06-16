@@ -1,14 +1,14 @@
 const latest = [
     {
         id : '1',
-        image: require('../CAFCL.png'),
-        title : 'Nafasi 4 kimataifa uhakika',
+        image: require('../Champions.png'),
+        title : 'Yanga Bingwa rasmi 2021/22',
         selected: true,    
     
     },
     {
         id : '2',
-        image: require('../Serengeti.png'),
+        image: require('../Under17.png'),
         title : 'Serengeti Girls yafuzu Kombe la dunia',
         selected: true,
     

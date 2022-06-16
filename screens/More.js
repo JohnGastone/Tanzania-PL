@@ -36,12 +36,16 @@ const MoreScreen = ({navigation}) => {
                     {/* Back Button and Sign In / Sign Out options */}
                     <View>
                         <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
-                            <Button
-                                title='Back'
-                                color='#087A76'
-                            
-                            />
+                            <Pressable 
+                                style={styles.backButton} 
+                                onPress={() => navigation.goBack()}
+                            >
+                                <Text style={styles.backButtonText}>Back</Text>
+                            </Pressable>
+                                
                         </TouchableOpacity>
+                    </View>
+                    <View>
                         <Pressable style={styles.button} onPress={() => navigation.navigate('SignUp')}>
                             <Text style={styles.text}>Sign In / Create New Account</Text>
                         </Pressable>  
@@ -137,6 +141,20 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 30,
+    },
+    backButton:{
+        paddingLeft: 20,
+        paddingRight: 20,
+        width: 70,
+        height: 35,
+        borderRadius: 20,
+        elevation: 5,
+        marginTop: 19,
+        backgroundColor: '#3AA78D',
+    },
+    backButtonText:{
+        alignSelf: 'center',
+        marginTop: 7,
     },
     button: {
         alignItems: 'center',

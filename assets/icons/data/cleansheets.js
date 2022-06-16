@@ -2,7 +2,7 @@ const cleansheets = [
     {
         id : '1',
         image: require('../Djigui.png'),
-        title : 'Cleansheets : 14',
+        title : 'Cleansheets : 15',
         selected: true,    
     
     },
@@ -14,7 +14,7 @@ const cleansheets = [
     
     },
     {
-        id : '2',
+        id : '3',
         image: require('../Mshery.png'),
         title : 'Cleansheets: 8',
         selected: true,

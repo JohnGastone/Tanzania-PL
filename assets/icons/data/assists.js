@@ -14,7 +14,7 @@ const assists = [
     
     },
     {
-        id : '2',
+        id : '3',
         image: require('../Kapombe.png'),
         title : 'Assists: 4',
         selected: true,

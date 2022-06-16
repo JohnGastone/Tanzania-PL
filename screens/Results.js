@@ -8,7 +8,8 @@ import
     SafeAreaView,
     Image,
     TouchableOpacity,
-    ScrollView
+    ScrollView,
+    Pressable,
     
 }
 from 'react-native';
@@ -30,15 +31,17 @@ const ResultsScreen = ({navigation}) => {
 
             {/* Back Button */}
             <View>
-                <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center' }}>
-                    <Button
-                        title='Back'
-                        color='#087A76'
-                    />
-                </TouchableOpacity>
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.backButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}>Back</Text>
+                        </Pressable>
+                            
+                    </TouchableOpacity>
             </View>
-
-
+            
              {/* Fixtures */}
             <View style={styles.fixtures}>
                 {/* Fixture Date */}
@@ -51,6 +54,7 @@ const ResultsScreen = ({navigation}) => {
                     <Button
                             title='2 - 1'
                             disabled={false}
+                            color = '#3AA78D'
                             style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A76', alignSelf: 'center', marginLeft: 10}}
                             onPress={() => navigation.navigate('Home') }
                     />
@@ -69,6 +73,7 @@ const ResultsScreen = ({navigation}) => {
                     <Button
                         title='2 - 1'
                         disabled={false}
+                        color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A76'}}
                         onPress={() => navigation.navigate('Home') }
                     />
@@ -89,6 +94,7 @@ const ResultsScreen = ({navigation}) => {
                     <Button
                             title='2 - 0'
                             disabled={false}
+                            color = '#3AA78D'
                             style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
                             onPress={() => navigation.navigate('Home') }
                     />
@@ -107,7 +113,8 @@ const ResultsScreen = ({navigation}) => {
                     <Button
                         title='0 - 0'
                         disabled={false}
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
+                        color = '#3AA78D'
+                        style={{width: 28,height: 28, paddingHorizontal: 12, borderRadius: 50, }}
                         onPress={() => navigation.navigate('Home') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
@@ -125,6 +132,7 @@ const ResultsScreen = ({navigation}) => {
                     <Button
                         title='4 - 3'
                         disabled={false}
+                        color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
                         onPress={() => navigation.navigate('Home') }
                     />    
@@ -270,6 +278,20 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 30,
+    },
+    backButton:{
+        paddingLeft: 20,
+        paddingRight: 20,
+        width: 70,
+        height: 35,
+        borderRadius: 20,
+        elevation: 5,
+        marginTop: 19,
+        backgroundColor: '#3AA78D',
+    },
+    backButtonText:{
+        alignSelf: 'center',
+        marginTop: 7,
     },
     fixtures: { 
         paddingTop: -10,
