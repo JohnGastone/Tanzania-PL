@@ -7,6 +7,7 @@ import HomeScreen from '../screens/Home';
 import MoreScreen from '../screens/More';
 import ResultsScreen from '../screens/Results';
 import StatsScreen from '../screens/Stats';
+import TableScreen from '../screens/Table';
 
 const Tab = createBottomTabNavigator();
 
@@ -189,7 +190,7 @@ const Tabs = () => {
                             <Text  style={{
                                     width:45,
                                     height: 25,
-                                    marginLeft: -10,
+                                    marginLeft: -4,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >SIGN IN</Text>
@@ -199,19 +200,19 @@ const Tabs = () => {
             />
 
             <Tab.Screen 
-                name='SignUp'
-                component={StackNavigator} 
+                name='Table'
+                component={TableScreen} 
                 options={{
                     headerShown: false,
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image
-                                source={require('../assets/icons/account.png')}
+                                source={require('../assets/icons/Dresser.png')}
                                 resizeMode='contain'
                                 style={{
                                     width:25,
                                     height: 25,
-                                    marginLeft: -10,
+                                    marginLeft: -20,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
@@ -221,7 +222,7 @@ const Tabs = () => {
                                     marginLeft: -10,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
-                            >SIGN UP</Text>
+                            >TABLE</Text>
                         </View>
                     ),
                 }} 

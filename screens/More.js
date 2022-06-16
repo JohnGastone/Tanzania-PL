@@ -46,7 +46,7 @@ const MoreScreen = ({navigation}) => {
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <Pressable style={styles.button} onPress={() => navigation.navigate('SignUp')}>
+                        <Pressable style={styles.button} onPress={() => navigation.navigate('SignIn')}>
                             <Text style={styles.text}>Sign In / Create New Account</Text>
                         </Pressable>  
                     </View>              

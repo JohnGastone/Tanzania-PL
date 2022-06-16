@@ -140,7 +140,7 @@ const StatsScreen = ({navigation}) => {
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                         <Pressable 
                             style={styles.tableButton} 
-                            onPress={() => navigation.goBack()}
+                            onPress={() => navigation.navigate('Table')}
                         >
                             <Text style={styles.backButtonText}>Table</Text>
                         </Pressable>                            
@@ -434,7 +434,7 @@ const styles = StyleSheet.create({
         borderRadius: 13,
         elevation: 5,
         marginTop: 19,
-        backgroundColor: '#7E7880',
+        backgroundColor: '#3AA78D',
     },
     backButtonText:{
         alignSelf: 'center',

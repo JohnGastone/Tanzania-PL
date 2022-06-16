@@ -187,6 +187,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       paddingBottom: 50,
       flexDirection: 'row',
+      
   },
   profileImage:{
     width: 70,
