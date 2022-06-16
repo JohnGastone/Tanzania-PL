@@ -154,14 +154,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
-                                    marginLeft: 10,
+                                    marginLeft: 6,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:30,
                                     height: 25,
-                                    marginLeft: 10,
+                                    marginLeft: 6,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >MORE</Text>
@@ -169,6 +169,35 @@ const Tabs = () => {
                     ),
                 }} 
             />
+            <Tab.Screen 
+                name='SignIn'
+                component={StackNavigator} 
+                options={{
+                    headerShown: false,
+                    tabBarIcon:({focused}) => (
+                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
+                            <Image
+                                source={require('../assets/icons/account.png')}
+                                resizeMode='contain'
+                                style={{
+                                    width:25,
+                                    height: 25,
+                                    marginLeft: -10,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            />
+                            <Text  style={{
+                                    width:45,
+                                    height: 25,
+                                    marginLeft: -10,
+                                    tintColor: focused ? '#e32f45' : '#748c94'
+                                }}
+                            >SIGN IN</Text>
+                        </View>
+                    ),
+                }} 
+            />
+
             <Tab.Screen 
                 name='SignUp'
                 component={StackNavigator} 
@@ -192,7 +221,7 @@ const Tabs = () => {
                                     marginLeft: -10,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
-                            >SIGN IN</Text>
+                            >SIGN UP</Text>
                         </View>
                     ),
                 }} 

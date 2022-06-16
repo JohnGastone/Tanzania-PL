@@ -134,7 +134,45 @@ const StatsScreen = ({navigation}) => {
                     </TouchableOpacity>
                 </View>
 
-                 {/* This Season */}  
+                 {/* This Season */}
+                 <View style={styles.listWrapper}>
+                    {/* Table */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}>Table</Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                    {/* Records */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}>Records</Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                    {/* fTPL */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}> fTPL </Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                    {/* All-Time Stats */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText1}> All-Time Stats </Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                </View>  
                  <View style={styles.thisSeason}>
                     <Text style={styles.seasonText}>
                         2021/22 Top Statistics
@@ -392,15 +430,36 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingRight: 20,
         width: 70,
-        height: 35,
-        borderRadius: 20,
+        height: 30,
+        borderRadius: 13,
         elevation: 5,
         marginTop: 19,
-        backgroundColor: '#3AA78D',
+        backgroundColor: '#7E7880',
     },
     backButtonText:{
         alignSelf: 'center',
         marginTop: 7,
+        aligContent: 'center',
+    },
+    listWrapper:{
+        flexDirection: 'row',
+        marginTop: -20, 
+    },
+    tableButton:{
+        paddingLeft: 20,
+        paddingRight: 20,
+        width: 80,
+        height: 32,
+        borderRadius: 20,
+        elevation: 5,
+        marginTop: 19,
+        backgroundColor: '#9793CF',
+    },
+    backButtonText1:{
+        alignSelf: 'center',
+        marginTop: 7,
+        aligContent: 'center',
+        width: 80,
     },
 
     button1: {
@@ -410,7 +469,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 20,
         elevation: 3,
-        backgroundColor: '#3AA78D',
+        backgroundColor: '#7E7880',
         width: 110,
         marginLeft: 20,
         paddingLeft: 30,
