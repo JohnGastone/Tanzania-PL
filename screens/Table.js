@@ -59,44 +59,50 @@ const TableScreen = ({navigation}) => {
                 </View>               
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
-                <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 1 </Text>   
-                <Image 
-                    source={require('../assets/icons/Yanga.png')}
-                    style={styles.teamImage}
-                />           
-                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Yanga </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 27 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 20 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 7 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 0 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 45:7 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -4}}> 67 </Text>                               
+                    <View style={styles.cafCL}>
+                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4,  }}> 1. </Text>   
+                    <Image 
+                        source={require('../assets/icons/Yanga.png')}
+                        style={styles.teamImage}
+                    /> 
+                            
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Yanga </Text>
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 27 </Text>
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 20 </Text>
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 7 </Text>
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 0 </Text>
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 45:7 </Text>
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -4}}> 67 </Text> 
+                    </View>                              
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
                 </View> 
                 {/* Fixture */}
                     
-                <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 2 </Text>                 
-                        <Image 
-                            source={require('../assets/icons/Simba.png')}
-                            style={styles.teamImage}
-                        />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Simba </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 26 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 15 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 2 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 36:12 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 54 </Text>
-                </View>
+                    <View style={styles.fixtureItem}>
+                       <View style={styles.cafCL}> 
+                           <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 2. </Text>                 
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            /> 
+                         
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Simba </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 26 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 15 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 2 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 36:12 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 54 </Text>
+                        </View>
+                    </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
                 </View>
                 {/* Fixture */} 
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 3 </Text>        
+                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 3. </Text>        
                         <Image 
                             source={require('../assets/icons/AzamFc.png')}
                             style={styles.teamImage}
@@ -115,7 +121,7 @@ const TableScreen = ({navigation}) => {
 
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
-                <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 4 </Text>                 
+                <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 4. </Text>                 
                         <Image 
                             source={require('../assets/icons/Geita.png')}
                             style={styles.teamImage}
@@ -134,7 +140,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 5 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 5. </Text>                 
                         <Image 
                             source={require('../assets/icons/Namungo.png')}
                             style={styles.teamImage}
@@ -153,7 +159,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 6 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 6. </Text>                 
                         <Image 
                             source={require('../assets/icons/Polisi.png')}
                             style={styles.teamImage}
@@ -172,7 +178,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 7 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 7. </Text>                 
                         <Image 
                             source={require('../assets/icons/Kagera.png')}
                             style={styles.teamImage}
@@ -191,7 +197,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 8 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 8. </Text>                 
                         <Image 
                             source={require('../assets/icons/Coastal.png')}
                             style={styles.teamImage}
@@ -210,7 +216,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 4 }}> 9 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 9. </Text>                 
                         <Image 
                             source={require('../assets/icons/KMC.png')}
                             style={styles.teamImage}
@@ -229,7 +235,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 10 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 15 }}> 10. </Text>                 
                         <Image 
                             source={require('../assets/icons/Mbeya_City.png')}
                             style={styles.teamImage}
@@ -248,7 +254,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 11 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 15 }}> 11. </Text>                 
                         <Image 
                             source={require('../assets/icons/Mtibwa.png')}
                             style={styles.teamImage}
@@ -267,7 +273,7 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 12 </Text>                 
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 15 }}> 12. </Text>                 
                         <Image 
                             source={require('../assets/icons/Dodoma.png')}
                             style={styles.teamImage}
@@ -286,18 +292,20 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 13 </Text>                 
-                        <Image 
-                            source={require('../assets/icons/Ruvu.png')}
-                            style={styles.teamImage}
-                        />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 11}}> Ruvu </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 6 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 11 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 35:37 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 28 </Text>                          
+                    <View style={styles.relegationPlayOffs}>
+                        <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 13. </Text>                 
+                                <Image 
+                                    source={require('../assets/icons/Ruvu.png')}
+                                    style={styles.teamImage}
+                                />   
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 11}}> Ruvu </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 27 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 6 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 11 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 35:37 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 28 </Text>                          
+                    </View>
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -305,59 +313,90 @@ const TableScreen = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 14 </Text>                 
-                        <Image 
-                            source={require('../assets/icons/Prisons.png')}
-                            style={styles.teamImage}
-                        />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Prisons </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 6 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 8 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 20:32 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 26 </Text>                          
+                    <View style={styles.relegationPlayOffs}>
+                        <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 14. </Text>                 
+                                <Image 
+                                    source={require('../assets/icons/Prisons.png')}
+                                    style={styles.teamImage}
+                                />   
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Prisons </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}> 27 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 6 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 8 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 20:32 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 26 </Text>                          
+                    </View>
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
                 </View>
 
                  {/* Fixture */}
-                 <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 15 </Text>                 
-                        <Image 
-                            source={require('../assets/icons/Biashara.png')}
-                            style={styles.teamImage}
-                        />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Biashara </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 4 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 13 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 10 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 21:29 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 25 </Text>                          
+                <View style={styles.fixtureItem}>
+                    <View style={styles.relegation}>
+                        <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 15. </Text>                 
+                                <Image 
+                                    source={require('../assets/icons/Biashara.png')}
+                                    style={styles.teamImage}
+                                />   
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Biashara </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}> 27 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 4 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 13 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 10 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 21:29 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 25 </Text>                          
+                    </View>
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
                 </View>
 
                  {/* Fixture */}
-                 <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 16 </Text>                 
-                        <Image 
-                            source={require('../assets/icons/Mbeya_Kwanza.png')}
-                            style={styles.teamImage}
-                        />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Mbeya K </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 5 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 20:33 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 24 </Text>                          
+                <View style={styles.fixtureItem}>
+                    <View style={styles.relegation}>
+                        <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 16. </Text>                 
+                                <Image 
+                                    source={require('../assets/icons/Mbeya_Kwanza.png')}
+                                    style={styles.teamImage}
+                                />   
+                            <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Mbeya K </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}> 27 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 5 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 20:33 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 24 </Text>                          
+                    </View>
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
+                </View>
+
+                {/* Table Elaboration */}
+                <View style={styles.tableElaboration}>
+                    <View style={styles.elaborationItem}>
+                    <Image 
+                        source={require('../assets/icons/ellipse.png')}
+                        style={styles.ellipse1}
+                    />
+                    <Text style={styles.elaborationText}> CAF Champions League Qualification - Preliminary stage</Text>
+                    </View>
+                    <View style={styles.elaborationItem}>
+                    <Image 
+                        source={require('../assets/icons/ellipse.png')}
+                        style={styles.ellipse2}
+                    />
+                    <Text style={styles.elaborationText1}> Relegation Play-Offs</Text>
+                    </View>
+                    <View style={styles.elaborationItem}>
+                    <Image 
+                        source={require('../assets/icons/ellipse.png')}
+                        style={styles.ellipse3}
+                    />
+                    <Text style={styles.elaborationText1}> Relegation to Championship</Text>
+                    </View>
                 </View>
             
                 {/* Sponsors */}
@@ -518,6 +557,7 @@ const styles = StyleSheet.create({
         marginRight: -8,
         marginLeft: 3,
         marginBottom: -5,
+        marginTop: -5,
     },
     fixtures: { 
         paddingTop: -10,
@@ -528,17 +568,91 @@ const styles = StyleSheet.create({
         marginTop: 6,
         flexDirection: 'row',
         alignItems: 'center',
+        marginLeft: -5,
+    },
+    cafCL: {
+        paddingHorizontal: 20,
+        marginBottom:-6,
+        marginTop: 6,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#9893CF',
+        borderRadius: 10,
+        elevation: 8,
+        marginLeft: -5,
+        paddingRight: -12,
+        
+    },
+    relegationPlayOffs: {
+        paddingHorizontal: 20,
+        marginBottom:-6,
+        marginTop: 6,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#EFC5C5',
+        borderRadius: 10,
+        elevation: 8,
+        marginLeft: -5,
+        paddingRight: -12,       
+    },
+    relegation: {
+         paddingHorizontal: 20,
+        marginBottom:-6,
+        marginTop: 6,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#D1C3C3',
+        borderRadius: 10,
+        elevation: 8,
+        marginLeft: -5,
+        paddingRight: -12, 
     },
     headerItem:{
         flexDirection: 'row',
         marginTop: 20,
         backgroundColor: '#3AA28D',
-        borderBottomRightRadius: 15,
-        borderTopLeftRadius: 15,
+        borderBottomRightRadius: 30,
         borderBottomLeftRadius: 30,
-        borderTopRightRadius: 30,
         height: 30,
         paddingRight: 20,
+        marginLeft: 12,
+    },
+    tableElaboration:{
+        flexDirection: 'column',
+    },
+    elaborationItem:{
+        flexDirection: 'row',
+        marginTop: -4,
+    },
+    elaborationText:{
+        paddingLeft: 10,
+        fontSize: 13,
+        color: '#000',
+        marginTop: 20,
+    },
+    elaborationText1:{
+        paddingLeft: 10,
+        fontSize: 13,
+        color: '#000',
+        marginTop: 14,
+    },
+    ellipse1:{
+        tintColor: '#9893CF',
+        width: 25,
+        marginLeft: 20,
+        marginTop: 15,
+    },
+    ellipse2:{
+        tintColor: '#EFC5C5',
+        width: 25,
+        marginLeft: 20,
+        marginTop: 10,
+    },
+    ellipse3:{
+        tintColor: '#D1C3C3',
+        width: 25,
+        marginLeft: 20,
+        marginTop: 10,
     },
     sponsorWrapper:{
         marginTop: 1,
