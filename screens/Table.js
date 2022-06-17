@@ -388,7 +388,7 @@ const TableScreen = ({navigation}) => {
                         source={require('../assets/icons/ellipse.png')}
                         style={styles.ellipse2}
                     />
-                    <Text style={styles.elaborationText1}> Relegation Play-Offs</Text>
+                    <Text style={styles.elaborationText1}> Relegation to Championship Play-Offs</Text>
                     </View>
                     <View style={styles.elaborationItem}>
                     <Image 
