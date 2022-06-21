@@ -154,7 +154,7 @@ const SignIn = (navigation) => {
                         }]}> Sign In</Text>
                     </LinearGradient>
                     <Pressable
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('SignUp')}
                         style={[styles.signIn, 
                             {
                             borderRadius: 10,
@@ -166,7 +166,7 @@ const SignIn = (navigation) => {
                     >
                     
                     
-                        <Text style={styles.textSign}> Sign Up </Text>
+                    <Text style={styles.textSign}> Sign Up </Text>
                     </Pressable>
                 </View>
         </Animatable.View>

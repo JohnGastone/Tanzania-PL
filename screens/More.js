@@ -33,7 +33,7 @@ const MoreScreen = ({navigation}) => {
                             </View>
                     </SafeAreaView>
                    
-                    {/* Back Button and Sign In / Sign Out options */}
+                    {/* Back Button */}
                     <View>
                         <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                             <Pressable 
@@ -45,10 +45,19 @@ const MoreScreen = ({navigation}) => {
                                 
                         </TouchableOpacity>
                     </View>
-                    <View>
-                        <Pressable style={styles.button} onPress={() => navigation.navigate('SignIn')}>
-                            <Text style={styles.text}>Sign In / Create New Account</Text>
-                        </Pressable>  
+                    {/* Sign In / Sign Up Buttons */}
+                    <View style={styles.inUp}>
+                        <TouchableOpacity>
+                            <Pressable style={styles.button2} onPress={() => navigation.navigate('SignIn')}>
+                                <Text style={styles.text}>Sign In</Text>
+                            </Pressable>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity>
+                            <Pressable style={styles.button3} onPress={() => navigation.navigate('SignUp')}>
+                                <Text style={styles.text}>Create New Account</Text>
+                            </Pressable> 
+                        </TouchableOpacity> 
                     </View>              
                     
                     {/* Favorite Team Button */}
@@ -156,6 +165,9 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 7,
     },
+    inUp:{
+        flexDirection: 'row',
+    },
     button: {
         alignItems: 'center',
         justifyContent: 'center',
@@ -169,15 +181,15 @@ const styles = StyleSheet.create({
         paddingLeft: 30,
         paddingRight: 30,
         height: 42,
-      },
-      text: {
+    },
+    text: {
         fontSize: 16,
         lineHeight: 21,
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'white',
       },
-      favoriteTeam:{
+    favoriteTeam:{
         fontSize: 20,
         lineHeight: 23,
         fontWeight: 'bold',
@@ -186,8 +198,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 2,
         padding: 10,
-        },
-        button1: {
+    },
+    button1: {
             alignItems: 'center',
             justifyContent: 'center',
             paddingVertical: 12,
@@ -199,7 +211,32 @@ const styles = StyleSheet.create({
             width: 320,
             marginLeft: 20,
             height: 42, 
-            },
+    },
+    button2:{          
+            paddingVertical: 12,
+            paddingHorizontal: 32,
+            borderRadius: 20,
+            elevation: 1,
+            backgroundColor: '#3AA78D',
+            marginTop: 10,
+            width: 110,
+            marginLeft: 20,
+            height: 42, 
+
+    },
+    button3:{
+        paddingVertical: 12,
+            paddingHorizontal: 32,
+            borderRadius: 20,
+            elevation: 1,
+            backgroundColor: '#3AA78D',
+            marginTop: 10,
+            width: 187,
+            marginLeft: 20,
+            height: 42, 
+
+
+    },
 
 
 });

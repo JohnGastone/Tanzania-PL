@@ -34,7 +34,7 @@ const FixturesScreen = ({navigation}) => {
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                         <Pressable 
                             style={styles.backButton} 
-                            onPress={() => navigation.navigate('SignUp')}
+                            onPress={() => navigation.navigate('Home')}
                         >
                             <Text style={styles.backButtonText}>Back</Text>
                         </Pressable>
@@ -55,7 +55,7 @@ const FixturesScreen = ({navigation}) => {
                             disabled={false}
                             color = '#3AA78D'
                             style={{width: 28,height: 28, paddingHorizontal: 14, alignSelf: 'center', marginLeft: 10}}
-                            onPress={() => navigation.navigate('Home') }
+                            onPress={() => navigation.navigate('Fixture') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 8}}>Tanzania Prisons</Text>
                     

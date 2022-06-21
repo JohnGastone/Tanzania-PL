@@ -3,21 +3,21 @@ import
 {
     View,
     Text, 
-    Button,
+    Button, 
+    BackHandler,
     StyleSheet,
     SafeAreaView,
     Image,
     TouchableOpacity,
     ScrollView,
     Pressable,
-    
 }
 from 'react-native';
 
-const ResultsScreen = ({navigation}) => {
+const Result = ({navigation}) => {
     return(
-        <ScrollView>
-        <View style={StyleSheet.container}>
+    <ScrollView>
+    <View style={StyleSheet.container}>
             {/* Header */}
             <SafeAreaView>
                     <View style={styles.headersWrapper}>
@@ -34,113 +34,88 @@ const ResultsScreen = ({navigation}) => {
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                         <Pressable 
                             style={styles.backButton} 
-                            onPress={() => navigation.goBack()}
+                            onPress={() => navigation.navigate('Fixtures')}
                         >
                             <Text style={styles.backButtonText}>Back</Text>
                         </Pressable>
                             
                     </TouchableOpacity>
             </View>
-            
-             {/* Fixtures */}
+            {/* Fixtures */}
             <View style={styles.fixtures}>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
+                    <Text style={{paddingRight: 10,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
                 </View>
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Biashara United </Text>
                     <Button
-                            title='2 - 1'
+                            title='16:00'
                             disabled={false}
                             color = '#3AA78D'
-                            style={{width: 28,height: 28, paddingHorizontal: 14, color: '#087A76', alignSelf: 'center', marginLeft: 10}}
-                            onPress={() => navigation.navigate('Result') }
+                            style={{width: 28,height: 28, paddingHorizontal: 14, alignSelf: 'center', marginLeft: 10}}
+                           
                     />
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Tanzania Prisons</Text>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 8}}>Tanzania Prisons</Text>
                     
                 </View>
                 <View>
-                            <Text style={styles.sponsorsLine}></Text>
-                        </View>
-                {/* Fixture Date */}
-                <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 12, color: '#000000', paddingTop: 13}}>16 March</Text>
-                </View>
-                <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -15, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
-                    <Button
-                        title='2 - 1'
-                        disabled={false}
-                        color = '#3AA78D'
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A76'}}
-                        onPress={() => navigation.navigate('Home') }
+                    <Image 
+                        source={require('../assets/icons/Biashara.png')}
+                        style={styles.teamImage}
                     />
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Azam</Text>
-                                 
-                </View>
-                <View>
-                    <Text style={styles.sponsorsLine}></Text>
-                    </View> 
-
-                 {/* Fixture Date */}
-                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>19 March</Text>
-                </View>
-                    
-                <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Young Africans</Text>                               
-                    <Button
-                            title='2 - 0'
-                            disabled={false}
-                            color = '#3AA78D'
-                            style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
-                            onPress={() => navigation.navigate('Home') }
+                    <Image 
+                        source={require('../assets/icons/Prisons.png')}
+                        style={styles.teamImage2}
                     />
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
-                </View>
-                <View>
-                    <Text style={styles.sponsorsLine}></Text>
                 </View>
 
-                {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>27 March</Text>
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.h2hButton}
+                            
+                        >
+                        <Text style={styles.h2hText}> H2H </Text>
+                        </Pressable>
+                        
+                    </TouchableOpacity>
                 </View>
-                <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
-                    <Button
-                        title='0 - 0'
-                        disabled={false}
-                        color = '#3AA78D'
-                        style={{width: 28,height: 28, paddingHorizontal: 12, borderRadius: 50, }}
-                        onPress={() => navigation.navigate('Home') }
-                    />
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
-                </View>
-                <View>
-                    <Text style={styles.sponsorsLine}></Text>
-                </View>
-
-                {/* Fixture Date */}
-                <View>
-                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>1 April</Text>
+                <View style={styles.h2hData}>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>8</Text>
+                        <Text style={styles.text2}>Played</Text>
+                        <Text style={styles.text3}>8</Text>
                     </View>
-                <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
-                    <Button
-                        title='4 - 3'
-                        disabled={false}
-                        color = '#3AA78D'
-                        style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                        onPress={() => navigation.navigate('Home') }
-                    />    
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
-                    
-                    
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>4</Text>
+                        <Text style={styles.text2}>Wins</Text>
+                        <Text style={styles.text3}>0</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>4</Text>
+                        <Text style={styles.text2}>Draws</Text>
+                        <Text style={styles.text3}>4</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>0</Text>
+                        <Text style={styles.text2}>Lost</Text>
+                        <Text style={styles.text3}>4</Text>
+                    </View>
+
                 </View>
-            
+               
+
                 {/* Sponsors */}
                 <View style={styles.sponsorWrapper}>
                      <Text style={styles.sponsorTitle}></Text>
@@ -169,7 +144,7 @@ const ResultsScreen = ({navigation}) => {
                                     }}
                         
                                 />
-                                 <Image
+                                <Image
                                     source={require ('../assets/icons/TBC.png') }
                                     style={{
                                         width: 70,
@@ -251,13 +226,15 @@ const ResultsScreen = ({navigation}) => {
                 <View>
                     <Text style={styles.tplBoard}></Text>
                 </View> 
-    </View>
-    </View>
-    </ScrollView>
+
+        
+        </View>
+     </View>
+     </ScrollView>
     );
 }
 
-export default ResultsScreen;
+export default Result;
 
 const styles = StyleSheet.create({
     container: {
@@ -277,7 +254,7 @@ const styles = StyleSheet.create({
     profileImage:{
         width: 70,
         height: 70,
-        borderRadius: 30,
+        borderRadius: 30
     },
     backButton:{
         paddingLeft: 20,
@@ -293,16 +270,68 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 7,
     },
-    fixtures: { 
-        paddingTop: -10,
+    fixtures:{
+        paddingTop: 1
     },
     fixtureItem:{
-        paddingHorizontal: 20,
-        marginBottom:6,
+        paddingHorizontal: 30,
+        marginBottom:10,
         flexDirection: 'row',
     },
+    teamImage:{
+        width: 25,
+        height: 25,
+        marginRight: -8,
+        marginLeft: 100,
+        marginBottom: -5,
+        marginTop: -5,
+    },
+    teamImage2:{
+        width: 25,
+        height: 25,
+        marginRight: -8,
+        marginLeft: 241,
+        marginBottom: -5,
+        marginTop: -20,
+    },
+    h2hButton:{
+        paddingLeft: 20,
+        paddingRight: 20,
+        width: 70,
+        height: 35,
+        borderRadius: 20,
+        elevation: 5,
+        marginTop: -15,
+        backgroundColor: '#3AA78D',
+        marginLeft: 130
+    },
+    h2hText:{
+        alignSelf: 'center',
+        marginTop: 7,
+    },
+    h2hData:{
+        marginLeft: -108,
+        marginTop: -19
+    },
+    played:{
+        flexDirection: 'row',
+        alignSelf: 'center'
+    },
+    text1:{
+        color: '#000',
+        marginLeft: 109
+    },
+    text2:{
+        color: '#000',
+        marginLeft: 55
+    },
+    text3:{
+        color: '#000',
+        marginLeft: 40
+    },
     sponsorWrapper:{
-        marginTop: 1,
+        marginTop: 100,
+
     },
     sponsorTitle:{
         paddingTop: 1,
@@ -390,4 +419,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         marginLeft: -26,
     },
+
+
+   
 });

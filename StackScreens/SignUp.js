@@ -68,7 +68,7 @@ const SignUp = (navigation) => {
             />
         </View>
         <View style={styles.headersWrapper}>
-            <Text style={styles.textHeader}> Welcome  </Text>
+            <Text style={styles.textHeader}> Register!  </Text>
         </View>
         <Animatable.View 
             animation="fadeInUpBig"
@@ -174,7 +174,7 @@ const SignUp = (navigation) => {
                         }]}> Sign In</Text>
                     </LinearGradient>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('SignIn')}
                         style={[styles.signIn, {
                             borderRadius: 10,
                             borderColor: '#009387',
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: -13,
         paddingLeft: 10,
-        color: 'black',
+        color: '#000',
     },
   button: {
     alignItems: 'center',
