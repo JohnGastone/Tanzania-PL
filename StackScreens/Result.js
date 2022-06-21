@@ -51,7 +51,7 @@ const Result = ({navigation}) => {
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Biashara United </Text>
                     <Button
-                            title='16:00'
+                            title=' 2 - 1 '
                             disabled={false}
                             color = '#3AA78D'
                             style={{width: 28,height: 28, paddingHorizontal: 14, alignSelf: 'center', marginLeft: 10}}
@@ -65,6 +65,7 @@ const Result = ({navigation}) => {
                         source={require('../assets/icons/Biashara.png')}
                         style={styles.teamImage}
                     />
+                    
                     <Image 
                         source={require('../assets/icons/Prisons.png')}
                         style={styles.teamImage2}
