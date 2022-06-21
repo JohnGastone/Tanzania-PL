@@ -4,6 +4,7 @@ import SignIn from '../StackScreens/SignIn';
 import SignUp from '../StackScreens/SignUp';
 import Fixture from '../StackScreens/Fixture';
 import Result from '../StackScreens/Result';
+import Top from '../StackScreens/Top';
 
 
 const Stack = createStackNavigator();
@@ -27,6 +28,11 @@ const StackNavigator = () => {
             }}
         />
         <Stack.Screen name="Result" component={Result} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="Top" component={Top} 
             options={{
                 headerShown: false,
             }}

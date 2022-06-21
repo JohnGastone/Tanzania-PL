@@ -9,6 +9,7 @@ import {
     StatusBar,
     ScrollView,
     Image,
+    Pressable
  } from 'react-native';
 
  import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -173,20 +174,24 @@ const SignUp = (navigation) => {
                             color: '#fff',
                         }]}> Sign In</Text>
                     </LinearGradient>
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('SignIn')}
-                        style={[styles.signIn, {
+                    <LinearGradient 
+                       colors={['#08d4c4', '#01ab9d']}
+                       style={styles.signUp} 
+                    >
+                    <Pressable
+                        onPress={() => navigation.navigate('SignUp')}
+                        style={[styles.signIn, 
+                            {
                             borderRadius: 10,
                             borderColor: '#009387',
-                            borderWidth: 1,
-                            marginTop: 15,
-                        
-                        }]}>
-                    
-                    
-                        <Text style={styles.textSign}> Sign Up </Text>
-                    </TouchableOpacity>
-                </View>
+                            borderWidth: 0,
+                            marginTop: 2,                      
+                            }]}
+                    >                                        
+                    <Text style={styles.textSign}> Sign Up </Text>
+                    </Pressable>
+                    </LinearGradient>
+                    </View>
         </Animatable.View>
     </View>
     </ScrollView>
@@ -261,10 +266,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
   },
+  signUp:{
+    width: '100%',
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    marginTop: 10
+  },
     textSign: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#000',
+        color: '#fff',
     },
 
 
