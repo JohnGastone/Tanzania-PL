@@ -502,7 +502,8 @@ const styles = StyleSheet.create
         marginBottom: 20,
     },
     sponsorWrapper:{
-        marginTop: 1,
+        marginTop: 100,
+
     },
     sponsorTitle:{
         paddingTop: 1,

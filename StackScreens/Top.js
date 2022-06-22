@@ -34,7 +34,7 @@ const Top = ({navigation}) => {
                         <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                             <Pressable 
                                 style={styles.backButton} 
-                                onPress={() => navigation.goBack()}
+                                onPress={() => navigation.navigate('Statistics')}
                             >
                                 <Text style={styles.backButtonText}>Back</Text>
                             </Pressable>
@@ -43,9 +43,176 @@ const Top = ({navigation}) => {
                 </View>
 
                 {/* Top Scorers*/}
+                <View>
+                    <Text style={styles.topScorerHeader}> Top Scorers</Text>
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Fiston Mayele </Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>16</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>George Mpole </Text>
+                            <Image 
+                                source={require('../assets/icons/Geita.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>16</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Reliant Lusajo</Text>
+                            <Image 
+                                source={require('../assets/icons/Namungo.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>10</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Rodgers Kola  </Text>
+                            <Image 
+                                source={require('../assets/icons/AzamFc.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 8</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Kibu Dennis    </Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 8</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>S Ntibazokiza</Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
                 
-                
-                
+                {/* Top Assist Providers*/}
+                <View>
+                    <Text style={styles.topAssistProviderHeader}> Top Assist Providers</Text>
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>S Ntibazokiza</Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>6</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Djuma Shaban</Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>5</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Tepsi Evans    </Text>
+                            <Image 
+                                source={require('../assets/icons/AzamFc.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>5</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>S Kapombe     </Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>5</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+
+                {/* Keepers with most Cleansheets*/}
+                <View>
+                    <Text style={styles.topAssistProviderHeader}> Goalkeepers with most cleansheets</Text>
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Djigui Diara </Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>17</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Aishi Manula</Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>14</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>A Mshery     </Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 8</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+
                     {/* Sponsors */}
                     <View style={styles.sponsorWrapper}>
                         <Text style={styles.sponsorTitle}></Text>
@@ -198,13 +365,47 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 7,
     },
-    fixtures: { 
-        paddingTop: -10,
+    topScorerHeader:{
+        color: '#000',
+        marginLeft: 30,
+        fontSize: 20,
+        fontWeight: 'bold'
     },
-    fixtureItem:{
-        paddingHorizontal: 20,
-        marginBottom:6,
+    topScorer:{
         flexDirection: 'row',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 20,
+        elevation: 1,
+        backgroundColor: '#fff',
+        marginTop: 10,
+        width: 300,
+        marginLeft: 20,
+        height: 42,
+        borderWidth: 0.2 
+    },
+    topScorerName:{
+        color: '#000',
+        marginRight: 150,
+        marginLeft: 10
+    },
+    teamImage:{
+        width: 25,
+        height: 25,
+        marginRight: 60,
+        marginLeft: -90,
+        marginBottom: -5,
+        marginTop: -5,
+    },
+    goals:{
+        color: '#000'
+    },
+    topAssistProviderHeader:{
+        color: '#000',
+        marginLeft: 30,
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginTop: 15
     },
     sponsorWrapper:{
         marginTop: 1,

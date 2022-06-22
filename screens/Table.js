@@ -34,7 +34,7 @@ const TableScreen = ({navigation}) => {
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                         <Pressable 
                             style={styles.backButton} 
-                            onPress={() => navigation.goBack()}
+                            onPress={() => navigation.navigate('Statistics')}
                         >
                             <Text style={styles.backButtonText}>Back</Text>
                         </Pressable>

@@ -302,7 +302,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     sponsorWrapper:{
-        marginTop: 1,
+        marginTop: 100,
     },
     sponsorTitle:{
         paddingTop: 1,
