@@ -5,6 +5,7 @@ import SignUp from '../StackScreens/SignUp';
 import Fixture from '../StackScreens/Fixture';
 import Result from '../StackScreens/Result';
 import Top from '../StackScreens/Top';
+import Table from '../StackScreens/Table';
 
 
 const Stack = createStackNavigator();
@@ -33,6 +34,11 @@ const StackNavigator = () => {
             }}
         />
         <Stack.Screen name="Top" component={Top} 
+            options={{
+                headerShown: false,
+            }}
+        />
+         <Stack.Screen name="Table" component={Table} 
             options={{
                 headerShown: false,
             }}

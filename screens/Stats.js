@@ -18,6 +18,8 @@ from 'react-native';
 import scorers from '../assets/icons/data/scorers';
 import cleansheets from '../assets/icons/data/cleansheets';
 import assists from '../assets/icons/data/assists';
+import passers from '../assets/icons/data/passers';
+import tacklers from '../assets/icons/data/tackles';
 
 {/* Function to render Top scorers data */}
 const renderScorersItem = ({item}) => 
@@ -77,6 +79,62 @@ const renderAssistsItem = ({item}) =>
 
 {/* Function to render Cleansheets data */}
 const renderCleansheetsItem = ({item}) => 
+{
+    return (
+        <View style={[styles.scorersItemWrapper,
+        {
+            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            marginLeft: item.id == 1 ? 20 : 0,
+        }]}>
+        <Image 
+            source = {item.image} 
+            style={styles.scorersItemImage} 
+        />
+        <Text style={styles.scorersItemTitle}> {item.title} </Text>
+        <View 
+        style={[
+            styles.scorersSelectWrapper,
+            {
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            }
+            ]}>
+           
+        </View>
+
+        </View>
+    );
+};
+
+{/* Function to render Passers data */}
+const renderPassersItem = ({item}) => 
+{
+    return (
+        <View style={[styles.scorersItemWrapper,
+        {
+            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            marginLeft: item.id == 1 ? 20 : 0,
+        }]}>
+        <Image 
+            source = {item.image} 
+            style={styles.scorersItemImage} 
+        />
+        <Text style={styles.scorersItemTitle}> {item.title} </Text>
+        <View 
+        style={[
+            styles.scorersSelectWrapper,
+            {
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
+            }
+            ]}>
+           
+        </View>
+
+        </View>
+    );
+};
+
+{/* Function to render Tacklers data */}
+const renderTacklersItem = ({item}) => 
 {
     return (
         <View style={[styles.scorersItemWrapper,
@@ -235,7 +293,43 @@ const StatsScreen = ({navigation}) => {
                 </View>
                 <Pressable style={styles.button1} onPress={() => navigation.navigate('Top')}>
                     <Text style={styles.text}>Full list</Text>
-                </Pressable>                        
+                </Pressable>
+
+                {/* Top Passers */}
+                <View style={styles.assistWrapper}>
+                        <Text style={styles.scorersTitle}>Top Passers</Text>
+                        <View style={styles.scorersListWrapper}>
+                            <FlatList
+                                data={passers}
+                                renderItem={renderPassersItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                        
+                </View>
+                <Pressable style={styles.button1} onPress={() => navigation.navigate('Top')}>
+                    <Text style={styles.text}>Full list</Text>
+                </Pressable> 
+
+                {/* Tacklers */}
+                <View style={styles.assistWrapper}>
+                        <Text style={styles.scorersTitle}>Tacklers</Text>
+                        <View style={styles.scorersListWrapper}>
+                            <FlatList
+                                data={tacklers}
+                                renderItem={renderTacklersItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                        
+                </View>
+                <Pressable style={styles.button1} onPress={() => navigation.navigate('Top')}>
+                    <Text style={styles.text}>Full list</Text>
+                </Pressable>                               
                                                            
                 {/* Sponsors */}
             <View style={styles.sponsorWrapper}>

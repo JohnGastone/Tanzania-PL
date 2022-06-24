@@ -71,7 +71,13 @@ const MoreScreen = ({navigation}) => {
                                 <Text style={styles.text}>Official Website</Text>
                             </Pressable>
                         </View>
-
+                    {/* Clubs */}
+                        <View>
+                            <Text style={styles.favoriteTeam}>Clubs</Text>
+                            <Pressable style={styles.button1} onPress={onPress}>
+                                <Text style={styles.text}>Clubs</Text>
+                            </Pressable>
+                        </View>
                     {/* Referees */}
                         <View>
                             <Text style={styles.favoriteTeam}>Referees</Text>

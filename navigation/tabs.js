@@ -7,7 +7,7 @@ import HomeScreen from '../screens/Home';
 import MoreScreen from '../screens/More';
 import ResultsScreen from '../screens/Results';
 import StatsScreen from '../screens/Stats';
-import TableScreen from '../screens/Table';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -143,34 +143,7 @@ const Tabs = () => {
                 }} 
             />
 
-            <Tab.Screen 
-                name='Table'
-                component={TableScreen} 
-                options={{
-                    headerShown: false,
-                    tabBarIcon:({focused}) => (
-                        <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
-                            <Image
-                                source={require('../assets/icons/Dresser.png')}
-                                resizeMode='contain'
-                                style={{
-                                    width:25,
-                                    height: 25,
-                                    marginLeft: 20,
-                                    tintColor: focused ? '#e32f45' : '#748c94'
-                                }}
-                            />
-                            <Text  style={{
-                                    width:45,
-                                    height: 25,
-                                    marginLeft: 35,
-                                    tintColor: focused ? '#e32f45' : '#748c94'
-                                }}
-                            >Table</Text>
-                        </View>
-                    ),
-                }} 
-            />
+            
 
             <Tab.Screen 
                 name='Fixture'
@@ -180,7 +153,7 @@ const Tabs = () => {
                     tabBarIcon:({focused}) => (
                         <View style={{alignItems: 'center' , justifyContent: 'center', top: 10}}>
                             <Image
-                                source={require('../assets/icons/account.png')}
+                                source={require('../assets/icons/More.png')}
                                 resizeMode='contain'
                                 style={{
                                     width:25,
@@ -192,7 +165,7 @@ const Tabs = () => {
                             <Text  style={{
                                     width:45,
                                     height: 25,
-                                    marginLeft: 19,
+                                    marginLeft: 28,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >Fixture</Text>
@@ -218,7 +191,7 @@ const Tabs = () => {
                                 }}
                             />
                             <Text  style={{
-                                    width:30,
+                                    width:35,
                                     height: 25,
                                     marginLeft: -2,
                                     tintColor: focused ? '#e32f45' : '#748c94'

@@ -14,7 +14,7 @@ import
 }
 from 'react-native';
 
-const TableScreen = ({navigation}) => {
+const Table = ({navigation}) => {
     return(
         <ScrollView>
         <View style={StyleSheet.container}>
@@ -515,7 +515,7 @@ const TableScreen = ({navigation}) => {
     );
 }
 
-export default TableScreen;
+export default Table;
 
 const styles = StyleSheet.create({
     container: {

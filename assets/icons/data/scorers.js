@@ -9,7 +9,7 @@ const scorers = [
     {
         id : '2',
         image: require('../mpole-pic.png'),
-        title : 'Goals: 15',
+        title : 'Goals: 16',
         selected: true,
     
     },

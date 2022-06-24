@@ -213,6 +213,108 @@ const Top = ({navigation}) => {
                     </TouchableOpacity>           
                 </View>
 
+                {/* Players with most Passes*/}
+                <View>
+                    <Text style={styles.topAssistProviderHeader}> Top Passers</Text>
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Yanic Bangala</Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}> 1032</Text>      
+                            <Text style={styles.accurate}> 999</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Cleo Mkandala</Text>
+                            <Image 
+                                source={require('../assets/icons/Dodoma.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}> 1001</Text>      
+                            <Text style={styles.accurate}> 989</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Khalid Aucho   </Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}>  980</Text>      
+                            <Text style={styles.accurate}>  901</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Sadio Kanoute</Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}> 979</Text>      
+                            <Text style={styles.accurate}> 878</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Kenny Muguna</Text>
+                            <Image 
+                                source={require('../assets/icons/AzamFc.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}>978</Text>      
+                            <Text style={styles.accurate}> 912</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                
+                {/* Players with most Tackles*/}
+                <View>
+                    <Text style={styles.topAssistProviderHeader}> Top Tacklers</Text>
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Victor Akpan </Text>
+                            <Image 
+                                source={require('../assets/icons/Coastal.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.goals}> 120</Text>      
+                           
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>K Shomari      </Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}>             78</Text>      
+                            
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+
+
                     {/* Sponsors */}
                     <View style={styles.sponsorWrapper}>
                         <Text style={styles.sponsorTitle}></Text>
@@ -399,6 +501,14 @@ const styles = StyleSheet.create({
     },
     goals:{
         color: '#000'
+    },
+    passes:{
+        color: '#000',
+        marginLeft: -35
+    },
+    accurate:{
+        color: '#000',
+        marginLeft: 12
     },
     topAssistProviderHeader:{
         color: '#000',
