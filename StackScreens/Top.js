@@ -217,52 +217,56 @@ const Top = ({navigation}) => {
                 <View>
                     <Text style={styles.topAssistProviderHeader}> Top Passers</Text>
                 </View>
+                <View style={styles.pass}>
+                    <Text style={styles.passesComplete}>Complete Passes</Text>
+                    <Text style={styles.passesAccurate}>Accurate Passes</Text>
+                </View>
                 <View >    
                     <TouchableOpacity>
-                        <Pressable style={styles.topScorer}>
+                        <Pressable style={styles.topPasser}>
                             <Text style={styles.topScorerName}>Yanic Bangala</Text>
                             <Image 
                                 source={require('../assets/icons/Yanga.png')}
-                                style={styles.teamImage}
+                                style={styles.passTeamImage}
                             />
-                            <Text style={styles.passes}> 1032</Text>      
-                            <Text style={styles.accurate}> 999</Text>
+                            <Text style={styles.passes}>1032</Text>      
+                            <Text style={styles.accurate}>     999</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
                 <View >    
                     <TouchableOpacity>
-                        <Pressable style={styles.topScorer}>
+                        <Pressable style={styles.topPasser}>
                             <Text style={styles.topScorerName}>Cleo Mkandala</Text>
                             <Image 
                                 source={require('../assets/icons/Dodoma.png')}
-                                style={styles.teamImage}
+                                style={styles.passTeamImage}
                             />
                             <Text style={styles.passes}> 1001</Text>      
-                            <Text style={styles.accurate}> 989</Text>
+                            <Text style={styles.accurate}>    989</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
                 <View >    
                     <TouchableOpacity>
-                        <Pressable style={styles.topScorer}>
+                        <Pressable style={styles.topPasser}>
                             <Text style={styles.topScorerName}>Khalid Aucho   </Text>
                             <Image 
                                 source={require('../assets/icons/Yanga.png')}
-                                style={styles.teamImage}
+                                style={styles.passTeamImage}
                             />
                             <Text style={styles.passes}>  980</Text>      
-                            <Text style={styles.accurate}>  901</Text>
+                            <Text style={styles.accurate}>     901</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
                 <View >    
                     <TouchableOpacity>
-                        <Pressable style={styles.topScorer}>
+                        <Pressable style={styles.topPasser}>
                             <Text style={styles.topScorerName}>Sadio Kanoute</Text>
                             <Image 
                                 source={require('../assets/icons/Simba.png')}
-                                style={styles.teamImage}
+                                style={styles.passTeamImage}
                             />
                             <Text style={styles.passes}> 979</Text>      
                             <Text style={styles.accurate}> 878</Text>
@@ -271,11 +275,11 @@ const Top = ({navigation}) => {
                 </View>
                 <View >    
                     <TouchableOpacity>
-                        <Pressable style={styles.topScorer}>
+                        <Pressable style={styles.topPasser}>
                             <Text style={styles.topScorerName}>Kenny Muguna</Text>
                             <Image 
                                 source={require('../assets/icons/AzamFc.png')}
-                                style={styles.teamImage}
+                                style={styles.passTeamImage}
                             />
                             <Text style={styles.passes}>978</Text>      
                             <Text style={styles.accurate}> 912</Text>
@@ -290,13 +294,39 @@ const Top = ({navigation}) => {
                 <View >    
                     <TouchableOpacity>
                         <Pressable style={styles.topScorer}>
-                            <Text style={styles.topScorerName}>Victor Akpan </Text>
+                            <Text style={styles.topScorerName}>Henock Inonga</Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}>            145</Text>      
+                            
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Victor Akpan  </Text>
                             <Image 
                                 source={require('../assets/icons/Coastal.png')}
                                 style={styles.teamImage}
                             />
                             <Text style={styles.goals}> 120</Text>      
                            
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>K Shomari       </Text>
+                            <Image 
+                                source={require('../assets/icons/Yanga.png')}
+                                style={styles.teamImage}
+                            />
+                            <Text style={styles.passes}>             78</Text>      
+                            
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -491,6 +521,19 @@ const styles = StyleSheet.create({
         marginRight: 150,
         marginLeft: 10
     },
+    topPasser:{
+        flexDirection: 'row',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 20,
+        elevation: 1,
+        backgroundColor: '#fff',
+        marginTop: 10,
+        width: 335,
+        marginLeft: 20,
+        height: 42,
+        borderWidth: 0.2 
+    },
     teamImage:{
         width: 25,
         height: 25,
@@ -498,6 +541,17 @@ const styles = StyleSheet.create({
         marginLeft: -90,
         marginBottom: -5,
         marginTop: -5,
+    },
+    passTeamImage:{
+        width: 25,
+        height: 25,
+        marginRight: 60,
+        marginLeft: -110,
+        marginBottom: -5,
+        marginTop: -5,
+    },
+    pass:{
+        flexDirection: 'row'
     },
     goals:{
         color: '#000'
@@ -508,7 +562,7 @@ const styles = StyleSheet.create({
     },
     accurate:{
         color: '#000',
-        marginLeft: 12
+        marginLeft: 39
     },
     topAssistProviderHeader:{
         color: '#000',
@@ -516,6 +570,17 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginTop: 15
+    },
+    passesComplete:{
+        color: '#000',
+        marginLeft: 200,
+        fontSize: 11,
+        
+    },
+    passesAccurate:{
+        color: '#000',
+        marginLeft: 20,
+        fontSize: 11,
     },
     sponsorWrapper:{
         marginTop: 1,
