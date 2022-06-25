@@ -45,7 +45,7 @@ const FixturesScreen = ({navigation}) => {
             <View style={styles.fixtures}>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 10,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>15 March</Text>
+                    <Text style={{marginLeft: 160, marginBottom: 6, color: '#000000'}}>15 March</Text>
                 </View>
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
@@ -54,7 +54,7 @@ const FixturesScreen = ({navigation}) => {
                             title='16:00'
                             disabled={false}
                             color = '#3AA78D'
-                            style={{width: 28,height: 28, paddingHorizontal: 14, alignSelf: 'center', marginLeft: 10}}
+                            style={{width: 28,height: 28, paddingHorizontal: 14, alignSelf: 'center', marginLeft: 10,}}
                             onPress={() => navigation.navigate('Fixture') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 8}}>Tanzania Prisons</Text>
@@ -65,7 +65,7 @@ const FixturesScreen = ({navigation}) => {
                         </View>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 10,alignSelf: 'center', marginBottom: 12, color: '#000000', paddingTop: 13}}>16 March</Text>
+                    <Text style={{marginLeft: 160, marginBottom: 6, color: '#000000', paddingTop: 13}}>16 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
@@ -84,7 +84,7 @@ const FixturesScreen = ({navigation}) => {
 
                  {/* Fixture Date */}
                  <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>19 March</Text>
+                    <Text style={{marginLeft: 159, marginBottom: 3, color: '#000000', paddingTop: 13}}>19 March</Text>
                 </View>
                     
                 <View style={styles.fixtureItem}>
@@ -94,7 +94,7 @@ const FixturesScreen = ({navigation}) => {
                             disabled={false}
                             color = '#3AA78D'
                             style={{width: 28,height: 28, paddingRight: 20, }}
-                            onPress={() => navigation.navigate('Home') }
+                            onPress={() => navigation.navigate('F1') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
                 </View>
@@ -104,7 +104,7 @@ const FixturesScreen = ({navigation}) => {
 
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>27 March</Text>
+                    <Text style={{marginLeft: 162, marginBottom: 3, color: '#000000', paddingTop: 13}}>27 March</Text>
                 </View>
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
@@ -113,7 +113,7 @@ const FixturesScreen = ({navigation}) => {
                         disabled={false}
                         color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12,}}
-                        onPress={() => navigation.navigate('Home') }
+                        onPress={() => navigation.navigate('F2') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
                 </View>
@@ -123,7 +123,7 @@ const FixturesScreen = ({navigation}) => {
 
                 {/* Fixture Date */}
                 <View>
-                        <Text style={{paddingRight: 16,alignSelf: 'center', marginBottom: 3, color: '#000000', paddingTop: 13}}>1 April</Text>
+                        <Text style={{marginLeft: 170, marginBottom: 3, color: '#000000', paddingTop: 13}}>1 April</Text>
                     </View>
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
@@ -132,7 +132,7 @@ const FixturesScreen = ({navigation}) => {
                         disabled={false}
                         color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12, }}
-                        onPress={() => navigation.navigate('Home') }
+                        onPress={() => navigation.navigate('F3') }
                     />    
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
                     

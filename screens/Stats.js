@@ -533,7 +533,7 @@ const styles = StyleSheet.create({
     backButtonText:{
         alignSelf: 'center',
         marginTop: 7,
-        aligContent: 'center',
+        alignContent: 'center',
     },
     listWrapper:{
         flexDirection: 'row',
@@ -552,7 +552,7 @@ const styles = StyleSheet.create({
     backButtonText1:{
         alignSelf: 'center',
         marginTop: 7,
-        aligContent: 'center',
+        alignContent: 'center',
         width: 80,
     },
 

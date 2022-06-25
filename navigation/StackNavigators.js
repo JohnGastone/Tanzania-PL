@@ -9,7 +9,11 @@ import Table from '../StackScreens/Table';
 import Namungo from '../StackScreens/Namungo';
 import ResultNamungo from '../StackScreens/ResultNamungo';
 import ResultYanga from '../StackScreens/ResultYanga';
-
+import ResultSimba from '../StackScreens/ResultSimba';
+import Polisi from '../StackScreens/Polisi';
+import F1 from '../StackScreens/F1';
+import F2 from '../StackScreens/F2';
+import F3 from '../StackScreens/F3';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -61,6 +65,32 @@ const StackNavigator = () => {
                 headerShown: false,
             }}
         />
+        <Stack.Screen name="ResultSimba" component={ResultSimba} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="Polisi" component={Polisi} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="F1" component={F1} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="F2" component={F2} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="F3" component={F3} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        
        
     </Stack.Navigator>
  );

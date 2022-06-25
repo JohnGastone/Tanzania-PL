@@ -14,7 +14,7 @@ import
 }
 from 'react-native';
 
-const Namungo = ({navigation}) => {
+const ResultSimba = ({navigation}) => {
     return(
     <ScrollView>
     <View style={StyleSheet.container}>
@@ -34,7 +34,7 @@ const Namungo = ({navigation}) => {
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                         <Pressable 
                             style={styles.backButton} 
-                            onPress={() => navigation.navigate('Fixtures')}
+                            onPress={() => navigation.navigate('Results')}
                         >
                             <Text style={styles.backButtonText}>Back</Text>
                         </Pressable>
@@ -45,31 +45,34 @@ const Namungo = ({navigation}) => {
             <View style={styles.fixtures}>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{marginLeft: 163, marginBottom: 10, color: '#000000'}}>16 March</Text>
+                    <Text style={{paddingRight: 10,alignSelf: 'center', marginBottom: 12, color: '#000000'}}>19 March</Text>
                 </View>
-                {/* Fixture */}
+                {/* Result */}
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 49, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 59 }}> Namungo </Text>
+                    <Text style={{paddingRight: 36, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 39 }}> Polisi Tanzania </Text>
                     <Button
-                            title='16:00'
+                            title='0 - 0'
                             disabled={false}
                             color = '#3AA78D'
                             style={{width: 28,height: 28, marginLeft: 5}}
                            
                     />
-                    <Text style={{paddingLeft: 22, color:'#5C1919', alignSelf: 'center', marginLeft: 8}}>Azam</Text>
+                    <Text style={{paddingLeft: 12, color:'#5C1919', alignSelf: 'center', marginLeft: 18}}>Simba Sc</Text>
                     
                 </View>
-                <View>
+                <View style={styles.teamImageWrapper}>
                     <Image 
-                        source={require('../assets/icons/Namungo.png')}
+                        source={require('../assets/icons/Polisi.png')}
                         style={styles.teamImage}
-                    />
+                    />                    
                     <Image 
-                        source={require('../assets/icons/AzamFc.png')}
+                        source={require('../assets/icons/Simba.png')}
                         style={styles.teamImage2}
-                    />
+                    />                    
                 </View>
+
+
+                
 
                 <View>
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
@@ -77,40 +80,72 @@ const Namungo = ({navigation}) => {
                             style={styles.h2hButton}
                             
                         >
-                        <Text style={styles.h2hText}> H2H </Text>
+                        <Text style={styles.h2hText}> Match Stats </Text>
                         </Pressable>
                         
                     </TouchableOpacity>
                 </View>
                 <View style={styles.h2hData}>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>6</Text>
-                        <Text style={styles.text2}>Played</Text>
-                        <Text style={styles.text3}>6</Text>
+                        <Text style={styles.text1}>5</Text>
+                        <Text style={styles.text2}>Shots on target </Text>
+                        <Text style={styles.text3}>7</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>1   </Text>
-                        <Text style={styles.text2}>Wins </Text>
-                        <Text style={styles.text3}>3 </Text>
+                        <Text style={styles.text1}>3</Text>
+                        <Text style={styles.text2}>Shots off target</Text>
+                        <Text style={styles.text3}>3</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>2 </Text>
-                        <Text style={styles.text2}> Draws </Text>
-                        <Text style={styles.text3}>2  </Text>
+                        <Text style={styles.text1}>47%</Text>
+                        <Text style={styles.text2}>     Possesion     </Text>
+                        <Text style={styles.text3}>53%</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>    3    </Text>
-                        <Text style={styles.text2}>Lost   </Text>
-                        <Text style={styles.text3}>1     </Text>
+                        <Text style={styles.text1}>3</Text>
+                        <Text style={styles.text2}> Corner Kicks  </Text>
+                        <Text style={styles.text3}>4</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>3</Text>
+                        <Text style={styles.text2}>     Offsides     </Text>
+                        <Text style={styles.text3}>2</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>12</Text>
+                        <Text style={styles.text2}>      Fouls        </Text>
+                        <Text style={styles.text3}>9</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>5</Text>
+                        <Text style={styles.text2}>Yellow Cards </Text>
+                        <Text style={styles.text3}>2</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>4</Text>
+                        <Text style={styles.text2}>     Crosses     </Text>
+                        <Text style={styles.text3}>4</Text>
                     </View>
 
                 </View>
@@ -234,7 +269,7 @@ const Namungo = ({navigation}) => {
     );
 }
 
-export default Namungo;
+export default ResultSimba;
 
 const styles = StyleSheet.create({
     container: {
@@ -278,6 +313,9 @@ const styles = StyleSheet.create({
         marginBottom:10,
         flexDirection: 'row',
     },
+    teamImageWrapper:{
+        flexDirection: 'column'
+    },
     teamImage:{
         width: 25,
         height: 25,
@@ -292,18 +330,32 @@ const styles = StyleSheet.create({
         marginRight: -8,
         marginLeft: 241,
         marginBottom: -5,
-        marginTop: -20,
+        marginTop: -19,
+    },
+    scorer:{
+        flexDirection: 'row'
+    },
+    scorer1:{
+        color: '#000',
+        marginLeft: 50,
+        marginTop: 3
+    },
+    scorer2:{
+        color: '#000',
+        marginLeft: 60,
+        marginTop: 3
     },
     h2hButton:{
         paddingLeft: 20,
         paddingRight: 20,
-        width: 70,
+        width: 120,
         height: 35,
         borderRadius: 20,
         elevation: 5,
         marginTop: -15,
         backgroundColor: '#3AA78D',
-        marginLeft: 130
+        marginLeft: 100,
+
     },
     h2hText:{
         alignSelf: 'center',

@@ -14,7 +14,7 @@ import
 }
 from 'react-native';
 
-const Namungo = ({navigation}) => {
+const F3 = ({navigation}) => {
     return(
     <ScrollView>
     <View style={StyleSheet.container}>
@@ -45,28 +45,28 @@ const Namungo = ({navigation}) => {
             <View style={styles.fixtures}>
                 {/* Fixture Date */}
                 <View>
-                    <Text style={{marginLeft: 163, marginBottom: 10, color: '#000000'}}>16 March</Text>
+                    <Text style={{marginLeft: 172, marginBottom: 12, color: '#000000'}}>1 April</Text>
                 </View>
                 {/* Fixture */}
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 49, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 59 }}> Namungo </Text>
+                    <Text style={{paddingRight: 37, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Polisi Tanzania </Text>
                     <Button
                             title='16:00'
                             disabled={false}
                             color = '#3AA78D'
-                            style={{width: 28,height: 28, marginLeft: 5}}
+                            style={{width: 28,height: 28, paddingHorizontal: 14, alignSelf: 'center', marginLeft: 10}}
                            
                     />
-                    <Text style={{paddingLeft: 22, color:'#5C1919', alignSelf: 'center', marginLeft: 8}}>Azam</Text>
+                    <Text style={{paddingLeft: 24, color:'#5C1919', alignSelf: 'center', marginLeft: -10}}>Ruvu Shooting</Text>
                     
                 </View>
                 <View>
                     <Image 
-                        source={require('../assets/icons/Namungo.png')}
+                        source={require('../assets/icons/Polisi.png')}
                         style={styles.teamImage}
                     />
                     <Image 
-                        source={require('../assets/icons/AzamFc.png')}
+                        source={require('../assets/icons/Ruvu.png')}
                         style={styles.teamImage2}
                     />
                 </View>
@@ -84,33 +84,33 @@ const Namungo = ({navigation}) => {
                 </View>
                 <View style={styles.h2hData}>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>6</Text>
+                        <Text style={styles.text1}>8</Text>
                         <Text style={styles.text2}>Played</Text>
-                        <Text style={styles.text3}>6</Text>
+                        <Text style={styles.text3}>8</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>1   </Text>
-                        <Text style={styles.text2}>Wins </Text>
-                        <Text style={styles.text3}>3 </Text>
+                        <Text style={styles.text1}>4</Text>
+                        <Text style={styles.text2}>Wins</Text>
+                        <Text style={styles.text3}>0</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>2 </Text>
-                        <Text style={styles.text2}> Draws </Text>
-                        <Text style={styles.text3}>2  </Text>
+                        <Text style={styles.text1}>4</Text>
+                        <Text style={styles.text2}>Draws</Text>
+                        <Text style={styles.text3}>4</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>    3    </Text>
-                        <Text style={styles.text2}>Lost   </Text>
-                        <Text style={styles.text3}>1     </Text>
+                        <Text style={styles.text1}>0</Text>
+                        <Text style={styles.text2}>Lost</Text>
+                        <Text style={styles.text3}>4</Text>
                     </View>
 
                 </View>
@@ -234,7 +234,7 @@ const Namungo = ({navigation}) => {
     );
 }
 
-export default Namungo;
+export default F3;
 
 const styles = StyleSheet.create({
     container: {

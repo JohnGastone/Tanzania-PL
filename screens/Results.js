@@ -115,7 +115,7 @@ const ResultsScreen = ({navigation}) => {
                         disabled={false}
                         color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12, borderRadius: 50, }}
-                        onPress={() => navigation.navigate('Home') }
+                        onPress={() => navigation.navigate('ResultSimba') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Simba Sc</Text>               
                 </View>
@@ -130,11 +130,11 @@ const ResultsScreen = ({navigation}) => {
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -14, marginLeft: 46 }}>Polisi Tanzania </Text>
                     <Button
-                        title='4 - 3'
+                        title='1 - 1'
                         disabled={false}
                         color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A43'}}
-                        onPress={() => navigation.navigate('Home') }
+                        onPress={() => navigation.navigate('Polisi') }
                     />    
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Ruvu Shooting</Text>
                     
