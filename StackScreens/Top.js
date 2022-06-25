@@ -90,7 +90,19 @@ const Top = ({navigation}) => {
                                 source={require('../assets/icons/AzamFc.png')}
                                 style={styles.teamImage}
                             />      
-                            <Text style={styles.goals}> 8</Text>
+                            <Text style={styles.goals}> 9</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>M Anthony      </Text>
+                            <Image 
+                                source={require('../assets/icons/KMC.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 9</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -115,6 +127,66 @@ const Top = ({navigation}) => {
                                 style={styles.teamImage}
                             />      
                             <Text style={styles.goals}>7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Meddi Kagere</Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Jere Juma     </Text>
+                            <Image 
+                                source={require('../assets/icons/Prisons.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Anwar Jabir  </Text>
+                            <Image 
+                                source={require('../assets/icons/Dodoma.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>A Suleiman    </Text>
+                            <Image 
+                                source={require('../assets/icons/Coastal.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Pape Sakho   </Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 6</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -184,19 +256,7 @@ const Top = ({navigation}) => {
                                 source={require('../assets/icons/Yanga.png')}
                                 style={styles.teamImage}
                             />      
-                            <Text style={styles.goals}>17</Text>
-                        </Pressable>
-                    </TouchableOpacity>           
-                </View>
-                <View >    
-                    <TouchableOpacity>
-                        <Pressable style={styles.topScorer}>
-                            <Text style={styles.topScorerName}>Aishi Manula</Text>
-                            <Image 
-                                source={require('../assets/icons/Simba.png')}
-                                style={styles.teamImage}
-                            />      
-                            <Text style={styles.goals}>14</Text>
+                            <Text style={styles.goals}>15</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -208,11 +268,89 @@ const Top = ({navigation}) => {
                                 source={require('../assets/icons/Yanga.png')}
                                 style={styles.teamImage}
                             />      
+                            <Text style={styles.goals}> 11</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Aishi Manula</Text>
+                            <Image 
+                                source={require('../assets/icons/Simba.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}>11</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>J Ssetuba    </Text>
+                            <Image 
+                                source={require('../assets/icons/Biashara.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 8</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>M Mnata      </Text>
+                            <Image 
+                                source={require('../assets/icons/Polisi.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 8</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>M Mbisa       </Text>
+                            <Image 
+                                source={require('../assets/icons/Coastal.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>H Kadedi       </Text>
+                            <Image 
+                                source={require('../assets/icons/Mbeya_Kwanza.png')}
+                                style={styles.teamImage}
+                            />      
+                            <Text style={styles.goals}> 7</Text>
+                        </Pressable>
+                    </TouchableOpacity>           
+                </View>
+                <View >    
+                    <TouchableOpacity>
+                        <Pressable style={styles.topScorer}>
+                            <Text style={styles.topScorerName}>Said Kipao     </Text>
+                            <Image 
+                                source={require('../assets/icons/Kagera.png')}
+                                style={styles.teamImage}
+                            />      
                             <Text style={styles.goals}> 8</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
 
+
+
+
+
+               
                 {/* Players with most Passes*/}
                 <View>
                     <Text style={styles.topAssistProviderHeader}> Top Passers</Text>
@@ -242,8 +380,8 @@ const Top = ({navigation}) => {
                                 source={require('../assets/icons/Dodoma.png')}
                                 style={styles.passTeamImage}
                             />
-                            <Text style={styles.passes}> 1001</Text>      
-                            <Text style={styles.accurate}>    989</Text>
+                            <Text style={styles.passes}>1001</Text>      
+                            <Text style={styles.accurate}>     989</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -255,8 +393,8 @@ const Top = ({navigation}) => {
                                 source={require('../assets/icons/Yanga.png')}
                                 style={styles.passTeamImage}
                             />
-                            <Text style={styles.passes}>  980</Text>      
-                            <Text style={styles.accurate}>     901</Text>
+                            <Text style={styles.passes}> 980</Text>      
+                            <Text style={styles.accurate}>      901</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -269,7 +407,7 @@ const Top = ({navigation}) => {
                                 style={styles.passTeamImage}
                             />
                             <Text style={styles.passes}> 979</Text>      
-                            <Text style={styles.accurate}> 878</Text>
+                            <Text style={styles.accurate}>      878</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>
@@ -281,8 +419,8 @@ const Top = ({navigation}) => {
                                 source={require('../assets/icons/AzamFc.png')}
                                 style={styles.passTeamImage}
                             />
-                            <Text style={styles.passes}>978</Text>      
-                            <Text style={styles.accurate}> 912</Text>
+                            <Text style={styles.passes}> 978</Text>      
+                            <Text style={styles.accurate}>      912</Text>
                         </Pressable>
                     </TouchableOpacity>           
                 </View>

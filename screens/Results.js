@@ -71,11 +71,11 @@ const ResultsScreen = ({navigation}) => {
                 <View style={styles.fixtureItem}>
                     <Text style={{paddingRight: 24, color:'#5C1919', alignSelf: 'center', marginRight: -15, marginLeft: 46, paddingHorizontal: 29 }}>Namungo</Text>
                     <Button
-                        title='2 - 1'
+                        title='1 - 2'
                         disabled={false}
                         color = '#3AA78D'
                         style={{width: 28,height: 28, paddingHorizontal: 12, color: '#087A76'}}
-                        onPress={() => navigation.navigate('Home') }
+                        onPress={() => navigation.navigate('ResultNamungo') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Azam</Text>
                                  
@@ -96,7 +96,7 @@ const ResultsScreen = ({navigation}) => {
                             disabled={false}
                             color = '#3AA78D'
                             style={{width: 28,height: 28, paddingRight: 20, color: '#087A43'}}
-                            onPress={() => navigation.navigate('Home') }
+                            onPress={() => navigation.navigate('ResultYanga') }
                     />
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>KMC </Text>
                 </View>

@@ -7,6 +7,8 @@ import Result from '../StackScreens/Result';
 import Top from '../StackScreens/Top';
 import Table from '../StackScreens/Table';
 import Namungo from '../StackScreens/Namungo';
+import ResultNamungo from '../StackScreens/ResultNamungo';
+import ResultYanga from '../StackScreens/ResultYanga';
 
 
 const Stack = createStackNavigator();
@@ -45,6 +47,16 @@ const StackNavigator = () => {
             }}
         />
         <Stack.Screen name="Namungo" component={Namungo} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="ResultNamungo" component={ResultNamungo} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="ResultYanga" component={ResultYanga} 
             options={{
                 headerShown: false,
             }}

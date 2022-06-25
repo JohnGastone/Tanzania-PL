@@ -49,7 +49,7 @@ const Result = ({navigation}) => {
                 </View>
                 {/* Result */}
                 <View style={styles.fixtureItem}>
-                    <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Biashara United </Text>
+                    <Text style={{paddingRight: 29, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 44 }}> Biashara United </Text>
                     <Button
                             title=' 2 - 1 '
                             disabled={false}
