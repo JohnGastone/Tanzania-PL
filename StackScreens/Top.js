@@ -356,7 +356,7 @@ const Top = ({navigation}) => {
                     <Text style={styles.topAssistProviderHeader}> Top Passers</Text>
                 </View>
                 <View style={styles.pass}>
-                    <Text style={styles.passesComplete}>Complete Passes</Text>
+                    <Text style={styles.passesComplete}> Passes Attempted</Text>
                     <Text style={styles.passesAccurate}>Accurate Passes</Text>
                 </View>
                 <View >    
@@ -717,7 +717,7 @@ const styles = StyleSheet.create({
     },
     passesAccurate:{
         color: '#000',
-        marginLeft: 20,
+        marginLeft: 15,
         fontSize: 11,
     },
     sponsorWrapper:{

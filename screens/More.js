@@ -78,6 +78,13 @@ const MoreScreen = ({navigation}) => {
                                 <Text style={styles.text}>Clubs</Text>
                             </Pressable>
                         </View>
+                    {/* Transfers */}
+                    <View>
+                            <Text style={styles.favoriteTeam}>Transfers</Text>
+                            <Pressable style={styles.button1} onPress={()=>navigation.navigate('Transfers')}>
+                                <Text style={styles.text}>Transfers</Text>
+                            </Pressable>
+                        </View>
                     {/* Referees */}
                         <View>
                             <Text style={styles.favoriteTeam}>Referees</Text>

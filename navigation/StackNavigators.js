@@ -14,6 +14,7 @@ import Polisi from '../StackScreens/Polisi';
 import F1 from '../StackScreens/F1';
 import F2 from '../StackScreens/F2';
 import F3 from '../StackScreens/F3';
+import Transfers from '../StackScreens/Transfers';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -86,6 +87,11 @@ const StackNavigator = () => {
             }}
         />
         <Stack.Screen name="F3" component={F3} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="Transfers" component={Transfers} 
             options={{
                 headerShown: false,
             }}
