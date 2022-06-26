@@ -8,15 +8,15 @@ const cleansheets = [
     },
     {
         id : '2',
-        image: require('../Aishi.png'),
-        title : 'Cleansheets: 12',
+        image: require('../Air.png'),
+        title : 'Cleansheets: 11',
         selected: true,
     
     },
     {
         id : '3',
         image: require('../Mshery.png'),
-        title : 'Cleansheets: 8',
+        title : 'Cleansheets: 11',
         selected: true,
     
     },
