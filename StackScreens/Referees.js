@@ -7,72 +7,43 @@ import
     StyleSheet,
     SafeAreaView,
     Image,
-    ScrollView,
-    FlatList,
     TouchableOpacity,
+    FlatList,
+    ScrollView,
+    Pressable,
     StatusBar,
-    Pressable
-    
 }
 from 'react-native';
-import latest from '../assets/icons/data/latest';
-import stars from '../assets/icons/data/stars';
-import campaigns from '../assets/icons/data/campaigns';
-import sponsor from '../assets/icons/data/sponsor';
-import transfers from '../assets/icons/data/transfers';
 
-    {/* Function to render Latest news data */}
-    const renderTransfersItem = ({item}) => 
-    {
-        return (
-            <View style={[styles.LatestItemWrapper,
-                {
-                    backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
-                    marginLeft: item.id == 1 ? 20 : 0,
-                }]}
-            >
-                <Image 
-                    source = {item.image} 
-                    style={styles.latestItemImage} 
-                />
-                <Text style={styles.latestItemTitle}> {item.title} </Text>
-                <View 
-                    style={[
-                        styles.latestSelectWrapper,
-                        {
-                            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
-                        }
-                        ]}>
-                
-                </View>
+import scorers from '../assets/icons/data/scorers';
+import cleansheets from '../assets/icons/data/cleansheets';
+import assists from '../assets/icons/data/assists';
+import passers from '../assets/icons/data/passers';
+import tacklers from '../assets/icons/data/tackles';
+import referee from '../assets/icons/data/referee';
 
-            </View>
-        );
-    };
-
-
-    {/* Function to render Sponsor's data */}
-const renderSponsorItem = ({item}) => 
+{/* Function to render Top scorers data */}
+const renderRefereeItem = ({item}) => 
 {
     return (
-        <View style={[styles.sponsorItemWrapper,
+        <View style={[styles.scorersItemWrapper,
         {
-            backgroundColor: item.selected ? '#ffffff' : '#f4cd6' ,
+            backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
             marginLeft: item.id == 1 ? 20 : 0,
         }]}>
         <Image 
             source = {item.image} 
-            style={styles.sponsorItemImage} 
+            style={styles.scorersItemImage} 
         />
-        <Text style={styles.sponsorItemTitle}> {item.title} </Text>
+        <Text style={styles.scorersItemTitle}> {item.title} </Text>
         <View 
         style={[
-            styles.sponsorSelectWrapper,
+            styles.scorersSelectWrapper,
             {
-                backgroundColor: item.selected ? '#ffffff' : '#f4cd6d' ,
+                backgroundColor: item.selected ? '#fffff' : '#f4cd6' ,
             }
             ]}>
-        
+           
         </View>
 
         </View>
@@ -80,11 +51,12 @@ const renderSponsorItem = ({item}) =>
 };
 
 
-    const Transfers = ({navigation}) => {
+
+const Referee = ({navigation}) => {
     return(
-        <ScrollView>
-            <View style={StyleSheet.container}>
-            <StatusBar backgroundColor='#009387' barStyle="light-content"/>
+    <View style={StyleSheet.container}>
+    <StatusBar backgroundColor='#009387' barStyle="light-content" />
+    <ScrollView>
                 {/* Header */}
                 <SafeAreaView>
                         <View style={styles.headersWrapper}>
@@ -96,49 +68,94 @@ const renderSponsorItem = ({item}) =>
                         </View>
                 </SafeAreaView>
 
-                 {/* Back Button */}
-                 <View>
-                        <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
-                            <Pressable 
-                                style={styles.backButton} 
-                                onPress={() => navigation.navigate('More')}
-                            >
-                                <Text style={styles.backButtonText}>Back</Text>
-                            </Pressable>
-                                
-                        </TouchableOpacity>
-                    </View>
-
-                {/* Latest Transfers */}
-                    
-                <View style={styles.latestWrapper}>
-                        <Text style={styles.latestTitle}>Latest Transfer updates</Text>
-                        
-                        <View style={styles.latestListWrapper}>
-                           
-                            <FlatList
-                                data={transfers}
-                                renderItem={renderTransfersItem}
-                                keyExtractor={item => item.id}
-                                horizontal={ false}
-                                showsHorizontalScrollIndicator={false}
-                                style={{marginLeft: -200}}
-                            />
-                        </View>
-                        <View>
-                            <Text style={styles.transfer}>Mshambuliaji Moses Phiri sasa rasmi </Text>
-                            
-                           
-                        </View>
-                        
-                    </View>
-
                
 
+                <View>
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.backButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}>Back</Text>
+                        </Pressable>
+                            
+                    </TouchableOpacity>
+                </View>
+
+                 {/* This Season */}
+                 <View style={styles.listWrapper}>
+                    {/* Table */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.navigate('Table')}
+                        >
+                            <Text style={styles.backButtonText}>CAF 'A'</Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                    {/* Records */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}>FIFA 'A'</Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                    {/* fTPL */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText}> CAF 'B' </Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                    {/* All-Time Stats */}
+                    <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
+                        <Pressable 
+                            style={styles.tableButton} 
+                            onPress={() => navigation.goBack()}
+                        >
+                            <Text style={styles.backButtonText1}> FIFA 'B' </Text>
+                        </Pressable>                            
+                    </TouchableOpacity>
+                </View>  
+                 <View style={styles.thisSeason}>
+                    <Text style={styles.seasonText}>
+                        2021/22 Premier League Referees
+                    </Text>
+                </View>   
+
+                
+
+                {/* Top Scorers */}
+                <View style={styles.scorersWrapper}>
+                        <Text style={styles.scorersTitle}>Our Refs</Text>
+                        <View style={styles.scorersListWrapper}>
+                            <FlatList
+                                data={referee}
+                                renderItem={renderRefereeItem}
+                                keyExtractor={item => item.id}
+                                horizontal={ true}
+                                showsHorizontalScrollIndicator={false}
+                            />
+                        </View>
+                </View>
+
+                <Pressable 
+                    style={styles.button1} 
+                    onPress={() => navigation.navigate('Top')}
+                >
+                    <Text style={styles.text}>Full list</Text>
+                </Pressable>
+                
+                                                           
                 {/* Sponsors */}
-                <View style={styles.sponsorWrapper}>
+            <View style={styles.sponsorWrapper}>
                      <Text style={styles.sponsorTitle}></Text>
-                        <View style={styles.sponsorListWrapper}>                           
+                        <View style={styles.sponsorListWrapper}>
+                           
                                 <Image
                                     source={require ('../assets/icons/AZAM.png') }
                                     style={{
@@ -172,11 +189,14 @@ const renderSponsorItem = ({item}) =>
                                         marginVertical: 18,                                       
                                         padding: 1,
                                         alignSelf: 'center',
-                                        marginTop: 16,
+                                        marginTop: 10,
                                         
                                     }}
                         
-                                />                                                                                                                           
+                                />
+                                 
+                                
+                                                          
                         </View>
                         <View>
                             <Text style={styles.sponsorsLine}></Text>
@@ -232,34 +252,21 @@ const renderSponsorItem = ({item}) =>
                             />
                             <Text style={styles.tplBoard}>LIGI KUU TV</Text>
                         </View>
-                </View> 
-                <View>
-                    <Text style={styles.tplBoard}></Text>
-                </View>
-                <View>
-                    <Text style={styles.tplBoard}></Text>
-                </View>
-                <View>
-                    <Text style={styles.tplBoard}></Text>
-                </View>
-                <View>
-                    <Text style={styles.tplBoard}></Text>
-                </View> 
-
-            </View>
-        </ScrollView>
+            </View>            
+        </ScrollView>   
+    </View>
     );
 }
- 
-export default Transfers;
 
-const styles = StyleSheet.create
-({
+export default Referee;
+
+const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#E1BEE7', 
+        backgroundColor: '#43927F',
+        headerShown: false,
     },
     headersWrapper:{
         flexDirection: 'row',
@@ -267,7 +274,6 @@ const styles = StyleSheet.create
         paddingHorizontal: 20,
         paddingTop: 20,
         alignItems: 'center',
-        headerShown: false,
         
     },
     profileImage:{
@@ -275,12 +281,71 @@ const styles = StyleSheet.create
         height: 70,
         borderRadius: 30,
     },
+    scorersWrapper:{
+        marginTop: 1,
+    },
+    scorersTitle:{
+        paddingTop: 10,
+        paddingBottom:1,
+        fontFamily: 'Montserrat-Bold',
+        fontSize: 20,
+        paddingHorizontal: 20,
+        color: '#000000',
+    },
+    scorersListWrapper:{
+        paddingTop: 10,
+        paddingBottom: 20,
+
+    },
+    scorersItemWrapper:{
+        backgroundColor: '#F3D4d3',
+        marginRight: 20,
+        marginTop: 1,
+        borderRadius: 15,   
+        shadowColor: '#000000',
+        shadowOffset:{
+            width: 0,
+            height: 0,
+        },
+        shadowOpacity: 0.0,
+        shadowRadius: 15,
+        elevation: 0,
+    },
+    scorersItemImage:{
+        width: 290,
+        height: undefined,
+        marginTop: -1,
+        alignSelf: 'center',
+        marginHorizontal: 20,
+        resizeMode: 'contain',
+        aspectRatio: 1,
+        borderRadius: 10,
+        marginRight: 12,
+        marginLeft: 10
+    },
+    scorersItemTitle:{
+        textAlign: 'center',
+        fontFamily: 'Montserrat-Medium',
+        fontSize: 14,
+        marginTop: 13,
+        color: '#000000'
+    },
+    scorersSelectWrapper:{
+        alignSelf: 'center',
+        justifyContent: 'center',
+        marginTop: 20,
+        width: 2,
+        height: 2,
+        borderRadius: 25,
+        marginBottom: 20,
+
+    },
     backButton:{
         paddingLeft: 20,
         paddingRight: 20,
         width: 70,
-        height: 35,
-        borderRadius: 20,
+        height: 30,
+        borderRadius: 13,
         elevation: 5,
         marginTop: 19,
         backgroundColor: '#3AA78D',
@@ -288,127 +353,52 @@ const styles = StyleSheet.create
     backButtonText:{
         alignSelf: 'center',
         marginTop: 7,
+        alignContent: 'center',
     },
-    latestWrapper:{
-        marginTop: 10,
-        flexDirection: 'row'
+    listWrapper:{
+        flexDirection: 'row',
+        marginTop: -20, 
     },
-    latestTitle:{
-        marginTop: 10,
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 20,
-        paddingHorizontal: 20,
-        color: '#000000',
+    tableButton:{
+        paddingLeft: 20,
+        paddingRight: 20,
+        width: 80,
+        height: 32,
+        borderRadius: 20,
+        elevation: 5,
+        marginTop: 19,
+        backgroundColor: '#9793CF',
     },
-    latestListWrapper:{
-        paddingTop: 10,
-        paddingBottom:1,
-        flexDirection: 'column'
-    },
-    LatestItemWrapper:{
-        backgroundColor: '#f3d4d3',
-        marginRight: 20,
-        borderRadius: 15,
-        shadowColor: '#000000',
-        padding: 0.45,
-        marginTop: 20,                     
-    },
-    latestItemImage:{
-        width: 130,
-        height: undefined,
-        marginTop: 25,
+    backButtonText1:{
         alignSelf: 'center',
-        marginHorizontal: 40,
-        resizeMode: 'contain',
-        aspectRatio: 1,
-        borderRadius: 10,
-        marginLeft: 15,
-        paddingHorizontal: 20,
-    },
-    latestItemTitle:{
-        textAlign: 'center',
-        fontFamily: 'Montserrat-Medium',
-        fontSize: 14,
-        marginTop: 10,
-        color: '#000000'
-    },
-    latestSelectWrapper:{
-        alignSelf: 'center',
-        justifyContent: 'center',
-        marginTop: 20,
-        width: 2,
-        height: 2,
-        borderRadius: 25,
-        marginBottom: 20,
-        flexDirection: 'column'
-
-    },
-   
-    transfer:{
+        marginTop: 7,
         alignItems: 'center',
-        color: '#000',
-        marginLeft: -50,
-        marginTop: 55
+        width: 80,
+        marginLeft: 34
     },
-    campaignsWrapper:{
-        marginTop: 1,
-    },
-    campaignsTitle:{
-        paddingTop: 1,
-        paddingBottom: 1,
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 20,
-        paddingHorizontal: 20,
-        color: '#000000',
-    },
-    campaignsListWrapper:{
-        paddingTop: 10,
-        paddingBottom: 20,
-    },
-    campaignsItemWrapper:{
-        backgroundColor: '#ffffff',
-        padding:20,
-        marginLeft:1,
-        marginRight: 15,
-        borderRadius: 15,   
-        shadowColor: '#000000',
-        shadowOffset:{
-            width: 16,
-            height: 0,
-        },
-        shadowOpacity: 0.0,
-        shadowRadius: 0,
-        elevation: 0,
-    },
-    campaignsItemImage:{
-        width: 75,
-        height: undefined,
-        marginTop: 25,
-        alignSelf: 'center',
-        marginHorizontal: 20,
-        resizeMode: 'contain',
-        aspectRatio: 1,
-        borderRadius: 10,
-    },
-    campaignsItemTitle:{
-        textAlign: 'center',
-        fontFamily: 'Montserrat-Medium',
-        fontSize: 14,
-        marginTop: 5,
-        color: '#000000',
-    },
-    campaignsSelectWrapper:{
-        alignSelf: 'center',
+
+    button1: {
+        alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20,
-        width: 2,
-        height: 2,
-        borderRadius: 25,
-        marginBottom: 20,
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 20,
+        elevation: 3,
+        backgroundColor: '#7E7880',
+        width: 110,
+        marginLeft: 20,
+        paddingLeft: 30,
+        paddingRight: 30,
+        height: 38,
+        marginTop: -45,
+        marginBottom: 43
+      },
+    assistWrapper: {
+        marginTop: -35
     },
+
     sponsorWrapper:{
         marginTop: 100,
-
     },
     sponsorTitle:{
         paddingTop: 1,
@@ -465,14 +455,14 @@ const styles = StyleSheet.create
         width: 2,
         height: 2,
         borderRadius: 25,
-        marginBottom: 20,
+        marginBottom: 10,
     },
     sponsorsLine: {
         flex: 1,
         marginLeft: 10,
         borderBottomColor: '#C4C4C4',
         borderBottomWidth: 1,
-        marginTop: -30,
+        marginTop: 0.5,
     },
     socialMedia: {
         flexDirection: 'row',
@@ -491,8 +481,13 @@ const styles = StyleSheet.create
     },
     ligiKuu: {
         color: '#000000',
-        marginTop: 4,
+        marginTop: 7,
         fontSize: 20,
-        marginLeft: -26,
     },
+    seasonText: {
+        color: '#000000',
+        marginLeft: 20,
+        fontSize: 20
+
+    }
 });

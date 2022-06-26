@@ -15,6 +15,7 @@ import F1 from '../StackScreens/F1';
 import F2 from '../StackScreens/F2';
 import F3 from '../StackScreens/F3';
 import Transfers from '../StackScreens/Transfers';
+import Referee from '../StackScreens/Referees';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -92,6 +93,11 @@ const StackNavigator = () => {
             }}
         />
         <Stack.Screen name="Transfers" component={Transfers} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="Referee" component={Referee} 
             options={{
                 headerShown: false,
             }}

@@ -15,15 +15,15 @@ const transfers = [
     },
     {
         id : '3',
-        image: require('../CAFCC.png'),
-        title : 'Pumzi ya moto kwa Mkapa',
+        image: require('../Akpan.png'),
+        title : 'Akpan mbioni mitaa ya Msimbazi',
         selected: true,    
     
     },
     {
         id : '4',
-        image: require('../Ukocha.png'),
-        title : 'Diploma "A" CAF',
+        image: require('../Cleofas.png'),
+        title : 'Mkandala atakiwa na Moalin',
         selected: true,
     
     },
