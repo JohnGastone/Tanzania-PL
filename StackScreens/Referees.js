@@ -99,7 +99,7 @@ const Referee = ({navigation}) => {
                             style={styles.tableButton} 
                             onPress={() => navigation.goBack()}
                         >
-                            <Text style={styles.backButtonText}>FIFA 'A'</Text>
+                            <Text style={styles.backButtonText}>CAF 'B'</Text>
                         </Pressable>                            
                     </TouchableOpacity>
                     {/* fTPL */}
@@ -108,7 +108,7 @@ const Referee = ({navigation}) => {
                             style={styles.tableButton} 
                             onPress={() => navigation.goBack()}
                         >
-                            <Text style={styles.backButtonText}> CAF 'B' </Text>
+                            <Text style={styles.backButtonText}> CAF 'C' </Text>
                         </Pressable>                            
                     </TouchableOpacity>
                     {/* All-Time Stats */}

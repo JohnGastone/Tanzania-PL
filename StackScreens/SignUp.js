@@ -172,7 +172,7 @@ const SignUp = (navigation) => {
                         <Text style={[styles.textSign,
                         {
                             color: '#fff',
-                        }]}> Sign In</Text>
+                        }]}> Sign Up</Text>
                     </LinearGradient>
                     <LinearGradient 
                        colors={['#08d4c4', '#01ab9d']}
@@ -188,7 +188,7 @@ const SignUp = (navigation) => {
                             marginTop: 2,                      
                             }]}
                     >                                        
-                    <Text style={styles.textSign}> Sign Up </Text>
+                    <Text style={styles.textSign}> Sign In </Text>
                     </Pressable>
                     </LinearGradient>
                     </View>

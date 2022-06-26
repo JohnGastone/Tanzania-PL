@@ -24,7 +24,7 @@ const SignIn = (navigation) => {
     const [data, setData] = React.useState({
         email: '',
            password: '',
-           check_textInputChange: false,
+           check_textInputChange: false,  
            secureTextEntry: true,
     });
 

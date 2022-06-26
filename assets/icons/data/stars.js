@@ -8,8 +8,8 @@ const stars = [
     },
     {
         id : '2',
-        image: require('../Ndemla.png'),
-        title : 'Ndemla awa lulu Manungu',
+        image: require('../Kichuya.png'),
+        title : 'Kichuya apiga 3 Manungu',
         selected: true,
     
     },

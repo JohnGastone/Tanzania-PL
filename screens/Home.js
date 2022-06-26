@@ -168,7 +168,7 @@ const renderSponsorItem = ({item}) =>
                 <View style={styles.starsWrapper}>
                         <Text style={styles.starsTitle}>Nyota wa Wiki</Text>
                         <View style={styles.starsListWrapper}>
-                            <Pressable onPress={()=> navigation.navigate('Home')}>
+                            
                             <FlatList
                                 data={stars}
                                 renderItem={renderStarsItem}
@@ -176,7 +176,7 @@ const renderSponsorItem = ({item}) =>
                                 horizontal={ true}
                                 showsHorizontalScrollIndicator={false}
                             />
-                            </Pressable>
+                            
                         </View>
                 </View>
 

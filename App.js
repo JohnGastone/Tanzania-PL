@@ -30,7 +30,7 @@ const App = () =>{
 
     }));
     useEffect(() => {
-        setTimeout(() => {
+        setTimeout(() => { 
             setIsLoading(false);
         }, 1000);
     }, []);
