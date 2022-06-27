@@ -125,10 +125,58 @@ const renderSponsorItem = ({item}) =>
                                 style={{marginLeft: -200}}
                             />
                         </View>
+                        {/* Transfer 1 */}
                         <View>
-                            <Text style={styles.transfer}>Mshambuliaji Moses Phiri sasa rasmi </Text>
-                            
-                           
+                            <Text style={styles.transfer1}>Mshambuliaji <Text style={{color: 'black', fontWeight: 'bold'}}>Moses Phiri</Text> sasa rasmi mali ya Simba baada ya kukamilisha 
+                            usajili wake kutoka klabu ya Zanaco Fc ya Zambia kwa dau linalokadiriwa kufikia Milioni 300.                            
+                            </Text>
+
+                            <TouchableOpacity>
+                            <Pressable style={styles.button1} onPress={() => navigation.navigate('Home')}>
+                                <Text style={styles.text}>Soma zaidi</Text>
+                            </Pressable>
+                        </TouchableOpacity>                                                       
+                        </View>
+
+                        {/* Transfer 2 */}
+                        <View>
+                            <Text style={styles.transfer2}>Mabingwa wapya wa ligi kuu NBC, Yanga Sc wameonyesha nia ya kumtaka
+                            mshambuliaji wa kimataifa wa Burkina Faso, <Text style={{color: 'black', fontWeight: 'bold'}}>Stephen Aziz-ki</Text> anayekipiga katika klabu ya ASEC Mimosas ya Ivory Coast.
+                            </Text>
+
+                             <TouchableOpacity>
+                            <Pressable style={styles.button2} onPress={() => navigation.navigate('Home')}>
+                                <Text style={styles.text}>Soma zaidi</Text>
+                            </Pressable>
+                        </TouchableOpacity>                                                        
+                        </View>
+
+                        {/* Transfer 3 */}
+                        <View>
+                            <Text style={styles.transfer3}>Klabu ya Simba ipo mbioni kufanya uhamisho wa kiungo wa
+                            kimataifa kutoka Nigeria anayekipiga kunako klabu ya Coastal Union <Text style={{color: 'black', fontWeight: 'bold'}}>Victor Akpan</Text> katika siku chache 
+                            zijazo. 
+                            </Text>
+
+                             <TouchableOpacity>
+                            <Pressable style={styles.button2} onPress={() => navigation.navigate('Home')}>
+                                <Text style={styles.text}>Soma zaidi</Text>
+                            </Pressable>
+                        </TouchableOpacity>                                                        
+                        </View>
+
+                        {/* Transfer 4 */}
+                        <View>
+                            <Text style={styles.transfer4}>Matajiri wa Chamazi Azam Fc wapo kwenye hatua za mwisho kukamilisha
+                            usajili wa kiungo <Text style={{color: 'black', fontWeight: 'bold'}}>Cleofas Mkandala</Text> kutoka
+                            klabu ya Dodoma Jiji katika siku za karibuni.
+                            </Text>
+
+                             <TouchableOpacity>
+                            <Pressable style={styles.button2} onPress={() => navigation.navigate('Home')}>
+                                <Text style={styles.text}>Soma zaidi</Text>
+                            </Pressable>
+                        </TouchableOpacity>                                                        
                         </View>
                         
                     </View>
@@ -322,7 +370,7 @@ const styles = StyleSheet.create
         resizeMode: 'contain',
         aspectRatio: 1,
         borderRadius: 10,
-        marginLeft: 15,
+        marginLeft: -4,
         paddingHorizontal: 20,
     },
     latestItemTitle:{
@@ -344,68 +392,65 @@ const styles = StyleSheet.create
 
     },
    
-    transfer:{
+    transfer1:{
         alignItems: 'center',
         color: '#000',
         marginLeft: -50,
-        marginTop: 55
+        marginTop: 55,
+        letterSpacing: 0.45,
+        width: 190,        
     },
-    campaignsWrapper:{
-        marginTop: 1,
+    transfer2:{
+        alignItems: 'center',
+        color: '#000',
+        marginLeft: -204,
+        marginTop: 300,
+        width: 190
     },
-    campaignsTitle:{
-        paddingTop: 1,
-        paddingBottom: 1,
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 20,
-        paddingHorizontal: 20,
-        color: '#000000',
+    transfer3:{
+        alignItems: 'center',
+        color: '#000',
+        marginLeft: -204,
+        marginTop: 540,
+        width: 190
     },
-    campaignsListWrapper:{
-        paddingTop: 10,
-        paddingBottom: 20,
+    transfer4:{
+        alignItems: 'center',
+        color: '#000',
+        marginLeft: -204,
+        marginTop: 783,
+        width: 190
     },
-    campaignsItemWrapper:{
-        backgroundColor: '#ffffff',
-        padding:20,
-        marginLeft:1,
-        marginRight: 15,
-        borderRadius: 15,   
-        shadowColor: '#000000',
-        shadowOffset:{
-            width: 16,
-            height: 0,
-        },
-        shadowOpacity: 0.0,
-        shadowRadius: 0,
-        elevation: 0,
+    button1:{          
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 20,
+        elevation: 1,
+        backgroundColor: '#7E7880',
+        marginTop: 10,
+        width: 130,
+        marginLeft: -15,
+        height: 40, 
     },
-    campaignsItemImage:{
-        width: 75,
-        height: undefined,
-        marginTop: 25,
-        alignSelf: 'center',
-        marginHorizontal: 20,
-        resizeMode: 'contain',
-        aspectRatio: 1,
-        borderRadius: 10,
+    button2:{          
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 20,
+        elevation: 1,
+        backgroundColor: '#7E7880',
+        marginTop: 10,
+        width: 130,
+        marginLeft: -170,
+        height: 40, 
+
     },
-    campaignsItemTitle:{
-        textAlign: 'center',
-        fontFamily: 'Montserrat-Medium',
-        fontSize: 14,
-        marginTop: 5,
-        color: '#000000',
-    },
-    campaignsSelectWrapper:{
-        alignSelf: 'center',
-        justifyContent: 'center',
-        marginTop: 20,
-        width: 2,
-        height: 2,
-        borderRadius: 25,
-        marginBottom: 20,
-    },
+    text: {
+        fontSize: 16,
+        lineHeight: 21,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'white',
+      },
     sponsorWrapper:{
         marginTop: 100,
 

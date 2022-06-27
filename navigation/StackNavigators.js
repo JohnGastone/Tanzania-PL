@@ -16,6 +16,7 @@ import F2 from '../StackScreens/F2';
 import F3 from '../StackScreens/F3';
 import Transfers from '../StackScreens/Transfers';
 import Referee from '../StackScreens/Referees';
+import LigiKuu from '../StackScreens/LigiKuu';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -87,6 +88,11 @@ const StackNavigator = () => {
                 headerShown: false,
             }}
         />
+        <Stack.Screen name="LigiKuu" component={LigiKuu} 
+            options={{
+                headerShown: false,
+            }}
+        />
         <Stack.Screen name="F3" component={F3} 
             options={{
                 headerShown: false,
@@ -102,6 +108,12 @@ const StackNavigator = () => {
                 headerShown: false,
             }}
         />
+        <Stack.Screen name="LIgiKuu" component={LigiKuu} 
+            options={{
+                headerShown: false,
+            }}
+        />
+
         
        
     </Stack.Navigator>

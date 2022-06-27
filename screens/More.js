@@ -96,7 +96,7 @@ const MoreScreen = ({navigation}) => {
                     {/* About us */}
                         <View>
                             <Text style={styles.favoriteTeam}>About Us</Text>
-                            <Pressable style={styles.button} onPress={()=> navigation.navigate('Home')}>
+                            <Pressable style={styles.button} onPress={()=> navigation.navigate('LigiKuu')}>
                                 <Text style={styles.text}>NBC Premier League</Text>
                             </Pressable>
                             <View>

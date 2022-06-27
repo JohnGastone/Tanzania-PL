@@ -7,7 +7,7 @@
 
     $password = $obj['password'];
 
-    if($obj['email']! = ""){
+    if($obj['email']!== ""){
 
         $result = $mysqli ->query("SELECT * FROM referees 
         where email='$email' and password='$password'");

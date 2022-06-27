@@ -15,15 +15,11 @@ import
 }
 from 'react-native';
 
-import scorers from '../assets/icons/data/scorers';
-import cleansheets from '../assets/icons/data/cleansheets';
-import assists from '../assets/icons/data/assists';
-import passers from '../assets/icons/data/passers';
-import tacklers from '../assets/icons/data/tackles';
-import referee from '../assets/icons/data/referee';
+
+import ligikuu from '../assets/icons/data/ligikuu';
 
 {/* Function to render Top scorers data */}
-const renderRefereeItem = ({item}) => 
+const renderLigiKuuItem = ({item}) => 
 {
     return (
         <View style={[styles.scorersItemWrapper,
@@ -52,11 +48,12 @@ const renderRefereeItem = ({item}) =>
 
 
 
-const Referee = ({navigation}) => {
+const LigiKuu = ({navigation}) => {
     return(
     <View style={StyleSheet.container}>
     <StatusBar backgroundColor='#009387' barStyle="light-content" />
     <ScrollView>
+        
                 {/* Header */}
                 <SafeAreaView>
                         <View style={styles.headersWrapper}>
@@ -69,7 +66,7 @@ const Referee = ({navigation}) => {
                 </SafeAreaView>
 
                
-                {/* Back Button */}
+                {/* Back Button*/}
                 <View>
                     <TouchableOpacity style={{ height: 80, width: 85, marginTop: 10, padding: 20, alignText: 'center',}}>
                         <Pressable 
@@ -90,7 +87,7 @@ const Referee = ({navigation}) => {
                             style={styles.tableButton} 
                             onPress={() => navigation.navigate('Table')}
                         >
-                            <Text style={styles.backButtonText}>CAF 'A'</Text>
+                            <Text style={styles.backButtonText}>TPLB</Text>
                         </Pressable>                            
                     </TouchableOpacity>
                     {/* Records */}
@@ -99,7 +96,7 @@ const Referee = ({navigation}) => {
                             style={styles.tableButton} 
                             onPress={() => navigation.goBack()}
                         >
-                            <Text style={styles.backButtonText}>CAF 'B'</Text>
+                            <Text style={styles.backButtonText}>TFF</Text>
                         </Pressable>                            
                     </TouchableOpacity>
                     {/* fTPL */}
@@ -108,7 +105,7 @@ const Referee = ({navigation}) => {
                             style={styles.tableButton} 
                             onPress={() => navigation.goBack()}
                         >
-                            <Text style={styles.backButtonText}> CAF 'C' </Text>
+                            <Text style={styles.backButtonText}> CAF </Text>
                         </Pressable>                            
                     </TouchableOpacity>
                     {/* All-Time Stats */}
@@ -117,25 +114,18 @@ const Referee = ({navigation}) => {
                             style={styles.tableButton} 
                             onPress={() => navigation.goBack()}
                         >
-                            <Text style={styles.backButtonText1}> FIFA 'B' </Text>
+                            <Text style={styles.backButtonText1}> FIFA </Text>
                         </Pressable>                            
                     </TouchableOpacity>
-                </View>  
-                 <View style={styles.thisSeason}>
-                    <Text style={styles.seasonText}>
-                        2021/22 Premier League Referees
-                    </Text>
-                </View>   
-
-                
+                </View>                                 
 
                 {/* Top Scorers */}
                 <View style={styles.scorersWrapper}>
-                        <Text style={styles.scorersTitle}>Our Refs</Text>
+                        <Text style={styles.scorersTitle}>Ligi Kuu Bara</Text>
                         <View style={styles.scorersListWrapper}>
                             <FlatList
-                                data={referee}
-                                renderItem={renderRefereeItem}
+                                data={ligikuu}
+                                renderItem={renderLigiKuuItem}
                                 keyExtractor={item => item.id}
                                 horizontal={ true}
                                 showsHorizontalScrollIndicator={false}
@@ -143,13 +133,6 @@ const Referee = ({navigation}) => {
                         </View>
                 </View>
 
-                <Pressable 
-                    style={styles.button1} 
-                    onPress={() => navigation.navigate('Top')}
-                >
-                    <Text style={styles.text}>Full list</Text>
-                </Pressable>
-                
                                                            
                 {/* Sponsors */}
             <View style={styles.sponsorWrapper}>
@@ -258,7 +241,7 @@ const Referee = ({navigation}) => {
     );
 }
 
-export default Referee;
+export default LigiKuu;
 
 const styles = StyleSheet.create({
     container: {
