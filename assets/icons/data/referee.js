@@ -6,6 +6,14 @@ const referee = [
         selected: true,    
     
     },
+    {
+        id : '1',
+        image: require('../kayoko.png'),
+        title : '',
+        selected: true,    
+    
+    },
+
     
     ];
     

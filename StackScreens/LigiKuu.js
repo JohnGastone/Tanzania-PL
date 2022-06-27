@@ -143,7 +143,7 @@ const LigiKuu = ({navigation}) => {
                     </Text>
 
                     <Text style={{color: 'black', fontWeight: 'semi-bold', fontSize: 20, marginTop: 10}}>
-                    Vilabu Wanachama wa Ligi Kuu
+                        Vilabu Wanachama wa Ligi Kuu
                     </Text>
 
                     <Text style={{color: 'black', marginTop: 10}}>
@@ -170,13 +170,31 @@ const LigiKuu = ({navigation}) => {
                         au <Text style={{color: 'blue', fontWeight: 'bold'}}>vilabu  11</Text>, ili kuafikiwa.
                     </Text>
 
+                   
+
                     <Text style={{color: 'black', marginTop: 8}}>
                         Kitabu cha Kanuni za Ligi Kuu, kilichomo ndani ya Kitabu cha Mwongozo (Pakua: Kitabu cha Mwongozo
                         wa Ligi Kuu; PDF 21.6MB), kinatumika kama mkataba kati ya Ligi, Vilabu Wanachama na nyingine, 
                         kufafanua muundo na uendeshaji wa ligi kuu.
                     </Text>
-
                     
+                    <Text style={{color:'black', marginTop: 9}}>
+                        Ukiukaji wowote mkubwa wa Kitabu cha Kanuni husababisha mahakama huru ya watu watatu kukaa kusikiliza
+                        kesi hiyo, kuthibitisha hatia na kuweka adhabu, ambayo inaweza kuanzia faini hadi kukatwa pointi na, 
+                        katika hali mbaya zaidi, kufukuzwa kwenye shindano (hii haijawahi kutokea. kilichotokea katika historia 
+                        ya Ligi Kuu).
+                    </Text>
+                    
+                    <Text style={{color: 'black', fontWeight: 'semi-bold', fontSize: 20, marginTop: 10}}>
+                        Wafanyakazi wa Ligi Kuu Tanzania
+                    </Text>
+
+                    <Text style={{color:'black', marginTop: 9}}>
+                        Ofisi kuu za Bodi ya Ligi Kuu Tanzania zipo pembezoni mwa jiji la Dar es Salaam. Bodi hiyo ina wafanyakazi 
+                        takribani 52 wanaotekeleza majukumu mbalimbali ikiwa ni pamoja na soka, maendeleo ya kocha, jamii, maendeleo 
+                        ya vijana, ulinzi, utangazaji, biashara, mawasiliano, dijitali, fedha, sheria, masoko na sera.
+                        
+                    </Text>
                 </View>
 
                                                            

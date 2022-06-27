@@ -17,6 +17,7 @@ import F3 from '../StackScreens/F3';
 import Transfers from '../StackScreens/Transfers';
 import Referee from '../StackScreens/Referees';
 import LigiKuu from '../StackScreens/LigiKuu';
+import Admin from '../StackScreens/Admin';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -107,8 +108,8 @@ const StackNavigator = () => {
             options={{
                 headerShown: false,
             }}
-        />
-        <Stack.Screen name="LIgiKuu" component={LigiKuu} 
+        />        
+        <Stack.Screen name="Admin" component={Admin} 
             options={{
                 headerShown: false,
             }}

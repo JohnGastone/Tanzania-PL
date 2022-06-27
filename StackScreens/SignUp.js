@@ -64,8 +64,8 @@ const SignUp = (navigation) => {
         <View style={styles.headersWrapper}>
             
             <Image 
-            source={require('../assets/icons/NBC_PL.png')}
-            style={styles.profileImage}
+                source={require('../assets/icons/NBC_PL.png')}
+                style={styles.profileImage}
             />
         </View>
         <View style={styles.headersWrapper}>
@@ -178,18 +178,18 @@ const SignUp = (navigation) => {
                        colors={['#08d4c4', '#01ab9d']}
                        style={styles.signUp} 
                     >
-                    <Pressable
-                        onPress={() => navigation.navigate('SignUp')}
-                        style={[styles.signIn, 
-                            {
-                            borderRadius: 10,
-                            borderColor: '#009387',
-                            borderWidth: 0,
-                            marginTop: 2,                      
-                            }]}
-                    >                                        
-                    <Text style={styles.textSign}> Sign In </Text>
-                    </Pressable>
+                        <Pressable
+                            onPress={() => navigation.navigate('SignUp')}
+                            style={[styles.signIn, 
+                                {
+                                borderRadius: 10,
+                                borderColor: '#009387',
+                                borderWidth: 0,
+                                marginTop: 2,                      
+                                }]}
+                        >                                        
+                            <Text style={styles.textSign}> Sign In </Text>
+                        </Pressable>
                     </LinearGradient>
                     </View>
         </Animatable.View>
