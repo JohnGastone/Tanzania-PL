@@ -112,7 +112,7 @@ const renderSponsorItem = ({item}) =>
                 {/* Latest Transfers */}
                     
                 <View style={styles.latestWrapper}>
-                        <Text style={styles.latestTitle}>Latest Transfer updates</Text>
+                        <Text style={styles.latestTitle}>Taarifa za usajili za hivi karibuni</Text>
                         
                         <View style={styles.latestListWrapper}>
                            
@@ -339,7 +339,8 @@ const styles = StyleSheet.create
     },
     latestWrapper:{
         marginTop: 10,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        
     },
     latestTitle:{
         marginTop: 10,
@@ -347,11 +348,13 @@ const styles = StyleSheet.create
         fontSize: 20,
         paddingHorizontal: 20,
         color: '#000000',
+        marginLeft: 10
     },
     latestListWrapper:{
         paddingTop: 10,
         paddingBottom:1,
-        flexDirection: 'column'
+        flexDirection: 'column',
+        marginLeft: -69
     },
     LatestItemWrapper:{
         backgroundColor: '#f3d4d3',

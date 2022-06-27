@@ -132,6 +132,52 @@ const LigiKuu = ({navigation}) => {
                             />
                         </View>
                 </View>
+                <View style={styles.waamuzi1}>
+                    <Text style={{color: 'black', fontWeight: 'semi-bold', fontSize: 23}}>
+                        Fahamu namna ligi kuu inavyoendeshwa
+                    </Text>
+                    <Text style={{color:  'black', marginTop: 10, justifyContent: 'center'}}>
+                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
+                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
+                        nchini Tanzania na duniani kote.
+                    </Text>
+
+                    <Text style={{color: 'black', fontWeight: 'semi-bold', fontSize: 20, marginTop: 10}}>
+                    Vilabu Wanachama wa Ligi Kuu
+                    </Text>
+
+                    <Text style={{color: 'black', marginTop: 10}}>
+                        Ligi Kuu ya NBC ni kampuni ya kibinafsi inayomilikiwa kikamilifu na Bodi ya ligi kuu Tanzania 
+                        kwa kushirikiana na Vilabu vyake 16 Wanachama wanaounda Ligi wakati wowote.
+                    </Text>
+
+                    <Text style={{color: 'black', marginTop: 3}}>
+                        Kila klabu inajitegemea, inafanya kazi ndani ya sheria za soka, 
+                        kama inavyofafanuliwa na Bodi ya Ligi, TFF, CAF na FIFA, na pia kuwa 
+                        chini ya sheria za Jamhuri ya Muungano wa Tanzania na Africa.
+                    </Text>
+
+                    <Text style={{color: 'black', marginTop: 3}}>
+                        Kila moja kati ya vilabu 16 ni mwanachama muhimu katika Ligi Kuu. Mashauriano 
+                        ndio kiini cha Ligi Kuu na mikutano mikuu ya Wanachama ndio jukwaa kuu la 
+                        kufanya maamuzi kwa ajili ya sera za Ligi Kuu na hufanyika mara kwa mara wakati wa msimu.
+                    </Text>
+
+                    <Text style={{color: 'black', marginTop: 9}}>
+                        Vilabu vina fursa ya kupendekeza sheria mpya au marekebisho katika mkutano wa vilabu. 
+                        Kila Klabu Mwanachama ina haki ya kupata kura moja na mabadiliko yote ya kanuni na 
+                        mikataba mikuu inayohusu ligi kuu inahitaji uungwaji mkono wa angalau kura ya theluthi mbili, 
+                        au <Text style={{color: 'blue', fontWeight: 'bold'}}>vilabu  11</Text>, ili kuafikiwa.
+                    </Text>
+
+                    <Text style={{color: 'black', marginTop: 8}}>
+                        Kitabu cha Kanuni za Ligi Kuu, kilichomo ndani ya Kitabu cha Mwongozo (Pakua: Kitabu cha Mwongozo
+                        wa Ligi Kuu; PDF 21.6MB), kinatumika kama mkataba kati ya Ligi, Vilabu Wanachama na nyingine, 
+                        kufafanua muundo na uendeshaji wa ligi kuu.
+                    </Text>
+
+                    
+                </View>
 
                                                            
                 {/* Sponsors */}
@@ -263,6 +309,7 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 30,
+        marginBottom: -20
     },
     scorersWrapper:{
         marginTop: 1,
@@ -304,7 +351,7 @@ const styles = StyleSheet.create({
         aspectRatio: 1,
         borderRadius: 10,
         marginRight: 12,
-        marginLeft: 10
+        marginLeft: -5
     },
     scorersItemTitle:{
         textAlign: 'center',
@@ -323,6 +370,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
 
     },
+    waamuzi1:{
+        marginTop: -70,
+        marginLeft: 23,        
+    },
     backButton:{
         paddingLeft: 20,
         paddingRight: 20,
@@ -332,6 +383,7 @@ const styles = StyleSheet.create({
         elevation: 5,
         marginTop: 19,
         backgroundColor: '#3AA78D',
+        marginBottom: -20
     },
     backButtonText:{
         alignSelf: 'center',

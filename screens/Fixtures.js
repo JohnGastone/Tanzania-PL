@@ -277,7 +277,8 @@ const styles = StyleSheet.create({
     profileImage:{
         width: 70,
         height: 70,
-        borderRadius: 30
+        borderRadius: 30,
+        marginBottom: -20
     },
     backButton:{
         paddingLeft: 20,

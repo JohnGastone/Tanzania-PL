@@ -123,15 +123,15 @@ const Referee = ({navigation}) => {
                 </View>  
                  <View style={styles.thisSeason}>
                     <Text style={styles.seasonText}>
-                        2021/22 Premier League Referees
+                        2021/22 Waamuzi Ligi Kuu
                     </Text>
-                </View>   
+                </View>
 
                 
 
                 {/* Top Scorers */}
                 <View style={styles.scorersWrapper}>
-                        <Text style={styles.scorersTitle}>Our Refs</Text>
+                        <Text style={styles.scorersTitle}></Text>
                         <View style={styles.scorersListWrapper}>
                             <FlatList
                                 data={referee}
@@ -141,15 +141,13 @@ const Referee = ({navigation}) => {
                                 showsHorizontalScrollIndicator={false}
                             />
                         </View>
-                </View>
+                </View> 
 
-                <Pressable 
-                    style={styles.button1} 
-                    onPress={() => navigation.navigate('Top')}
-                >
-                    <Text style={styles.text}>Full list</Text>
-                </Pressable>
-                
+                <View style={styles.waamuzi1}>
+                    <Text style={{color: 'black', fontWeight: 'bold'}}>
+                        Marefa
+                    </Text>
+                </View>                                  
                                                            
                 {/* Sponsors */}
             <View style={styles.sponsorWrapper}>
@@ -280,6 +278,7 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 30,
+        marginBottom: -20
     },
     scorersWrapper:{
         marginTop: 1,
@@ -312,7 +311,7 @@ const styles = StyleSheet.create({
         elevation: 0,
     },
     scorersItemImage:{
-        width: 290,
+        width: 300,
         height: undefined,
         marginTop: -1,
         alignSelf: 'center',
@@ -321,7 +320,7 @@ const styles = StyleSheet.create({
         aspectRatio: 1,
         borderRadius: 10,
         marginRight: 12,
-        marginLeft: 10
+        marginLeft: -5
     },
     scorersItemTitle:{
         textAlign: 'center',
@@ -393,10 +392,10 @@ const styles = StyleSheet.create({
         marginTop: -45,
         marginBottom: 43
       },
-    assistWrapper: {
-        marginTop: -35
+    waamuzi1:{
+        marginTop: -70,
+        marginLeft: 15
     },
-
     sponsorWrapper:{
         marginTop: 100,
     },
@@ -487,7 +486,8 @@ const styles = StyleSheet.create({
     seasonText: {
         color: '#000000',
         marginLeft: 20,
-        fontSize: 20
+        fontSize: 20,
+        marginBottom: -24
 
     }
 });
