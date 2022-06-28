@@ -158,7 +158,7 @@ const SignIn = (navigation) => {
                        style={styles.signUp} 
                     >
                     <Pressable
-                        onPress={() => navigation.navigate('SignUp')}
+                        onPress={()=> navigation.navigate('Home')}
                         style={[styles.signIn, 
                             {
                             borderRadius: 10,

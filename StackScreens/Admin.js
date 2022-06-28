@@ -31,38 +31,29 @@ const Admin = (navigation) => {
                 <View style={styles.headerTitle}>
                     <Text style={styles.textHeader}> Welcome Admin!  </Text>
                 </View>
-                <View style={{marginLeft: 20, marginTop: -90}}>
-                <Text style={{color:  'black', marginTop: -570, justifyContent: 'center'}}>
-                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
-                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
-                        nchini Tanzania na duniani kote.
-                </Text>
-                <Text style={{color:  'black', marginTop: -370, justifyContent: 'center'}}>
-                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
-                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
-                        nchini Tanzania na duniani kote.
-                </Text>
-                <Text style={{color:  'black', marginTop: -570, justifyContent: 'center'}}>
-                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
-                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
-                        nchini Tanzania na duniani kote.
-                </Text>
-                <Text style={{color:  'black', marginTop: -570, justifyContent: 'center'}}>
-                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
-                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
-                        nchini Tanzania na duniani kote.
-                </Text>
-                <Text style={{color:  'black', marginTop: -570, justifyContent: 'center'}}>
-                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
-                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
-                        nchini Tanzania na duniani kote.
-                </Text>
-                <Text style={{color:  'black', marginTop: -570, justifyContent: 'center'}}>
+                <View>
+                <Text style={styles.text1}>
                         Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
                         Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
                         nchini Tanzania na duniani kote.
                 </Text>
                 </View>
+
+                {/* New user button */}            
+                <View style={styles.inUp}>
+                        <TouchableOpacity>
+                            <Pressable style={styles.button2} onPress={() => navigation.navigate('ExportPDF')}>
+                                <Text style={styles.text}>Create Match Report</Text>
+                            </Pressable>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity>
+                            <Pressable style={styles.button3} onPress={() => navigation.navigate('SignUp')}>
+                                <Text style={styles.text}>Add New Official</Text>
+                            </Pressable> 
+                        </TouchableOpacity> 
+                </View>
+                
         </View>
     </ScrollView>
   );
@@ -80,8 +71,11 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       paddingBottom: 700,
   },
-  headerTitle:{
-
+  text1:{
+    color:  'black', 
+    marginTop: -659, 
+    justifyContent: 'center',
+    marginLeft: 15
   },
   textHeader: {
     color: '#fff',
@@ -97,6 +91,35 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 40,
   },
+  inUp:{
+    flexDirection: 'row'
+  },
+  button2:{          
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    elevation: 1,
+    backgroundColor: '#3AA78D',
+    marginTop: -570,
+    width: 149,
+    marginLeft: 20,
+    height: 42, 
+
+},
+button3:{
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 20,
+    elevation: 1,
+    backgroundColor: '#3AA78D',
+    marginTop: -570,
+    width: 149,
+    marginLeft: 20,
+    height: 42, 
+
+
+},
+
   
 });
 export default Admin;

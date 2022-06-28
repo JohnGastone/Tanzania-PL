@@ -18,6 +18,7 @@ import Transfers from '../StackScreens/Transfers';
 import Referee from '../StackScreens/Referees';
 import LigiKuu from '../StackScreens/LigiKuu';
 import Admin from '../StackScreens/Admin';
+import ExportPDF from '../StackScreens/ExportPDF';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -110,6 +111,11 @@ const StackNavigator = () => {
             }}
         />        
         <Stack.Screen name="Admin" component={Admin} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="ExportPDF" component={ExportPDF} 
             options={{
                 headerShown: false,
             }}
