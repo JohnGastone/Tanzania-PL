@@ -50,7 +50,7 @@ const Tabs = () => {
                             <Text  style={{
                                     width:29,
                                     height: 25,
-                                    marginLeft: 10,
+                                    marginLeft: 12,
                                     tintColor: focused ? '#e32f45' : '#f0f'
                                 }}
                             >Home</Text>
@@ -78,7 +78,7 @@ const Tabs = () => {
                             <Text  style={{
                                     width:55,
                                     height: 25,
-                                    marginLeft: 20,
+                                    marginLeft: 32,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >Fixtures</Text>
@@ -106,7 +106,7 @@ const Tabs = () => {
                             <Text  style={{
                                     width:45,
                                     height: 25,
-                                    marginLeft: 30,
+                                    marginLeft: 37,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >Results</Text>
@@ -127,14 +127,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
-                                    marginLeft: 30,
+                                    marginLeft: 20,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:35,
                                     height: 25,
-                                    marginLeft: 30,
+                                    marginLeft: 25,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >Stats</Text>
@@ -146,7 +146,7 @@ const Tabs = () => {
             
 
             <Tab.Screen 
-                name='Fixture'
+                name='Extended'
                 component={StackNavigator} 
                 options={{
                     headerShown: false,
@@ -163,12 +163,12 @@ const Tabs = () => {
                                 }}
                             />
                             <Text  style={{
-                                    width:45,
+                                    width:47,
                                     height: 25,
-                                    marginLeft: 28,
+                                    marginLeft: 15,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
-                            >Fixture</Text>
+                            >Extended</Text>
                         </View>
                     ),
                 }} 
@@ -186,14 +186,14 @@ const Tabs = () => {
                                 style={{
                                     width:25,
                                     height: 25,
-                                    marginLeft: -6,
+                                    marginLeft: -8,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             />
                             <Text  style={{
                                     width:35,
                                     height: 25,
-                                    marginLeft: -2,
+                                    marginLeft: 2,
                                     tintColor: focused ? '#e32f45' : '#748c94'
                                 }}
                             >More</Text>

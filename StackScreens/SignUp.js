@@ -56,6 +56,7 @@ const SignUp = (navigation) => {
             secureTextEntry: !data.secureTextEntry,
         });
     }
+    
 
   return (
     <ScrollView>
@@ -283,3 +284,5 @@ const styles = StyleSheet.create({
 
 });
 export default SignUp;
+
+

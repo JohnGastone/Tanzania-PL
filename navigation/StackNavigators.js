@@ -2,7 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import SignIn from '../StackScreens/SignIn';
 import SignUp from '../StackScreens/SignUp';
-import Fixture from '../StackScreens/Fixture';
+import Extended from '../StackScreens/Extended';
 import Result from '../StackScreens/Result';
 import Top from '../StackScreens/Top';
 import Table from '../StackScreens/Table';
@@ -25,7 +25,7 @@ const StackNavigator = () => {
  return (
     <Stack.Navigator>
 
-        <Stack.Screen name="Fixture" component={Fixture}
+        <Stack.Screen name="Extended" component={Extended}
             options={{
                 headerShown: false
             }}

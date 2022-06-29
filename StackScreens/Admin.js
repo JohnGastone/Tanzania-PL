@@ -33,9 +33,9 @@ const Admin = (navigation) => {
                 </View>
                 <View>
                 <Text style={styles.text1}>
-                        Ligi Kuu Tanzania Bara hatufanyi kazi kwa kujitenga. Tunafanya kazi kwa bidii na kwa njia inayojenga na 
-                        Vilabu vyetu Wanachama na mamlaka nyingine za kandanda ili kuboresha ubora wa soka, 
-                        nchini Tanzania na duniani kote.
+                        Maafisa wa mechi wanawajibika kukusanya taarifa zote muhimu kuhusiana na michezo yote inayochezwa katika msimu husika. 
+                        Hii ni pamoja na taarifa za timu zilizoshiriki mchezo husika, wachezaji, muda na tarifa zote muhimu zitazosaidia kutengenza Ripoti
+                        ya mchezo husika.
                 </Text>
                 </View>
 

@@ -14,7 +14,7 @@ import
 }
 from 'react-native';
 
-const Fixture = ({navigation}) => {
+const Extended = ({navigation}) => {
     return(
     <ScrollView>
     <View style={StyleSheet.container}>
@@ -234,7 +234,7 @@ const Fixture = ({navigation}) => {
     );
 }
 
-export default Fixture;
+export default Extended;
 
 const styles = StyleSheet.create({
     container: {
