@@ -1,14 +1,14 @@
 const scorers = [
     {
         id : '1',
-        image: require('../Mayele.png'),
-        title : 'Goals : 16',
+        image: require('../Mpole.png'),
+        title : 'Goals : 17',
         selected: true,    
     
     },
     {
         id : '2',
-        image: require('../mpole-pic.png'),
+        image: require('../Mayele.png'),
         title : 'Goals: 16',
         selected: true,
     

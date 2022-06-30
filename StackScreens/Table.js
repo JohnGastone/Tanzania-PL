@@ -67,12 +67,12 @@ const Table = ({navigation}) => {
                         /> 
                                 
                             <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Yanga </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 27 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 20 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 7 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 30 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 22 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 8 </Text>
                                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 0 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 45:7 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -4}}> 67 </Text> 
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 49:8 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -4}}> 74 </Text> 
                     </View>                              
                 </View>
                 <View>
@@ -89,12 +89,12 @@ const Table = ({navigation}) => {
                             /> 
                          
                             <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Simba </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 26 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 15 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 2 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 36:12 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 54 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 30 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 17 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 3 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 41:14 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 61 </Text>
                         </View>
                     </View>
                 <View>
@@ -108,12 +108,12 @@ const Table = ({navigation}) => {
                             style={styles.teamImage}
                         />   
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Azam </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 14}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 11 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 14}}> 30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 14 </Text>
                         <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 7 </Text>
                         <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 9 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 34:27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 40 </Text>               
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 41:28 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 49 </Text>               
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -127,12 +127,12 @@ const Table = ({navigation}) => {
                             style={styles.teamImage}
                         />   
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Geita Gold </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -12}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 10 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -12}}> 30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 12 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
                         <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 8 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 28:25 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 39 </Text>                          
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 32:26 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 46 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -146,12 +146,12 @@ const Table = ({navigation}) => {
                             style={styles.teamImage}
                         />   
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Namungo </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 9 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 10 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 11 </Text>
                         <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 8 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 37:30 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 37 </Text>                          
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 42:34 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 41 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -161,16 +161,16 @@ const Table = ({navigation}) => {
                  <View style={styles.fixtureItem}>
                  <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 6. </Text>                 
                         <Image 
-                            source={require('../assets/icons/Polisi.png')}
+                            source={require('../assets/icons/Kagera.png')}
                             style={styles.teamImage}
                         />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Polisi Tz </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -4}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 12 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 7 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 21:20 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 36 </Text>                          
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Kagera </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -4}}>   30  </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}>10 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 8 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 12 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 22:31 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 39 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -180,16 +180,16 @@ const Table = ({navigation}) => {
                  <View style={styles.fixtureItem}>
                  <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 7. </Text>                 
                         <Image 
-                            source={require('../assets/icons/Kagera.png')}
+                            source={require('../assets/icons/Coastal.png')}
                             style={styles.teamImage}
                         />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Kagera  </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -3}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8</Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 9 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -5}}> 18:24 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 34 </Text>                          
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Coastal  </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -3}}> 30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 10 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 8 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 12 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -5}}> 22:31 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 38 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -199,16 +199,16 @@ const Table = ({navigation}) => {
                  <View style={styles.fixtureItem}>
                  <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 8. </Text>                 
                         <Image 
-                            source={require('../assets/icons/Coastal.png')}
+                            source={require('../assets/icons/Polisi.png')}
                             style={styles.teamImage}
                         />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 14}}> Coastal  </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 9 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 7 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 11 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -6}}> 20:29 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 34 </Text>                          
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 14}}> Polisi  </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}>       30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 13 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 9 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -6}}> 21:23 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 37 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -218,16 +218,16 @@ const Table = ({navigation}) => {
                  <View style={styles.fixtureItem}>
                  <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 19 }}> 9. </Text>                 
                         <Image 
-                            source={require('../assets/icons/KMC.png')}
+                            source={require('../assets/icons/Mbeya_City.png')}
                             style={styles.teamImage}
                         />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> KMC </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> 26 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 7 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 11 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 8 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -5}}> 29:29 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 32 </Text>                          
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>Mbeya C</Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}>30</Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 13 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 9 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -5}}> 25:29 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 37 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -237,16 +237,16 @@ const Table = ({navigation}) => {
                  <View style={styles.fixtureItem}>
                  <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 15 }}> 10. </Text>                 
                         <Image 
-                            source={require('../assets/icons/Mbeya_City.png')}
+                            source={require('../assets/icons/KMC.png')}
                             style={styles.teamImage}
                         />   
-                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Mbeya C </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}> 27 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 7 </Text>
+                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> KMC  </Text>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}>           30 </Text>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8 </Text>
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 11 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 9 </Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}>22:24</Text>
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 32 </Text>                          
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 11 </Text>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}>34:35</Text>
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 35 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -256,35 +256,16 @@ const Table = ({navigation}) => {
                  <View style={styles.fixtureItem}>
                  <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 15 }}> 11. </Text>                 
                         <Image 
-                            source={require('../assets/icons/Mtibwa.png')}
-                            style={styles.teamImage}
-                        />   
-                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Mtibwa </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 7 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 10 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 23:27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 31 </Text>                          
-                </View>
-                <View>
-                    <Text style={styles.sponsorsLine}></Text>
-                </View>
-
-                 {/* Fixture */}
-                 <View style={styles.fixtureItem}>
-                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 15 }}> 12. </Text>                 
-                        <Image 
                             source={require('../assets/icons/Dodoma.png')}
                             style={styles.teamImage}
                         />   
                     <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Dodoma </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -12}}> 27 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 7}}> 7 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 12 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 23:24 </Text>
-                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 31 </Text>                          
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -12}}>       30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 9 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 7}}> 8 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 25:37 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 35 </Text>                          
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
@@ -292,24 +273,47 @@ const Table = ({navigation}) => {
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
-                    <View style={styles.relegationPlayOffs}>
-                        <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}> 13. </Text>                 
+                    
+                        <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: -1 }}>       12. </Text>                 
                                 <Image 
                                     source={require('../assets/icons/Ruvu.png')}
                                     style={styles.teamImage}
                                 />   
                             <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 11}}> Ruvu </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 27 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 6 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}>       30 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 8 </Text>
                                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 11 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 35:37 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 28 </Text>                          
-                    </View>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 12 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 28:39 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 34 </Text>                          
+                    
                 </View>
                 <View>
                     <Text style={styles.sponsorsLine}></Text>
                 </View>
+
+                 {/* Fixture */}
+                 <View style={styles.fixtureItem}>
+                 <View style={styles.relegationPlayOffs}>
+                 <Text style={{paddingRight: 26, color:'#5C1919', alignSelf: 'center', marginRight: -25, marginLeft: 2 }}>13. </Text>                 
+                        <Image 
+                            source={require('../assets/icons/Mtibwa.png')}
+                            style={styles.teamImage}
+                        />   
+                    <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Mtibwa </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}>       30 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 7 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 10 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 25:34 </Text>
+                        <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 31 </Text>                          
+                </View>
+                </View>
+                <View>
+                    <Text style={styles.sponsorsLine}></Text>
+                </View>
+
+                
 
                  {/* Fixture */}
                  <View style={styles.fixtureItem}>
@@ -320,12 +324,12 @@ const Table = ({navigation}) => {
                                     style={styles.teamImage}
                                 />   
                             <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Prisons </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}> 27 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 6 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -11}}>         30 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 7 </Text>
                                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 8 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 13 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -3}}> 20:32 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 26 </Text>                          
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 15 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -3}}> 21:34 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 29 </Text>                          
                     </View>
                 </View>
                 <View>
@@ -341,12 +345,12 @@ const Table = ({navigation}) => {
                                     style={styles.teamImage}
                                 />   
                             <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Biashara </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}> 27 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 4 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}>          30 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 5 </Text>
                                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 13 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 10 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 21:29 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 25 </Text>                          
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 5}}> 12 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 23:35 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 28 </Text>                          
                     </View>
                 </View>
                 <View>
@@ -362,12 +366,12 @@ const Table = ({navigation}) => {
                                     style={styles.teamImage}
                                 />   
                             <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 10}}> Mbeya K </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}> 27 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -21}}>           30 </Text>
                                 <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -2}}> 5 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}> 9 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 11}}> 13 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}> 20:33 </Text>
-                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}> 24 </Text>                          
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 1}}>10 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: 11}}>15</Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -7}}>22:39 </Text>
+                                <Text style={{paddingRight: 20, color:'#5C1919', alignSelf: 'center', marginLeft: -9}}>25 </Text>                          
                     </View>
                 </View>
                 <View>

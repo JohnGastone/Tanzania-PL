@@ -84,33 +84,33 @@ const F2 = ({navigation}) => {
                 </View>
                 <View style={styles.h2hData}>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>8</Text>
+                        <Text style={styles.text1}>6</Text>
                         <Text style={styles.text2}>Played</Text>
-                        <Text style={styles.text3}>8</Text>
+                        <Text style={styles.text3}>6</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
-                        <Text style={styles.text1}>4</Text>
+                        <Text style={styles.text1}>1</Text>
                         <Text style={styles.text2}>Wins</Text>
-                        <Text style={styles.text3}>0</Text>
-                    </View>
-                    <View>
-                        <Text></Text>
-                    </View>
-                    <View style={styles.played}>
-                        <Text style={styles.text1}>4</Text>
-                        <Text style={styles.text2}>Draws</Text>
-                        <Text style={styles.text3}>4</Text>
+                        <Text style={styles.text3}>5</Text>
                     </View>
                     <View>
                         <Text></Text>
                     </View>
                     <View style={styles.played}>
                         <Text style={styles.text1}>0</Text>
+                        <Text style={styles.text2}>Draws</Text>
+                        <Text style={styles.text3}>0</Text>
+                    </View>
+                    <View>
+                        <Text></Text>
+                    </View>
+                    <View style={styles.played}>
+                        <Text style={styles.text1}>5</Text>
                         <Text style={styles.text2}>Lost</Text>
-                        <Text style={styles.text3}>4</Text>
+                        <Text style={styles.text3}>1</Text>
                     </View>
 
                 </View>

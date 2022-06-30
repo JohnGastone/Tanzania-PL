@@ -19,6 +19,7 @@ import Referee from '../StackScreens/Referees';
 import LigiKuu from '../StackScreens/LigiKuu';
 import Admin from '../StackScreens/Admin';
 import ExportPDF from '../StackScreens/ExportPDF';
+import Story from '../StackScreens/Story';
 
 const Stack = createStackNavigator();
 const StackNavigator = () => {
@@ -76,6 +77,11 @@ const StackNavigator = () => {
             }}
         />
         <Stack.Screen name="Polisi" component={Polisi} 
+            options={{
+                headerShown: false,
+            }}
+        />
+        <Stack.Screen name="Story" component={Story} 
             options={{
                 headerShown: false,
             }}
